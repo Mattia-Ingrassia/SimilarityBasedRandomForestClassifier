@@ -759,7 +759,6 @@
         "na_values": null,
         "ignored_columns": null
     },
-
     "dry_bean": {
         "columns" : [
             "Area",
@@ -827,6 +826,22 @@
         "categorical_features": null,
         "na_values": null,
         "ignored_columns": null
+    },
+    "rice" : {
+        "columns" : [
+            "Area",
+            "Perimeter",
+            "Major axis length",
+            "Minor axis length",
+            "Eccentricity",
+            "Convex area",
+            "Extent",
+            "Class"
+        ],
+        "target_column" : "Class",
+        "needs_y_encoding" : true,
+        "categorical_features" : null,
+        "na_values": null,
+        "ignored_columns": null
     }
-
 }
