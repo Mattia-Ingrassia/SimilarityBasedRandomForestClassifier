@@ -874,5 +874,36 @@
         "categorical_features": null,
         "na_values": null,
         "ignored_columns": null
+    },
+    "zoo":{
+        "columns" : [
+            "animal_name",
+            "hair",
+            "feathers",
+            "eggs",
+            "milk",
+            "airborne",
+            "aquatic",
+            "predator",
+            "toothed",
+            "backbone",
+            "breathes",
+            "venomous",
+            "fins",
+            "legs",
+            "tail",
+            "domestic",
+            "catsize",
+            "class"
+        ],
+        "target_column" : "class",
+        "needs_y_encoding" : true,
+        "categorical_features" : [
+            "legs"
+        ],
+        "na_values": null,
+        "ignored_columns": [
+            "animal_name"
+        ]
     }
 }
