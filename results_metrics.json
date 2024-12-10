@@ -1,0 +1,1442 @@
+[
+    {
+        "dataset": "adult",
+        "classifier": "Edited Variant of Random Forest",
+        "metrics": {
+            "accuracy": 0.8435132737323415,
+            "balanced_accuracy": 0.7467673354206417,
+            "micro_f1": 0.8435132737323415,
+            "macro_f1": 0.7680473292308416
+        }
+    },
+    {
+        "dataset": "adult",
+        "classifier": "Random Forest",
+        "metrics": {
+            "accuracy": 0.8495188698560022,
+            "balanced_accuracy": 0.7658718303472343,
+            "micro_f1": 0.8495188698560022,
+            "macro_f1": 0.7827339078466357
+        }
+    },
+    {
+        "dataset": "adult",
+        "classifier": "Extra Trees",
+        "metrics": {
+            "accuracy": 0.8365522418617348,
+            "balanced_accuracy": 0.7576581246738057,
+            "micro_f1": 0.8365522418617348,
+            "macro_f1": 0.7689500195514574
+        }
+    },
+    {
+        "dataset": "adult",
+        "classifier": "AdaBoost",
+        "metrics": {
+            "accuracy": 0.8373711867876885,
+            "balanced_accuracy": 0.7178954180043675,
+            "micro_f1": 0.8373711867876885,
+            "macro_f1": 0.7457558075989847
+        }
+    },
+    {
+        "dataset": "adult",
+        "classifier": "Gradient Boosting",
+        "metrics": {
+            "accuracy": 0.8621442707977889,
+            "balanced_accuracy": 0.7841941634552618,
+            "micro_f1": 0.8621442707977889,
+            "macro_f1": 0.8015470435604664
+        }
+    },
+    {
+        "dataset": "adult",
+        "classifier": "XGBoost",
+        "metrics": {
+            "accuracy": 0.8689688118474033,
+            "balanced_accuracy": 0.7999891415344987,
+            "micro_f1": 0.8689688118474033,
+            "macro_f1": 0.8141717354740425
+        }
+    },
+    {
+        "dataset": "bank",
+        "classifier": "Edited Variant of Random Forest",
+        "metrics": {
+            "accuracy": 0.9006930109112357,
+            "balanced_accuracy": 0.6589015311554647,
+            "micro_f1": 0.9006930109112357,
+            "macro_f1": 0.6959085304338078
+        }
+    },
+    {
+        "dataset": "bank",
+        "classifier": "Random Forest",
+        "metrics": {
+            "accuracy": 0.9057062813329402,
+            "balanced_accuracy": 0.7136632598739248,
+            "micro_f1": 0.9057062813329402,
+            "macro_f1": 0.7406359625795667
+        }
+    },
+    {
+        "dataset": "bank",
+        "classifier": "Extra Trees",
+        "metrics": {
+            "accuracy": 0.8969330580949573,
+            "balanced_accuracy": 0.6977089706106032,
+            "micro_f1": 0.8969330580949573,
+            "macro_f1": 0.7200308303907429
+        }
+    },
+    {
+        "dataset": "bank",
+        "classifier": "AdaBoost",
+        "metrics": {
+            "accuracy": 0.8943526983190799,
+            "balanced_accuracy": 0.6272906068851295,
+            "micro_f1": 0.8943526983190799,
+            "macro_f1": 0.6616207678358528
+        }
+    },
+    {
+        "dataset": "bank",
+        "classifier": "Gradient Boosting",
+        "metrics": {
+            "accuracy": 0.8909613683279268,
+            "balanced_accuracy": 0.6308660492470974,
+            "micro_f1": 0.8909613683279268,
+            "macro_f1": 0.6620967520930393
+        }
+    },
+    {
+        "dataset": "bank",
+        "classifier": "XGBoost",
+        "metrics": {
+            "accuracy": 0.9014302565614863,
+            "balanced_accuracy": 0.7334967720673979,
+            "micro_f1": 0.9014302565614863,
+            "macro_f1": 0.7467200933731346
+        }
+    },
+    {
+        "dataset": "breast_cancer_wisconsin",
+        "classifier": "Edited Variant of Random Forest",
+        "metrics": {
+            "accuracy": 0.9415204678362573,
+            "balanced_accuracy": 0.9371693121693121,
+            "micro_f1": 0.9415204678362573,
+            "macro_f1": 0.9371693121693121
+        }
+    },
+    {
+        "dataset": "breast_cancer_wisconsin",
+        "classifier": "Random Forest",
+        "metrics": {
+            "accuracy": 0.9707602339181286,
+            "balanced_accuracy": 0.9603174603174602,
+            "micro_f1": 0.9707602339181286,
+            "macro_f1": 0.9680266257806365
+        }
+    },
+    {
+        "dataset": "breast_cancer_wisconsin",
+        "classifier": "Extra Trees",
+        "metrics": {
+            "accuracy": 0.9766081871345029,
+            "balanced_accuracy": 0.9748677248677249,
+            "micro_f1": 0.9766081871345029,
+            "macro_f1": 0.9748677248677249
+        }
+    },
+    {
+        "dataset": "breast_cancer_wisconsin",
+        "classifier": "AdaBoost",
+        "metrics": {
+            "accuracy": 0.9649122807017544,
+            "balanced_accuracy": 0.9589947089947091,
+            "micro_f1": 0.9649122807017544,
+            "macro_f1": 0.962044983722995
+        }
+    },
+    {
+        "dataset": "breast_cancer_wisconsin",
+        "classifier": "Gradient Boosting",
+        "metrics": {
+            "accuracy": 0.9649122807017544,
+            "balanced_accuracy": 0.9623015873015872,
+            "micro_f1": 0.9649122807017544,
+            "macro_f1": 0.9623015873015872
+        }
+    },
+    {
+        "dataset": "breast_cancer_wisconsin",
+        "classifier": "XGBoost",
+        "metrics": {
+            "accuracy": 0.9649122807017544,
+            "balanced_accuracy": 0.9623015873015872,
+            "micro_f1": 0.9649122807017544,
+            "macro_f1": 0.9623015873015872
+        }
+    },
+    {
+        "dataset": "car",
+        "classifier": "Edited Variant of Random Forest",
+        "metrics": {
+            "accuracy": 0.8265895953757225,
+            "balanced_accuracy": 0.4599634980206673,
+            "micro_f1": 0.8265895953757225,
+            "macro_f1": 0.4067442774339326
+        }
+    },
+    {
+        "dataset": "car",
+        "classifier": "Random Forest",
+        "metrics": {
+            "accuracy": 0.9710982658959537,
+            "balanced_accuracy": 0.9154382496498583,
+            "micro_f1": 0.9710982658959537,
+            "macro_f1": 0.9215552149925849
+        }
+    },
+    {
+        "dataset": "car",
+        "classifier": "Extra Trees",
+        "metrics": {
+            "accuracy": 0.9499036608863198,
+            "balanced_accuracy": 0.8589394406768834,
+            "micro_f1": 0.9499036608863198,
+            "macro_f1": 0.871924110228427
+        }
+    },
+    {
+        "dataset": "car",
+        "classifier": "AdaBoost",
+        "metrics": {
+            "accuracy": 0.8034682080924855,
+            "balanced_accuracy": 0.44004806950799447,
+            "micro_f1": 0.8034682080924855,
+            "macro_f1": 0.3915719696969697
+        }
+    },
+    {
+        "dataset": "car",
+        "classifier": "Gradient Boosting",
+        "metrics": {
+            "accuracy": 0.9826589595375722,
+            "balanced_accuracy": 0.9221497044632744,
+            "micro_f1": 0.9826589595375722,
+            "macro_f1": 0.935263670396908
+        }
+    },
+    {
+        "dataset": "car",
+        "classifier": "XGBoost",
+        "metrics": {
+            "accuracy": 0.9710982658959537,
+            "balanced_accuracy": 0.90548613415529,
+            "micro_f1": 0.9710982658959537,
+            "macro_f1": 0.9278077846364883
+        }
+    },
+    {
+        "dataset": "connect_4",
+        "classifier": "Edited Variant of Random Forest",
+        "metrics": {
+            "accuracy": 0.7038681665679889,
+            "balanced_accuracy": 0.4122835270799978,
+            "micro_f1": 0.7038681665679889,
+            "macro_f1": 0.4015188521758091
+        }
+    },
+    {
+        "dataset": "connect_4",
+        "classifier": "Random Forest",
+        "metrics": {
+            "accuracy": 0.8009177027827117,
+            "balanced_accuracy": 0.6297750704631558,
+            "micro_f1": 0.8009177027827117,
+            "macro_f1": 0.6388277850749428
+        }
+    },
+    {
+        "dataset": "connect_4",
+        "classifier": "Extra Trees",
+        "metrics": {
+            "accuracy": 0.7568087625814092,
+            "balanced_accuracy": 0.6044249026711376,
+            "micro_f1": 0.7568087625814092,
+            "macro_f1": 0.6030684794526274
+        }
+    },
+    {
+        "dataset": "connect_4",
+        "classifier": "AdaBoost",
+        "metrics": {
+            "accuracy": 0.6797908032366292,
+            "balanced_accuracy": 0.3760767665862644,
+            "micro_f1": 0.6797908032366292,
+            "macro_f1": 0.3524211086111377
+        }
+    },
+    {
+        "dataset": "connect_4",
+        "classifier": "Gradient Boosting",
+        "metrics": {
+            "accuracy": 0.7646536412078153,
+            "balanced_accuracy": 0.5225579418609513,
+            "micro_f1": 0.7646536412078153,
+            "macro_f1": 0.5228717880097603
+        }
+    },
+    {
+        "dataset": "connect_4",
+        "classifier": "XGBoost",
+        "metrics": {
+            "accuracy": 0.8117229129662522,
+            "balanced_accuracy": 0.589734366649466,
+            "micro_f1": 0.8117229129662522,
+            "macro_f1": 0.5991325158709847
+        }
+    },
+    {
+        "dataset": "covertype",
+        "classifier": "Edited Variant of Random Forest",
+        "metrics": {
+            "accuracy": 0.6961572884156416,
+            "balanced_accuracy": 0.4182202510934963,
+            "micro_f1": 0.6961572884156416,
+            "macro_f1": 0.4340580806652274
+        }
+    },
+    {
+        "dataset": "covertype",
+        "classifier": "Random Forest",
+        "metrics": {
+            "accuracy": 0.9583428951716542,
+            "balanced_accuracy": 0.9103011835979545,
+            "micro_f1": 0.9583428951716542,
+            "macro_f1": 0.9245027686763926
+        }
+    },
+    {
+        "dataset": "covertype",
+        "classifier": "Extra Trees",
+        "metrics": {
+            "accuracy": 0.9659847163576281,
+            "balanced_accuracy": 0.9293378916155696,
+            "micro_f1": 0.9659847163576281,
+            "macro_f1": 0.9396271344298986
+        }
+    },
+    {
+        "dataset": "covertype",
+        "classifier": "AdaBoost",
+        "metrics": {
+            "accuracy": 0.5639285386451257,
+            "balanced_accuracy": 0.29276425000732803,
+            "micro_f1": 0.5639285386451257,
+            "macro_f1": 0.231564300549378
+        }
+    },
+    {
+        "dataset": "covertype",
+        "classifier": "Gradient Boosting",
+        "metrics": {
+            "accuracy": 0.6783091610060584,
+            "balanced_accuracy": 0.4708017625683256,
+            "micro_f1": 0.6783091610060584,
+            "macro_f1": 0.4469037755288255
+        }
+    },
+    {
+        "dataset": "covertype",
+        "classifier": "XGBoost",
+        "metrics": {
+            "accuracy": 0.8082029098586377,
+            "balanced_accuracy": 0.7226563914778863,
+            "micro_f1": 0.8082029098586377,
+            "macro_f1": 0.7536969809511503
+        }
+    },
+    {
+        "dataset": "default_credit_card",
+        "classifier": "Edited Variant of Random Forest",
+        "metrics": {
+            "accuracy": 0.817,
+            "balanced_accuracy": 0.6365817552204269,
+            "micro_f1": 0.817,
+            "macro_f1": 0.6608362364825576
+        }
+    },
+    {
+        "dataset": "default_credit_card",
+        "classifier": "Random Forest",
+        "metrics": {
+            "accuracy": 0.8034444444444444,
+            "balanced_accuracy": 0.6316666398849458,
+            "micro_f1": 0.8034444444444444,
+            "macro_f1": 0.6514724549953218
+        }
+    },
+    {
+        "dataset": "default_credit_card",
+        "classifier": "Extra Trees",
+        "metrics": {
+            "accuracy": 0.7926666666666666,
+            "balanced_accuracy": 0.6263717501816375,
+            "micro_f1": 0.7926666666666666,
+            "macro_f1": 0.6429423084577047
+        }
+    },
+    {
+        "dataset": "default_credit_card",
+        "classifier": "AdaBoost",
+        "metrics": {
+            "accuracy": 0.8208888888888889,
+            "balanced_accuracy": 0.6435825448985987,
+            "micro_f1": 0.8208888888888889,
+            "macro_f1": 0.6694277846903959
+        }
+    },
+    {
+        "dataset": "default_credit_card",
+        "classifier": "Gradient Boosting",
+        "metrics": {
+            "accuracy": 0.8211111111111111,
+            "balanced_accuracy": 0.6651692815191205,
+            "micro_f1": 0.8211111111111111,
+            "macro_f1": 0.6897698824748116
+        }
+    },
+    {
+        "dataset": "default_credit_card",
+        "classifier": "XGBoost",
+        "metrics": {
+            "accuracy": 0.8076666666666666,
+            "balanced_accuracy": 0.6453686465627766,
+            "micro_f1": 0.8076666666666666,
+            "macro_f1": 0.6662032850918982
+        }
+    },
+    {
+        "dataset": "dropout",
+        "classifier": "Edited Variant of Random Forest",
+        "metrics": {
+            "accuracy": 0.7477409638554217,
+            "balanced_accuracy": 0.6555272146236905,
+            "micro_f1": 0.7477409638554217,
+            "macro_f1": 0.6613290534451789
+        }
+    },
+    {
+        "dataset": "dropout",
+        "classifier": "Random Forest",
+        "metrics": {
+            "accuracy": 0.7492469879518072,
+            "balanced_accuracy": 0.6877422738721353,
+            "micro_f1": 0.7492469879518072,
+            "macro_f1": 0.6884734262519313
+        }
+    },
+    {
+        "dataset": "dropout",
+        "classifier": "Extra Trees",
+        "metrics": {
+            "accuracy": 0.7545180722891566,
+            "balanced_accuracy": 0.6789955007701837,
+            "micro_f1": 0.7545180722891566,
+            "macro_f1": 0.6808052480855903
+        }
+    },
+    {
+        "dataset": "dropout",
+        "classifier": "AdaBoost",
+        "metrics": {
+            "accuracy": 0.713855421686747,
+            "balanced_accuracy": 0.5737524039448149,
+            "micro_f1": 0.713855421686747,
+            "macro_f1": 0.5298069273825887
+        }
+    },
+    {
+        "dataset": "dropout",
+        "classifier": "Gradient Boosting",
+        "metrics": {
+            "accuracy": 0.7635542168674698,
+            "balanced_accuracy": 0.6908111303482537,
+            "micro_f1": 0.7635542168674698,
+            "macro_f1": 0.694984434874453
+        }
+    },
+    {
+        "dataset": "dropout",
+        "classifier": "XGBoost",
+        "metrics": {
+            "accuracy": 0.7643072289156626,
+            "balanced_accuracy": 0.6892667685620976,
+            "micro_f1": 0.7643072289156626,
+            "macro_f1": 0.6940810300270055
+        }
+    },
+    {
+        "dataset": "dry_bean",
+        "classifier": "Edited Variant of Random Forest",
+        "metrics": {
+            "accuracy": 0.8325171400587659,
+            "balanced_accuracy": 0.8057208826869164,
+            "micro_f1": 0.8325171400587659,
+            "macro_f1": 0.7816137973311104
+        }
+    },
+    {
+        "dataset": "dry_bean",
+        "classifier": "Random Forest",
+        "metrics": {
+            "accuracy": 0.9231145935357493,
+            "balanced_accuracy": 0.9307004806978673,
+            "micro_f1": 0.9231145935357493,
+            "macro_f1": 0.9322607760155313
+        }
+    },
+    {
+        "dataset": "dry_bean",
+        "classifier": "Extra Trees",
+        "metrics": {
+            "accuracy": 0.92384916748286,
+            "balanced_accuracy": 0.9312622623839195,
+            "micro_f1": 0.92384916748286,
+            "macro_f1": 0.9327175853122768
+        }
+    },
+    {
+        "dataset": "dry_bean",
+        "classifier": "AdaBoost",
+        "metrics": {
+            "accuracy": 0.6486287952987267,
+            "balanced_accuracy": 0.5287347774706004,
+            "micro_f1": 0.6486287952987267,
+            "macro_f1": 0.474771807393869
+        }
+    },
+    {
+        "dataset": "dry_bean",
+        "classifier": "Gradient Boosting",
+        "metrics": {
+            "accuracy": 0.9098922624877571,
+            "balanced_accuracy": 0.9182009422257158,
+            "micro_f1": 0.9098922624877571,
+            "macro_f1": 0.9197798962064526
+        }
+    },
+    {
+        "dataset": "dry_bean",
+        "classifier": "XGBoost",
+        "metrics": {
+            "accuracy": 0.9214005876591577,
+            "balanced_accuracy": 0.9299334315239413,
+            "micro_f1": 0.9214005876591577,
+            "macro_f1": 0.932359355808894
+        }
+    },
+    {
+        "dataset": "ecoli",
+        "classifier": "Edited Variant of Random Forest",
+        "metrics": {
+            "accuracy": 0.8217821782178217,
+            "balanced_accuracy": 0.5378623188405798,
+            "micro_f1": 0.8217821782178217,
+            "macro_f1": 0.5496031746031745
+        }
+    },
+    {
+        "dataset": "ecoli",
+        "classifier": "Random Forest",
+        "metrics": {
+            "accuracy": 0.8217821782178217,
+            "balanced_accuracy": 0.6085062582345191,
+            "micro_f1": 0.8217821782178217,
+            "macro_f1": 0.5748673740053051
+        }
+    },
+    {
+        "dataset": "ecoli",
+        "classifier": "Extra Trees",
+        "metrics": {
+            "accuracy": 0.8514851485148515,
+            "balanced_accuracy": 0.6307339701361441,
+            "micro_f1": 0.8514851485148515,
+            "macro_f1": 0.5925928355352512
+        }
+    },
+    {
+        "dataset": "ecoli",
+        "classifier": "AdaBoost",
+        "metrics": {
+            "accuracy": 0.6336633663366337,
+            "balanced_accuracy": 0.24764218269653052,
+            "micro_f1": 0.6336633663366337,
+            "macro_f1": 0.22638574660633484
+        }
+    },
+    {
+        "dataset": "ecoli",
+        "classifier": "Gradient Boosting",
+        "metrics": {
+            "accuracy": 0.8514851485148515,
+            "balanced_accuracy": 0.6265618137900747,
+            "micro_f1": 0.8514851485148515,
+            "macro_f1": 0.5960799859055673
+        }
+    },
+    {
+        "dataset": "ecoli",
+        "classifier": "XGBoost",
+        "metrics": {
+            "accuracy": 0.8415841584158416,
+            "balanced_accuracy": 0.604586627140975,
+            "micro_f1": 0.8415841584158416,
+            "macro_f1": 0.5583225067215215
+        }
+    },
+    {
+        "dataset": "glass",
+        "classifier": "Edited Variant of Random Forest",
+        "metrics": {
+            "accuracy": 0.6615384615384615,
+            "balanced_accuracy": 0.6580687830687831,
+            "micro_f1": 0.6615384615384615,
+            "macro_f1": 0.6423353596757851
+        }
+    },
+    {
+        "dataset": "glass",
+        "classifier": "Random Forest",
+        "metrics": {
+            "accuracy": 0.676923076923077,
+            "balanced_accuracy": 0.6962081128747796,
+            "micro_f1": 0.676923076923077,
+            "macro_f1": 0.6806009031618787
+        }
+    },
+    {
+        "dataset": "glass",
+        "classifier": "Extra Trees",
+        "metrics": {
+            "accuracy": 0.6923076923076923,
+            "balanced_accuracy": 0.7378747795414462,
+            "micro_f1": 0.6923076923076923,
+            "macro_f1": 0.6984848484848484
+        }
+    },
+    {
+        "dataset": "glass",
+        "classifier": "AdaBoost",
+        "metrics": {
+            "accuracy": 0.49230769230769234,
+            "balanced_accuracy": 0.3624338624338624,
+            "micro_f1": 0.49230769230769234,
+            "macro_f1": 0.32488738738738737
+        }
+    },
+    {
+        "dataset": "glass",
+        "classifier": "Gradient Boosting",
+        "metrics": {
+            "accuracy": 0.7846153846153846,
+            "balanced_accuracy": 0.7290564373897707,
+            "micro_f1": 0.7846153846153846,
+            "macro_f1": 0.7120298593166808
+        }
+    },
+    {
+        "dataset": "glass",
+        "classifier": "XGBoost",
+        "metrics": {
+            "accuracy": 0.7076923076923077,
+            "balanced_accuracy": 0.6946649029982362,
+            "micro_f1": 0.7076923076923077,
+            "macro_f1": 0.6552663170880225
+        }
+    },
+    {
+        "dataset": "heart_failure",
+        "classifier": "Edited Variant of Random Forest",
+        "metrics": {
+            "accuracy": 0.6222222222222222,
+            "balanced_accuracy": 0.48976293103448276,
+            "micro_f1": 0.6222222222222222,
+            "macro_f1": 0.4097222222222222
+        }
+    },
+    {
+        "dataset": "heart_failure",
+        "classifier": "Random Forest",
+        "metrics": {
+            "accuracy": 0.7666666666666667,
+            "balanced_accuracy": 0.7209051724137931,
+            "micro_f1": 0.7666666666666667,
+            "macro_f1": 0.730423620025674
+        }
+    },
+    {
+        "dataset": "heart_failure",
+        "classifier": "Extra Trees",
+        "metrics": {
+            "accuracy": 0.7444444444444445,
+            "balanced_accuracy": 0.6896551724137931,
+            "micro_f1": 0.7444444444444445,
+            "macro_f1": 0.6989090909090909
+        }
+    },
+    {
+        "dataset": "heart_failure",
+        "classifier": "AdaBoost",
+        "metrics": {
+            "accuracy": 0.7666666666666667,
+            "balanced_accuracy": 0.7139008620689655,
+            "micro_f1": 0.7666666666666667,
+            "macro_f1": 0.725090909090909
+        }
+    },
+    {
+        "dataset": "heart_failure",
+        "classifier": "Gradient Boosting",
+        "metrics": {
+            "accuracy": 0.8222222222222222,
+            "balanced_accuracy": 0.8060344827586207,
+            "micro_f1": 0.8222222222222222,
+            "macro_f1": 0.8060344827586207
+        }
+    },
+    {
+        "dataset": "heart_failure",
+        "classifier": "XGBoost",
+        "metrics": {
+            "accuracy": 0.7888888888888889,
+            "balanced_accuracy": 0.7661637931034483,
+            "micro_f1": 0.7888888888888889,
+            "macro_f1": 0.768009768009768
+        }
+    },
+    {
+        "dataset": "iris",
+        "classifier": "Edited Variant of Random Forest",
+        "metrics": {
+            "accuracy": 0.9777777777777777,
+            "balanced_accuracy": 0.9743589743589745,
+            "micro_f1": 0.9777777777777777,
+            "macro_f1": 0.9751724137931035
+        }
+    },
+    {
+        "dataset": "iris",
+        "classifier": "Random Forest",
+        "metrics": {
+            "accuracy": 0.9777777777777777,
+            "balanced_accuracy": 0.9743589743589745,
+            "micro_f1": 0.9777777777777777,
+            "macro_f1": 0.9751724137931035
+        }
+    },
+    {
+        "dataset": "iris",
+        "classifier": "Extra Trees",
+        "metrics": {
+            "accuracy": 0.9777777777777777,
+            "balanced_accuracy": 0.9743589743589745,
+            "micro_f1": 0.9777777777777777,
+            "macro_f1": 0.9751724137931035
+        }
+    },
+    {
+        "dataset": "iris",
+        "classifier": "AdaBoost",
+        "metrics": {
+            "accuracy": 0.9555555555555556,
+            "balanced_accuracy": 0.9487179487179488,
+            "micro_f1": 0.9555555555555556,
+            "macro_f1": 0.9500000000000001
+        }
+    },
+    {
+        "dataset": "iris",
+        "classifier": "Gradient Boosting",
+        "metrics": {
+            "accuracy": 0.9777777777777777,
+            "balanced_accuracy": 0.9743589743589745,
+            "micro_f1": 0.9777777777777777,
+            "macro_f1": 0.9751724137931035
+        }
+    },
+    {
+        "dataset": "iris",
+        "classifier": "XGBoost",
+        "metrics": {
+            "accuracy": 0.9777777777777777,
+            "balanced_accuracy": 0.9743589743589745,
+            "micro_f1": 0.9777777777777777,
+            "macro_f1": 0.9751724137931035
+        }
+    },
+    {
+        "dataset": "letter_recognition",
+        "classifier": "Edited Variant of Random Forest",
+        "metrics": {
+            "accuracy": 0.43183333333333335,
+            "balanced_accuracy": 0.4369050891167632,
+            "micro_f1": 0.43183333333333335,
+            "macro_f1": 0.3869557072533211
+        }
+    },
+    {
+        "dataset": "letter_recognition",
+        "classifier": "Random Forest",
+        "metrics": {
+            "accuracy": 0.9235,
+            "balanced_accuracy": 0.9242406042507341,
+            "micro_f1": 0.9235,
+            "macro_f1": 0.9245280092889232
+        }
+    },
+    {
+        "dataset": "letter_recognition",
+        "classifier": "Extra Trees",
+        "metrics": {
+            "accuracy": 0.949,
+            "balanced_accuracy": 0.9495233221214275,
+            "micro_f1": 0.949,
+            "macro_f1": 0.9496464555001902
+        }
+    },
+    {
+        "dataset": "letter_recognition",
+        "classifier": "AdaBoost",
+        "metrics": {
+            "accuracy": 0.066,
+            "balanced_accuracy": 0.06622406602261557,
+            "micro_f1": 0.066,
+            "macro_f1": 0.021116310166702495
+        }
+    },
+    {
+        "dataset": "letter_recognition",
+        "classifier": "Gradient Boosting",
+        "metrics": {
+            "accuracy": 0.044333333333333336,
+            "balanced_accuracy": 0.04431991773945571,
+            "micro_f1": 0.044333333333333336,
+            "macro_f1": 0.05785289757193252
+        }
+    },
+    {
+        "dataset": "letter_recognition",
+        "classifier": "XGBoost",
+        "metrics": {
+            "accuracy": 0.9115,
+            "balanced_accuracy": 0.9121778599423134,
+            "micro_f1": 0.9115,
+            "macro_f1": 0.9122358899576901
+        }
+    },
+    {
+        "dataset": "mushroom",
+        "classifier": "Edited Variant of Random Forest",
+        "metrics": {
+            "accuracy": 0.9976387249114522,
+            "balanced_accuracy": 0.9980897803247373,
+            "micro_f1": 0.9976387249114522,
+            "macro_f1": 0.9975022301516503
+        }
+    },
+    {
+        "dataset": "mushroom",
+        "classifier": "Random Forest",
+        "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "micro_f1": 1.0,
+            "macro_f1": 1.0
+        }
+    },
+    {
+        "dataset": "mushroom",
+        "classifier": "Extra Trees",
+        "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "micro_f1": 1.0,
+            "macro_f1": 1.0
+        }
+    },
+    {
+        "dataset": "mushroom",
+        "classifier": "AdaBoost",
+        "metrics": {
+            "accuracy": 0.9887839433293979,
+            "balanced_accuracy": 0.9900407287178057,
+            "micro_f1": 0.9887839433293979,
+            "macro_f1": 0.988166333133201
+        }
+    },
+    {
+        "dataset": "mushroom",
+        "classifier": "Gradient Boosting",
+        "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "micro_f1": 1.0,
+            "macro_f1": 1.0
+        }
+    },
+    {
+        "dataset": "mushroom",
+        "classifier": "XGBoost",
+        "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "micro_f1": 1.0,
+            "macro_f1": 1.0
+        }
+    },
+    {
+        "dataset": "obesity",
+        "classifier": "Edited Variant of Random Forest",
+        "metrics": {
+            "accuracy": 0.749211356466877,
+            "balanced_accuracy": 0.7639060832745065,
+            "micro_f1": 0.749211356466877,
+            "macro_f1": 0.762727073591052
+        }
+    },
+    {
+        "dataset": "obesity",
+        "classifier": "Random Forest",
+        "metrics": {
+            "accuracy": 0.9305993690851735,
+            "balanced_accuracy": 0.931336542578787,
+            "micro_f1": 0.9305993690851735,
+            "macro_f1": 0.9301755678846045
+        }
+    },
+    {
+        "dataset": "obesity",
+        "classifier": "Extra Trees",
+        "metrics": {
+            "accuracy": 0.9511041009463722,
+            "balanced_accuracy": 0.9509959079074266,
+            "micro_f1": 0.9511041009463722,
+            "macro_f1": 0.9509129296768722
+        }
+    },
+    {
+        "dataset": "obesity",
+        "classifier": "AdaBoost",
+        "metrics": {
+            "accuracy": 0.41324921135646686,
+            "balanced_accuracy": 0.3833014213246481,
+            "micro_f1": 0.41324921135646686,
+            "macro_f1": 0.24205206755745115
+        }
+    },
+    {
+        "dataset": "obesity",
+        "classifier": "Gradient Boosting",
+        "metrics": {
+            "accuracy": 0.9258675078864353,
+            "balanced_accuracy": 0.9282257952278486,
+            "micro_f1": 0.9258675078864353,
+            "macro_f1": 0.926311728606597
+        }
+    },
+    {
+        "dataset": "obesity",
+        "classifier": "XGBoost",
+        "metrics": {
+            "accuracy": 0.9637223974763407,
+            "balanced_accuracy": 0.9655181135201872,
+            "micro_f1": 0.9637223974763407,
+            "macro_f1": 0.9647930919364122
+        }
+    },
+    {
+        "dataset": "poker_hand",
+        "classifier": "Edited Variant of Random Forest",
+        "metrics": {
+            "accuracy": 0.5521929867350888,
+            "balanced_accuracy": 0.11369143635625856,
+            "micro_f1": 0.5521929867350888,
+            "macro_f1": 0.10061927569806817
+        }
+    },
+    {
+        "dataset": "poker_hand",
+        "classifier": "Random Forest",
+        "metrics": {
+            "accuracy": 0.7657518788434584,
+            "balanced_accuracy": 0.22743568971572,
+            "micro_f1": 0.7657518788434584,
+            "macro_f1": 0.26522616052477976
+        }
+    },
+    {
+        "dataset": "poker_hand",
+        "classifier": "Extra Trees",
+        "metrics": {
+            "accuracy": 0.8362227360383476,
+            "balanced_accuracy": 0.3129354093108675,
+            "micro_f1": 0.8362227360383476,
+            "macro_f1": 0.3749773983890165
+        }
+    },
+    {
+        "dataset": "poker_hand",
+        "classifier": "AdaBoost",
+        "metrics": {
+            "accuracy": 0.4819920456060591,
+            "balanced_accuracy": 0.09979417837628857,
+            "micro_f1": 0.4819920456060591,
+            "macro_f1": 0.09035425214195847
+        }
+    },
+    {
+        "dataset": "poker_hand",
+        "classifier": "Gradient Boosting",
+        "metrics": {
+            "accuracy": 0.5582091882030419,
+            "balanced_accuracy": 0.12270674986904491,
+            "micro_f1": 0.5582091882030419,
+            "macro_f1": 0.11851067537668061
+        }
+    },
+    {
+        "dataset": "poker_hand",
+        "classifier": "XGBoost",
+        "metrics": {
+            "accuracy": 0.6328003304032807,
+            "balanced_accuracy": 0.17828040721948213,
+            "micro_f1": 0.6328003304032807,
+            "macro_f1": 0.2023331814191777
+        }
+    },
+    {
+        "dataset": "seismic_bumps",
+        "classifier": "Edited Variant of Random Forest",
+        "metrics": {
+            "accuracy": 0.9188144329896907,
+            "balanced_accuracy": 0.5282920110192838,
+            "micro_f1": 0.9188144329896907,
+            "macro_f1": 0.5350686156099324
+        }
+    },
+    {
+        "dataset": "seismic_bumps",
+        "classifier": "Random Forest",
+        "metrics": {
+            "accuracy": 0.9278350515463918,
+            "balanced_accuracy": 0.523801652892562,
+            "micro_f1": 0.9278350515463918,
+            "macro_f1": 0.5295951504654687
+        }
+    },
+    {
+        "dataset": "seismic_bumps",
+        "classifier": "Extra Trees",
+        "metrics": {
+            "accuracy": 0.9201030927835051,
+            "balanced_accuracy": 0.5103581267217631,
+            "micro_f1": 0.9201030927835051,
+            "macro_f1": 0.5094416574901097
+        }
+    },
+    {
+        "dataset": "seismic_bumps",
+        "classifier": "AdaBoost",
+        "metrics": {
+            "accuracy": 0.9355670103092784,
+            "balanced_accuracy": 0.5,
+            "micro_f1": 0.9355670103092784,
+            "macro_f1": 0.4833555259653795
+        }
+    },
+    {
+        "dataset": "seismic_bumps",
+        "classifier": "Gradient Boosting",
+        "metrics": {
+            "accuracy": 0.9123711340206185,
+            "balanced_accuracy": 0.5155371900826446,
+            "micro_f1": 0.9123711340206185,
+            "macro_f1": 0.5175364810006218
+        }
+    },
+    {
+        "dataset": "seismic_bumps",
+        "classifier": "XGBoost",
+        "metrics": {
+            "accuracy": 0.9252577319587629,
+            "balanced_accuracy": 0.5224242424242425,
+            "micro_f1": 0.9252577319587629,
+            "macro_f1": 0.527385752688172
+        }
+    },
+    {
+        "dataset": "shuttle",
+        "classifier": "Edited Variant of Random Forest",
+        "metrics": {
+            "accuracy": 0.9979310344827587,
+            "balanced_accuracy": 0.6569404398928107,
+            "micro_f1": 0.9979310344827587,
+            "macro_f1": 0.6706807913374101
+        }
+    },
+    {
+        "dataset": "shuttle",
+        "classifier": "Random Forest",
+        "metrics": {
+            "accuracy": 0.9997126436781609,
+            "balanced_accuracy": 0.9946882934662804,
+            "micro_f1": 0.9997126436781609,
+            "macro_f1": 0.9972485211186461
+        }
+    },
+    {
+        "dataset": "shuttle",
+        "classifier": "Extra Trees",
+        "metrics": {
+            "accuracy": 0.9997126436781609,
+            "balanced_accuracy": 0.9895571641473281,
+            "micro_f1": 0.9997126436781609,
+            "macro_f1": 0.9932769171185338
+        }
+    },
+    {
+        "dataset": "shuttle",
+        "classifier": "AdaBoost",
+        "metrics": {
+            "accuracy": 0.9264367816091954,
+            "balanced_accuracy": 0.4143970385108985,
+            "micro_f1": 0.9264367816091954,
+            "macro_f1": 0.3947763557450849
+        }
+    },
+    {
+        "dataset": "shuttle",
+        "classifier": "Gradient Boosting",
+        "metrics": {
+            "accuracy": 0.998448275862069,
+            "balanced_accuracy": 0.9375026612731531,
+            "micro_f1": 0.998448275862069,
+            "macro_f1": 0.9492477090248718
+        }
+    },
+    {
+        "dataset": "shuttle",
+        "classifier": "XGBoost",
+        "metrics": {
+            "accuracy": 0.9996551724137931,
+            "balanced_accuracy": 0.9946778430534892,
+            "micro_f1": 0.9996551724137931,
+            "macro_f1": 0.9971229307390926
+        }
+    },
+    {
+        "dataset": "spambase",
+        "classifier": "Edited Variant of Random Forest",
+        "metrics": {
+            "accuracy": 0.8979000724112962,
+            "balanced_accuracy": 0.8837849509969877,
+            "micro_f1": 0.8979000724112962,
+            "macro_f1": 0.8917170533087244
+        }
+    },
+    {
+        "dataset": "spambase",
+        "classifier": "Random Forest",
+        "metrics": {
+            "accuracy": 0.9319333816075308,
+            "balanced_accuracy": 0.9257261473823103,
+            "micro_f1": 0.9319333816075308,
+            "macro_f1": 0.9289935455639426
+        }
+    },
+    {
+        "dataset": "spambase",
+        "classifier": "Extra Trees",
+        "metrics": {
+            "accuracy": 0.945691527878349,
+            "balanced_accuracy": 0.9390012326709898,
+            "micro_f1": 0.945691527878349,
+            "macro_f1": 0.9432222153395128
+        }
+    },
+    {
+        "dataset": "spambase",
+        "classifier": "AdaBoost",
+        "metrics": {
+            "accuracy": 0.9051412020275162,
+            "balanced_accuracy": 0.9019842096582376,
+            "micro_f1": 0.9051412020275162,
+            "macro_f1": 0.9018738301104815
+        }
+    },
+    {
+        "dataset": "spambase",
+        "classifier": "Gradient Boosting",
+        "metrics": {
+            "accuracy": 0.9304851556842868,
+            "balanced_accuracy": 0.9272474543607907,
+            "micro_f1": 0.9304851556842868,
+            "macro_f1": 0.9279509586539716
+        }
+    },
+    {
+        "dataset": "spambase",
+        "classifier": "XGBoost",
+        "metrics": {
+            "accuracy": 0.942795076031861,
+            "balanced_accuracy": 0.9401221385973593,
+            "micro_f1": 0.942795076031861,
+            "macro_f1": 0.9407262969569112
+        }
+    },
+    {
+        "dataset": "telescope",
+        "classifier": "Edited Variant of Random Forest",
+        "metrics": {
+            "accuracy": 0.8165089379600421,
+            "balanced_accuracy": 0.7678038413633301,
+            "micro_f1": 0.8165089379600421,
+            "macro_f1": 0.7838141669056495
+        }
+    },
+    {
+        "dataset": "telescope",
+        "classifier": "Random Forest",
+        "metrics": {
+            "accuracy": 0.8647038205397827,
+            "balanced_accuracy": 0.8335438545983802,
+            "micro_f1": 0.8647038205397827,
+            "macro_f1": 0.8464786179899962
+        }
+    },
+    {
+        "dataset": "telescope",
+        "classifier": "Extra Trees",
+        "metrics": {
+            "accuracy": 0.8645285664213109,
+            "balanced_accuracy": 0.8326623842682837,
+            "micro_f1": 0.8645285664213109,
+            "macro_f1": 0.8460045119063808
+        }
+    },
+    {
+        "dataset": "telescope",
+        "classifier": "AdaBoost",
+        "metrics": {
+            "accuracy": 0.7975814931650894,
+            "balanced_accuracy": 0.7671592824283717,
+            "micro_f1": 0.7975814931650894,
+            "macro_f1": 0.7739474139950897
+        }
+    },
+    {
+        "dataset": "telescope",
+        "classifier": "Gradient Boosting",
+        "metrics": {
+            "accuracy": 0.8531370487206449,
+            "balanced_accuracy": 0.8233352726080445,
+            "micro_f1": 0.8531370487206449,
+            "macro_f1": 0.8343414049274344
+        }
+    },
+    {
+        "dataset": "telescope",
+        "classifier": "XGBoost",
+        "metrics": {
+            "accuracy": 0.8590956887486856,
+            "balanced_accuracy": 0.8346922251078097,
+            "micro_f1": 0.8590956887486856,
+            "macro_f1": 0.8429408806767762
+        }
+    },
+    {
+        "dataset": "vehicles",
+        "classifier": "Edited Variant of Random Forest",
+        "metrics": {
+            "accuracy": 0.6771653543307087,
+            "balanced_accuracy": 0.6983526474467684,
+            "micro_f1": 0.6771653543307087,
+            "macro_f1": 0.6695447736195936
+        }
+    },
+    {
+        "dataset": "vehicles",
+        "classifier": "Random Forest",
+        "metrics": {
+            "accuracy": 0.7204724409448819,
+            "balanced_accuracy": 0.741420293951385,
+            "micro_f1": 0.7204724409448819,
+            "macro_f1": 0.7234993272127556
+        }
+    },
+    {
+        "dataset": "vehicles",
+        "classifier": "Extra Trees",
+        "metrics": {
+            "accuracy": 0.7322834645669292,
+            "balanced_accuracy": 0.7531477294139816,
+            "micro_f1": 0.7322834645669292,
+            "macro_f1": 0.7411586271803112
+        }
+    },
+    {
+        "dataset": "vehicles",
+        "classifier": "AdaBoost",
+        "metrics": {
+            "accuracy": 0.5826771653543307,
+            "balanced_accuracy": 0.6184746561145658,
+            "micro_f1": 0.5826771653543307,
+            "macro_f1": 0.5364364519961462
+        }
+    },
+    {
+        "dataset": "vehicles",
+        "classifier": "Gradient Boosting",
+        "metrics": {
+            "accuracy": 0.7204724409448819,
+            "balanced_accuracy": 0.7421853212737894,
+            "micro_f1": 0.7204724409448819,
+            "macro_f1": 0.7303828965097269
+        }
+    },
+    {
+        "dataset": "vehicles",
+        "classifier": "XGBoost",
+        "metrics": {
+            "accuracy": 0.7401574803149606,
+            "balanced_accuracy": 0.7619120972300735,
+            "micro_f1": 0.7401574803149606,
+            "macro_f1": 0.7485215869430284
+        }
+    },
+    {
+        "dataset": "wine",
+        "classifier": "Edited Variant of Random Forest",
+        "metrics": {
+            "accuracy": 0.8333333333333334,
+            "balanced_accuracy": 0.8311656137743094,
+            "micro_f1": 0.8333333333333334,
+            "macro_f1": 0.8343388637506285
+        }
+    },
+    {
+        "dataset": "wine",
+        "classifier": "Random Forest",
+        "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "micro_f1": 1.0,
+            "macro_f1": 1.0
+        }
+    },
+    {
+        "dataset": "wine",
+        "classifier": "Extra Trees",
+        "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "micro_f1": 1.0,
+            "macro_f1": 1.0
+        }
+    },
+    {
+        "dataset": "wine",
+        "classifier": "AdaBoost",
+        "metrics": {
+            "accuracy": 0.9444444444444444,
+            "balanced_accuracy": 0.9524959742351046,
+            "micro_f1": 0.9444444444444444,
+            "macro_f1": 0.9469135802469135
+        }
+    },
+    {
+        "dataset": "wine",
+        "classifier": "Gradient Boosting",
+        "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "micro_f1": 1.0,
+            "macro_f1": 1.0
+        }
+    },
+    {
+        "dataset": "wine",
+        "classifier": "XGBoost",
+        "metrics": {
+            "accuracy": 0.9814814814814815,
+            "balanced_accuracy": 0.9814814814814815,
+            "micro_f1": 0.9814814814814815,
+            "macro_f1": 0.9833839918946302
+        }
+    },
+    {
+        "dataset": "yeast",
+        "classifier": "Edited Variant of Random Forest",
+        "metrics": {
+            "accuracy": 0.5672645739910314,
+            "balanced_accuracy": 0.44601417549115396,
+            "micro_f1": 0.5672645739910314,
+            "macro_f1": 0.4461070401733483
+        }
+    },
+    {
+        "dataset": "yeast",
+        "classifier": "Random Forest",
+        "metrics": {
+            "accuracy": 0.5515695067264574,
+            "balanced_accuracy": 0.48757511297928896,
+            "micro_f1": 0.5515695067264574,
+            "macro_f1": 0.49691782875858226
+        }
+    },
+    {
+        "dataset": "yeast",
+        "classifier": "Extra Trees",
+        "metrics": {
+            "accuracy": 0.5493273542600897,
+            "balanced_accuracy": 0.5016712240618177,
+            "micro_f1": 0.5493273542600897,
+            "macro_f1": 0.5145967488428167
+        }
+    },
+    {
+        "dataset": "yeast",
+        "classifier": "AdaBoost",
+        "metrics": {
+            "accuracy": 0.4103139013452915,
+            "balanced_accuracy": 0.16614427050151653,
+            "micro_f1": 0.4103139013452915,
+            "macro_f1": 0.12604626644528405
+        }
+    },
+    {
+        "dataset": "yeast",
+        "classifier": "Gradient Boosting",
+        "metrics": {
+            "accuracy": 0.5224215246636771,
+            "balanced_accuracy": 0.33875100240936595,
+            "micro_f1": 0.5224215246636771,
+            "macro_f1": 0.30525838978172876
+        }
+    },
+    {
+        "dataset": "yeast",
+        "classifier": "XGBoost",
+        "metrics": {
+            "accuracy": 0.5695067264573991,
+            "balanced_accuracy": 0.4900225659956294,
+            "micro_f1": 0.5695067264573991,
+            "macro_f1": 0.5058637198552739
+        }
+    }
+]
