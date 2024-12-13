@@ -1,0 +1,14 @@
+{
+    "columns": [
+        "variance",
+        "skewness",
+        "curtosis",
+        "entropy",
+        "class"
+    ],
+    "target_column": "class",
+    "needs_y_encoding": true,
+    "categorical_features": null,
+    "na_values": null,
+    "ignored_columns": null
+}

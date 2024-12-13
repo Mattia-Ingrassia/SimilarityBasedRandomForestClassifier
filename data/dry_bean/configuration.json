@@ -1,0 +1,26 @@
+{
+    "columns" : [
+        "Area",
+        "Perimeter",
+        "Major axis length",
+        "Minor axis length",
+        "Aspect ratio",
+        "Eccentricity",
+        "Convex area",
+        "Equivalent diameter",
+        "Extent",
+        "Solidity",
+        "Roundness",
+        "Compactness",
+        "ShapeFactor1",
+        "ShapeFactor2",
+        "ShapeFactor3",
+        "ShapeFactor4",
+        "Class"
+    ],
+    "target_column" : "Class",
+    "needs_y_encoding" : true,
+    "categorical_features" : null,
+    "na_values": null,
+    "ignored_columns": null
+}

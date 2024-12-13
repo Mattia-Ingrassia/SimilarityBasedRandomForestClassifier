@@ -165,6 +165,7 @@ cython_debug/
 data/**/*.npy
 data/**/*.dat
 data/**/*.arff
+data/template.md
 util/
 old_files/
 informazioni/

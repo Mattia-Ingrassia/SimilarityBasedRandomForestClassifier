@@ -1,0 +1,23 @@
+{
+    "columns" : [
+        "buying",
+        "maint",
+        "doors",
+        "persons",
+        "lug_boot",
+        "safety",
+        "class"
+    ],
+    "target_column" : "class",
+    "needs_y_encoding" : true,
+    "categorical_features" : [
+        "buying",
+        "maint",
+        "doors",
+        "persons",
+        "lug_boot",
+        "safety"
+    ],
+    "na_values": null,
+    "ignored_columns": null
+}

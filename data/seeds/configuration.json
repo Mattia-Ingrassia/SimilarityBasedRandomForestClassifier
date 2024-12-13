@@ -1,0 +1,17 @@
+{
+    "columns": [
+        "Area",
+        "Perimeter",
+        "Compactness",
+        "Length_of_kernel",
+        "Width_of_kernel",
+        "Asymmetry_coefficient",
+        "Length_of_kernel_groove",
+        "Class"
+    ],
+    "target_column": "Class",
+    "needs_y_encoding": true,
+    "categorical_features": null,
+    "na_values": null,
+    "ignored_columns": null
+}

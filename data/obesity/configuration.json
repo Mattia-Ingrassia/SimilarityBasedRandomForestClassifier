@@ -1,0 +1,35 @@
+{
+    "columns": [
+        "Gender",
+        "Age",
+        "Height",
+        "Weight",
+        "family_history_with_overweight",
+        "FAVC",
+        "FCVC",
+        "NCP",
+        "CAEC",
+        "SMOKE",
+        "CH2O",
+        "SCC",
+        "FAF",
+        "TUE",
+        "CALC",
+        "MTRANS",
+        "obesity_level"
+    ],
+    "target_column": "obesity_level",
+    "needs_y_encoding": true,
+    "categorical_features": [
+        "Gender",
+        "family_history_with_overweight",
+        "FAVC",
+        "CAEC",
+        "SMOKE",
+        "SCC",
+        "CALC",
+        "MTRANS"
+    ],
+    "na_values": null,
+    "ignored_columns": null
+}

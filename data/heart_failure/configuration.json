@@ -1,0 +1,22 @@
+{
+    "columns": [
+        "age",
+        "anaemia",
+        "creatinine_phosphokinase",
+        "diabetes",
+        "ejection_fraction",
+        "high_blood_pressure",
+        "platelets",
+        "serum_creatinine",
+        "serum_sodium",
+        "sex",
+        "smoking",
+        "time",
+        "death_event"
+    ],
+    "target_column": "death_event",
+    "needs_y_encoding": false,
+    "categorical_features": null,
+    "na_values": null,
+    "ignored_columns": null
+}

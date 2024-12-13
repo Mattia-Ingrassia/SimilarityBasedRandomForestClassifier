@@ -1,0 +1,39 @@
+{
+    "columns" : [
+        "age",
+        "job",
+        "marital",
+        "education",
+        "default",
+        "balance",
+        "housing",
+        "loan",
+        "contact",
+        "day",
+        "month",
+        "duration",
+        "campaign",
+        "pdays",
+        "previous",
+        "poutcome",
+        "y"
+    ],
+    "target_column" : "y",
+    "needs_y_encoding" : true,
+    "categorical_features" : [
+        "job",
+        "marital",
+        "education",
+        "default",
+        "housing",
+        "loan",
+        "contact",
+        "day",
+        "month",
+        "poutcome"
+    ],
+    "na_values": "unknown",
+    "ignored_columns": [
+        "duration"
+    ]
+}

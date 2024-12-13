@@ -1,0 +1,19 @@
+{
+    "columns": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "class"
+    ],
+    "target_column": "class",
+    "needs_y_encoding": true,
+    "categorical_features": null,
+    "na_values": null,
+    "ignored_columns": null
+}

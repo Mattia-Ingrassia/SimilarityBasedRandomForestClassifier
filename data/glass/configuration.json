@@ -1,0 +1,22 @@
+{
+    "columns": [
+        "Id",
+        "RI",
+        "Na",
+        "Mg",
+        "Al",
+        "Si",
+        "K",
+        "Ca",
+        "Ba",
+        "Fe",
+        "Type_of_glass"
+    ],
+    "target_column": "Type_of_glass",
+    "needs_y_encoding": true,
+    "categorical_features": null,
+    "na_values": null,
+    "ignored_columns": [
+        "Id"
+    ]
+}

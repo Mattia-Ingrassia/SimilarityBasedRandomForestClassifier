@@ -1,0 +1,21 @@
+{
+    "columns" : [
+        "sequence_name",
+        "mcg",
+        "gvh",
+        "alm",
+        "mit",
+        "erl",
+        "pox",
+        "vac",
+        "nuc",
+        "localization_site"
+    ],
+    "target_column" : "localization_site",
+    "needs_y_encoding" : true,
+    "categorical_features" : null,
+    "na_values": null,
+    "ignored_columns": [
+        "sequence_name"
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "columns" : [
+        "compactness",
+        "circularity",
+        "distance_circularity",
+        "radius_ratio",
+        "pr.axis_aspect_ratio",
+        "max.length_aspect_ratio",
+        "scatter_ratio",
+        "elongatedness",
+        "pr.axis_rectangularity",
+        "max.length_rectangularity",
+        "scaled_variance_major_axis",
+        "scaled_variance_minor_axis",
+        "scaled_radius_of_gyration",
+        "skewness_major_axis",
+        "skewness_minor_axis",
+        "kurtosis_minor_axis",
+        "kurtosis_major_axis",
+        "hollows_ratio",
+        "class"
+    ],
+    "target_column" : "class",
+    "needs_y_encoding" : true,
+    "categorical_features" : null,
+    "na_values": null,
+    "ignored_columns": null
+}

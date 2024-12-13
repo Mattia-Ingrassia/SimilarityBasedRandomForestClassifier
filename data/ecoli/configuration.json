@@ -1,0 +1,23 @@
+{
+    "columns" : [
+        "sequence_name",
+        "mcg",
+        "gvh",
+        "lip",
+        "chg",
+        "aac",
+        "alm1",
+        "alm2",
+        "class"
+    ],
+    "target_column" : "class",
+    "needs_y_encoding" : true,
+    "categorical_features" : [
+        "lip",
+        "chg"
+    ],
+    "na_values": null,
+    "ignored_columns": [
+        "sequence_name"
+    ]
+}

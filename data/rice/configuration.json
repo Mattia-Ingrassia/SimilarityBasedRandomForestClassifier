@@ -1,0 +1,17 @@
+{
+    "columns" : [
+        "Area",
+        "Perimeter",
+        "Major_axis_length",
+        "Minor_axis_length",
+        "Eccentricity",
+        "Convex_area",
+        "Extent",
+        "Class"
+    ],
+    "target_column" : "Class",
+    "needs_y_encoding" : true,
+    "categorical_features" : null,
+    "na_values": null,
+    "ignored_columns": null
+}

@@ -1,0 +1,33 @@
+{
+    "columns" : [
+        "seismic",
+        "seismoacoustic",
+        "shift",
+        "genergy",
+        "gpuls",
+        "gdenergy",
+        "gdpuls",
+        "ghazard",
+        "nbumps",
+        "nbumps2",
+        "nbumps3",
+        "nbumps4",
+        "nbumps5",
+        "nbumps6",
+        "nbumps7",
+        "nbumps89",
+        "energy",
+        "maxenergy",
+        "class"
+    ],
+    "target_column" : "class",
+    "needs_y_encoding" : true,
+    "categorical_features" : [
+        "seismic",
+        "seismoacoustic",
+        "shift",
+        "ghazard"
+    ],
+    "na_values": null,
+    "ignored_columns": null
+}

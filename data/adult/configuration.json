@@ -1,0 +1,34 @@
+{
+    "columns" : [
+        "age",
+        "workclass",
+        "fnlwgt",
+        "education",
+        "education-num",
+        "marital-status",
+        "occupation",
+        "relationship",
+        "race",
+        "sex",
+        "capital-gain",
+        "capital-loss",
+        "hours-per-week",
+        "native-country",
+        "income"
+    ],
+    "target_column" : "income",
+    "needs_y_encoding" : true,
+    "categorical_features": [
+        "workclass",
+        "education", 
+        "marital-status", 
+        "occupation", 
+        "relationship", 
+        "race", 
+        "sex", 
+        "native-country"
+    ],
+    "na_values": "?",
+    "ignored_columns": null
+}
+    

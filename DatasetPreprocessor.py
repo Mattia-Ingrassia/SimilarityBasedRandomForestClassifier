@@ -1,3 +1,4 @@
+from collections import Counter
 import os
 import numpy as np
 from pandas import read_csv
@@ -13,20 +14,24 @@ class DatasetPreprocessor:
             dataset_name: str,
             columns: list,
             target_column: str,
+            input_data_path: str,
+            output_data_path: str,
             needs_y_encoding: bool = False,
             categorical_features: list = None,
             ignored_columns: list = None,
-            na_values: list = None
+            na_values: list = None,
     ):
         self.dataset_name = dataset_name
         self.columns = columns
         self.target_column = target_column
+        self.input_data_path = input_data_path
+        self.output_data_path = output_data_path
         self.needs_y_encoding = needs_y_encoding
         self.categorical_features = categorical_features
         self.ignored_columns = ignored_columns
         self.na_values = na_values
-        self.output_dir = f"data/{dataset_name}"
-        self.dataset_path = f"{self.output_dir}/{dataset_name}.csv"
+        self.output_dir = output_data_path + f"/{dataset_name}"
+        self.dataset_path = f"{input_data_path}/{dataset_name}.csv"
         self.classes_encoder = None
 
 
@@ -50,7 +55,7 @@ class DatasetPreprocessor:
     def pre_processing(self) -> tuple[np.ndarray, np.ndarray]:
         
         try:
-            data = read_csv(self.dataset_path, names=self.columns, na_values=self.na_values)
+            data = read_csv(self.dataset_path, names=self.columns, na_values=self.na_values, skipinitialspace=True)
         except FileNotFoundError:
             print(f"Dataset file {self.dataset_path} not found")
         except Exception as e:
