@@ -96,6 +96,8 @@ A simple database containing 17 Boolean-valued attributes.  The "type" attribute
 
 ## Sample Data
 
+An example of how the dataset is structured:
+
 | animal_name | hair | feathers | eggs | milk | airborne | aquatic | predator | toothed | backbone | breathes | venomous | fins | legs | tail | domestic | catsize | class_type |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | cheetah | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 1 | 1 | 1 | 0 | 0 | 4 | 1 | 0 | 1 | **1** |

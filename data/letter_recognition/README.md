@@ -108,6 +108,8 @@ The objective is to identify each of a large number of black-and-white rectangul
 
 ## Sample Data
 
+An example of how the dataset is structured:
+
 | **lettr** | x-box | y-box | width | height | onpix | x-bar | y-bar | x2bar | y2bar | xybar | x2ybr | xy2br | x-ege | xegvy | y-ege | yegvx |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | **T** | 2 | 8 | 3 | 5 | 1 | 8 | 13 | 0 | 6 | 6 | 10 | 8 | 0 | 8 | 0 | 8 |

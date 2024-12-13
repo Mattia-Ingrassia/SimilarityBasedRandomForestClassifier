@@ -84,6 +84,8 @@ These data are the results of a chemical analysis of wines grown in the same reg
 
 ## Sample Data
 
+An example of how the dataset is structured:
+
 | Alcohol | Malic acid | Ash | Alcalinity of ash | Magnesium | Total phenols | Flavanoids | Nonflavanoid phenols | Proanthocyanins | Color intensity | Hue | OD280/OD315 of diluted wines | Proline | Class |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | 13.72 | 1.43 | 2.5 | 16.7 | 108 | 3.4 | 3.67 | .19 | 2.04 | 6.8 | .89 | 2.87 | 1285 |

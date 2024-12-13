@@ -83,6 +83,8 @@ List the features (columns) in the dataset along with descriptions, data types, 
 
 ## Sample Data
 
+An example of how the dataset is structured:
+
 | age | anaemia | creatinine_phosphokinase | diabetes | ejection_fraction | high_blood_pressure | platelets | serum_creatinine | serum_sodium | sex | smoking | time | death_event |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 70 | 0 | 571 | 1 | 45 | 1 | 185000 | 1.2 | 139 | 1 | 1 | 33 | 1 |

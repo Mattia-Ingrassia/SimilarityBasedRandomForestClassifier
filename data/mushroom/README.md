@@ -18,7 +18,6 @@ The Guide clearly states that there is no simple rule for determining the edibil
   - [Table of Contents](#table-of-contents)
   - [Dataset Overview](#dataset-overview)
   - [Variables](#variables)
-  - [| ***habitat*** | Feature | Habitat of the mushroom | Categorical | grasses=g, leaves=l, meadows=m, paths=p, urban=u, waste=w, woods=d |](#-habitat--feature--habitat-of-the-mushroom--categorical--grassesg-leavesl-meadowsm-pathsp-urbanu-wastew-woodsd-)
   - [Target Variable](#target-variable)
   - [Dataset Details](#dataset-details)
   - [File Structure](#file-structure)
@@ -65,6 +64,7 @@ The Guide clearly states that there is no simple rule for determining the edibil
 | ***spore-print-color*** | Feature | Color of the spore print | Categorical | black=k, brown=n, buff=b, chocolate=h, green=r, orange=o, purple=u, white=w, yellow=y |
 | ***population*** | Feature | Population size | Categorical | abundant=a, clustered=c, numerous=n, scattered=s, several=v, solitary=y |
 | ***habitat*** | Feature | Habitat of the mushroom | Categorical | grasses=g, leaves=l, meadows=m, paths=p, urban=u, waste=w, woods=d |
+
 ---
 
 ## Target Variable
@@ -99,6 +99,8 @@ The Guide clearly states that there is no simple rule for determining the edibil
 ---
 
 ## Sample Data
+
+An example of how the dataset is structured:
 
 | ***class*** | cap-shape | cap-surface | cap-color | bruises | odor | gill-attachment | gill-spacing | gill-size | gill-color | stalk-shape | stalk-root | stalk-surface-above-ring | stalk-surface-below-ring | stalk-color-above-ring | stalk-color-below-ring | veil-type | veil-color | ring-number | ring-type | spore-print-color | population | habitat |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|

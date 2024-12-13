@@ -76,6 +76,8 @@ A total of 3810 rice grain's images were taken for the two species, processed an
 
 ## Sample Data
 
+An example of how the dataset is structured:
+
 | Area | Perimeter | Major_Axis_Length | Minor_Axis_Length | Eccentricity | Convex_Area | Extent | **Class** |
 |---|---|---|---|---|---|---|---|
 | 13939.0 | 484.39300537109375 | 207.02627563476562 | 86.22347259521484 | 0.9091423153877258 | 14233.0 | 0.6424686312675476 | *Cammeo* |

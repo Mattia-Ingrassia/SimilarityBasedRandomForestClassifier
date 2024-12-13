@@ -86,6 +86,9 @@ The data is related with direct marketing campaigns of a Portuguese banking inst
 
 ## Sample Data
 
+
+An example of how the dataset is structured:
+
 | age | job | marital | education | default | balance | housing | loan | contact | day_of_week  | month | duration | campaign | pdays | previous | poutcome | **y** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 44 | entrepreneur | married | tertiary | no | 3463 | yes | yes | cellular | 28 | jan | 290 | 2 | 153 | 3 | failure | no |

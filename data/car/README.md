@@ -78,7 +78,7 @@ Derived from simple hierarchical decision model, this car evaluation database ma
 
 ## Sample Data
 
-Provide a small snippet or example from the dataset:  
+An example of how the dataset is structured:
 
 | buying | maint | doors | persons | lug_boot | safety | class |
 | --- | --- | --- | --- | --- | --- | --- | 

@@ -87,6 +87,8 @@ The data describe the problem of high energy (higher than 10^4 J) seismic bumps 
 
 ## Sample Data
 
+An example of how the dataset is structured:
+
 | seismic | seismoacoustic | shift | genergy | gpuls | gdenergy | gdpuls | ghazard | nbumps | nbumps2 | nbumps3 | nbumps4 | nbumps5 | nbumps6 | nbumps7 | nbumps89 | energy | maxenergy | ***class*** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | b | a | W | 48980.0 | 1007.0 | 54.0 | 21.0 | a | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | ***0*** |

@@ -81,6 +81,8 @@ From USA Forensic Science Service; 6 types of glass; defined in terms of their o
 
 ## Sample Data
 
+An example of how the dataset is structured:
+
 | Id | RI | Na | Mg | Al | Si | K | Ca | Ba | Fe | class | 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | 
 | 70 | 1.52300 | 13.31 | 3.58 | 0.82 | 71.99 | 0.12 | 10.17 | 0.00 | 0.03 | 1 | 

@@ -84,12 +84,13 @@ This data contains protein localization sites
 
 ## Sample Data
 
+An example of how the dataset is structured:
+
 | Sequence | mcg | gvh | lip | chg | aac | alm1 | alm2 | class |
 |----------|-----|-----|-----|-----|-----|------|------|-------|
 | CYOA_ECOLI | 0.70 | 0.39 | 1.00 | 0.50 | 0.51 | 0.82 | 0.84 | imL |
 | ATKA_ECOLI | 0.72 | 0.42 | 0.48 | 0.50 | 0.65 | 0.77 | 0.79 | imU |
 | SYK2_ECOLI | 0.17 | 0.39 | 0.48 | 0.50 | 0.53 | 0.30 | 0.39 | cp |
-
 
 ---
 

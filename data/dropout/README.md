@@ -11,7 +11,6 @@ A dataset created from a higher education institution (acquired from several dis
   - [Table of Contents](#table-of-contents)
   - [Dataset Overview](#dataset-overview)
   - [Variables](#variables)
-  - [| ***Target*** | **Target** | Three category classification (dropout, enrolled, and graduate) at the end of the normal duration of the course | Categorical | dropout, enrolled, graduate |](#-target--target--three-category-classification-dropout-enrolled-and-graduate-at-the-end-of-the-normal-duration-of-the-course--categorical--dropout-enrolled-graduate-)
   - [Target Variable](#target-variable)
   - [Dataset Details](#dataset-details)
   - [File Structure](#file-structure)
@@ -73,6 +72,7 @@ A dataset created from a higher education institution (acquired from several dis
 | ***Inflation rate*** | Feature | Inflation rate (%) | Continuous | - |
 | ***GDP*** | Feature | - | Continuous | - |
 | ***Target*** | **Target** | Three category classification (dropout, enrolled, and graduate) at the end of the normal duration of the course | Categorical | dropout, enrolled, graduate |
+
 ---
 
 ## Target Variable
@@ -108,6 +108,8 @@ A dataset created from a higher education institution (acquired from several dis
 ---
 
 ## Sample Data
+
+An example of how the dataset is structured:
 
 | Marital status | Application mode | Application order | Course | Daytime/evening attendance | Previous qualification | Previous qualification (grade) | Nationality | Mother's qualification | Father's qualification | Mother's occupation | Father's occupation | Admission grade | Displaced | Educational special needs | Debtor | Tuition fees up to date | Gender | Scholarship holder | Age at enrollment | International | Curricular units 1st sem (credited) | Curricular units 1st sem (enrolled) | Curricular units 1st sem (evaluations) | Curricular units 1st sem (approved) | Curricular units 1st sem (grade) | Curricular units 1st sem (without evaluations) | Curricular units 2nd sem (credited) | Curricular units 2nd sem (enrolled) | Curricular units 2nd sem (evaluations) | Curricular units 2nd sem (approved) | Curricular units 2nd sem (grade) | Curricular units 2nd sem (without evaluations) | Unemployment rate | Inflation rate | GDP | Target |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

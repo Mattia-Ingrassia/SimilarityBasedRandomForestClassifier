@@ -95,6 +95,8 @@ This dataset include data for the estimation of obesity levels in individuals fr
 
 ## Sample Data
 
+An example of how the dataset is structured:
+
 | Gender | Age | Height | Weight | family_history_with_overweight | FAVC | FCVC | NCP | CAEC | SMOKE | CH2O | SCC | FAF | TUE | CALC | MTRANS | ***NObeyesdad*** |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Male | 23 | 1.8 | 77 | yes | no | 2 | 3 | Sometimes | no | 2 | no | 2 | 1 | Frequently | Public_Transportation | *Normal_Weight* |

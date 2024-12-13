@@ -72,6 +72,7 @@ Data were extracted from images that were taken from genuine and forged banknote
 
 ## Sample Data
 
+An example of how the dataset is structured:
 
 | variance | skewness | curtosis | entropy | class |
 | --- | --- | --- | --- | --- |

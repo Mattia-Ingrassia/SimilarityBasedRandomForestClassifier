@@ -75,6 +75,8 @@ This is one of the earliest datasets used in the literature on classification me
 
 ## Sample Data
 
+An example of how the dataset is structured:
+
 | sepal_length | sepal_width | petal_length | petal_width | **class** |
 |---|---|---|---|---|
 | 5.0 | 3.3 | 1.4 | 0.2 | Iris-setosa |

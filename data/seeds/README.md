@@ -78,6 +78,8 @@ Measurements of geometrical properties of kernels belonging to three different v
 
 ## Sample Data
 
+An example of how the dataset is structured:
+
 | Area | Perimeter | Compactness | Length of kernel | Width of kernel | Asymmetry coefficient | Length of kernel groove | Class |
 |---|---|---|---|---|---|---|---|
 | 12.73 | 13.75 | 0.8458 | 5.412 | 2.882 | 3.533 | 5.067 | 1 |

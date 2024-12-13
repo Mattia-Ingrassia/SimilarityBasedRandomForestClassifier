@@ -90,6 +90,8 @@ The shuttle dataset contains 9 attributes all of which are numerical. Approximat
 
 ## Sample Data
 
+An example of how the dataset is structured:
+
 | f1 | f2 | f3 | f4 | f5 | f6 | f7 | f8 | f9 | class |
 |----|----|----|----|----|----|----|----|----|-------|
 | 55 | 0 | 96 | 0 | 46 | 23 | 41 | 50 | 8 | **4** |

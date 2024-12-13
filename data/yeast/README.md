@@ -32,6 +32,8 @@ This dataset contains information about various properties of yeast cells. The g
 
 ## Variables
 
+An example of how the dataset is structured:
+
 | Variable Name | Role | Description | Data Type | Range / Values |
 |---|---|---|---|---|
 | ***Sequence_Name*** | ID | Accession number for the SWISS-PROT database (should be ignored) | Categorical | - |

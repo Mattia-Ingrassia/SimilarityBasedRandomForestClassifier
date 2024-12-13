@@ -95,6 +95,8 @@ Each record is an example of a hand consisting of five playing cards drawn from 
 
 ## Sample Data
 
+An example of how the dataset is structured:
+
 | S1 | C1 | S2 | C2 | S3 | C3 | S4 | C4 | S5 | C5 | hand |
 |----|----|----|----|----|----|----|----|----|----|------|
 | 3 | 10 | 4 | 10 | 3 | 1 | 1 | 1 | 2 | 12 | 2 |

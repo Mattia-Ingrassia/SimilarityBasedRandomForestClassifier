@@ -97,6 +97,8 @@ Images of 13,611 grains of 7 different registered dry beans were taken with a hi
 
 ## Sample Data
 
+An example of how the dataset is structured:
+
 | Area | Perimeter | Major axis length | Minor axis length | Aspect ratio | Eccentricity | Convex area | Equivalent diameter | Extent | Solidity | Roundness | Compactness | ShapeFactor1 | ShapeFactor2 | ShapeFactor3 | ShapeFactor4 | Class |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 254616.0 | 1985.37 | 738.8601534818813 | 447.41832874876803 | 1.6513855289481494 | 0.7958056520436629 | 263261.0 | 569.3743583287609 | 0.7837473450918829 | 0.9671618659809087 | 0.8117319584911376 | 0.7706118074517647 | 0.00290186065872483 | 0.0006312464571718085 | 0.5938425577840758 | 0.980663006398178 | BOMBAY |

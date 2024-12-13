@@ -78,6 +78,8 @@ This database encodes the complete set of possible board configurations at the e
 
 ## Sample Data
 
+An example of how the dataset is structured:
+
 | top-left-square | top-middle-square | top-right-square | middle-left-square | middle-middle-square | middle-right-square | bottom-left-square | bottom-middle-square | bottom-right-square | class |
 |---|---|---|---|---|---|---|---|---|---|
 | b | b | b | o | b | o | x | x | x | positive |

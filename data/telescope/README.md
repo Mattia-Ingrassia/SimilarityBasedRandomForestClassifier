@@ -79,6 +79,8 @@ The data are MC generated (see below) to simulate registration of high energy ga
 
 ## Sample Data
 
+An example of how the dataset is structured:
+
 | fLength | fWidth | fSize | fConc | fConc1 | fAsym | fM3Long | fM3Trans | fAlpha | fDist | class |
 |---------|--------|-------|-------|--------|-------|---------|----------|--------|-------|-------|
 | 56.2216 | 18.7019 | 2.9297 | 0.2516 | 0.1393 | 96.5758 | -41.2969 | 11.3764 | 5.911 | 197.209 | **g** |
