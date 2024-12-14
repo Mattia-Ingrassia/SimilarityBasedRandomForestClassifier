@@ -1,0 +1,6 @@
+{   
+    "random_states": [1, 23, 42],
+    "number_of_estimators": [10, 50, 100],
+    "test_sizes": [0.2, 0.3, 0.4],
+    "distance_metrics": ["cityblock", "cosine", "euclidean", "l1", "l2", "manhattan","braycurtis", "canberra", "chebyshev", "correlation", "hamming", "minkowski", "sqeuclidean"]
+}
