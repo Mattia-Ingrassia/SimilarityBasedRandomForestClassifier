@@ -1,0 +1,210 @@
+[
+    {
+        "dataset": "spambase",
+        "classifier": "Random Forest",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9500362056480811,
+            "balanced_accuracy": 0.9456930302004393,
+            "micro_f1": 0.9500362056480811,
+            "macro_f1": 0.9480197493204421,
+            "training_time": 0.12181568145751953,
+            "prediction_time": 0.0038039684295654297,
+            "total_time": 0.12561964988708496
+        }
+    },
+    {
+        "dataset": "spambase",
+        "classifier": "Extra Trees",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.943519188993483,
+            "balanced_accuracy": 0.9393614851081191,
+            "micro_f1": 0.943519188993483,
+            "macro_f1": 0.9412916939175933,
+            "training_time": 0.08357882499694824,
+            "prediction_time": 0.005681514739990234,
+            "total_time": 0.08926033973693848
+        }
+    },
+    {
+        "dataset": "spambase",
+        "classifier": "XGBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9514844315713251,
+            "balanced_accuracy": 0.9485641987204527,
+            "micro_f1": 0.9514844315713251,
+            "macro_f1": 0.9496730245083402,
+            "training_time": 0.03597116470336914,
+            "prediction_time": 0.0011491775512695312,
+            "total_time": 0.03712034225463867
+        }
+    },
+    {
+        "dataset": "spambase",
+        "classifier": "AdaBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9246922519913107,
+            "balanced_accuracy": 0.9196061963419186,
+            "micro_f1": 0.9246922519913107,
+            "macro_f1": 0.9216761555744606,
+            "training_time": 0.14583969116210938,
+            "prediction_time": 0.0043070316314697266,
+            "total_time": 0.1501467227935791
+        }
+    },
+    {
+        "dataset": "spambase",
+        "classifier": "Gradient Boosting",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9304851556842868,
+            "balanced_accuracy": 0.9231295085809526,
+            "micro_f1": 0.9304851556842868,
+            "macro_f1": 0.9273014410738962,
+            "training_time": 0.30591773986816406,
+            "prediction_time": 0.0010447502136230469,
+            "total_time": 0.3069624900817871
+        }
+    },
+    {
+        "dataset": "spambase",
+        "classifier": "SimilarityBasedForest-[cityblock]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8935553946415641,
+            "balanced_accuracy": 0.8877998124951171,
+            "micro_f1": 0.8935553946415641,
+            "macro_f1": 0.8893897959884207,
+            "training_time": 0.26622915267944336,
+            "prediction_time": 0.00747990608215332,
+            "total_time": 0.2737090587615967
+        }
+    },
+    {
+        "dataset": "spambase",
+        "classifier": "SimilarityBasedForest-[cosine]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8913830557566981,
+            "balanced_accuracy": 0.8876110054949348,
+            "micro_f1": 0.8913830557566981,
+            "macro_f1": 0.8876110054949348,
+            "training_time": 0.2393946647644043,
+            "prediction_time": 0.008531570434570312,
+            "total_time": 0.2479262351989746
+        }
+    },
+    {
+        "dataset": "spambase",
+        "classifier": "SimilarityBasedForest-[euclidean]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9022447501810282,
+            "balanced_accuracy": 0.9039287047405749,
+            "micro_f1": 0.9022447501810282,
+            "macro_f1": 0.8997933356803663,
+            "training_time": 0.2026965618133545,
+            "prediction_time": 0.007200717926025391,
+            "total_time": 0.20989727973937988
+        }
+    },
+    {
+        "dataset": "spambase",
+        "classifier": "SimilarityBasedForest-[braycurtis]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9058653149891384,
+            "balanced_accuracy": 0.9003999670130298,
+            "micro_f1": 0.9058653149891384,
+            "macro_f1": 0.9021528231959887,
+            "training_time": 0.2412567138671875,
+            "prediction_time": 0.00853419303894043,
+            "total_time": 0.24979090690612793
+        }
+    },
+    {
+        "dataset": "spambase",
+        "classifier": "SimilarityBasedForest-[canberra]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9073135409123824,
+            "balanced_accuracy": 0.9032711355330434,
+            "micro_f1": 0.9073135409123824,
+            "macro_f1": 0.9039346115386288,
+            "training_time": 0.21625137329101562,
+            "prediction_time": 0.009588956832885742,
+            "total_time": 0.22584033012390137
+        }
+    },
+    {
+        "dataset": "spambase",
+        "classifier": "SimilarityBasedForest-[chebyshev]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9015206372194062,
+            "balanced_accuracy": 0.8959044072328273,
+            "micro_f1": 0.9015206372194062,
+            "macro_f1": 0.8976367996511881,
+            "training_time": 0.2713766098022461,
+            "prediction_time": 0.0077381134033203125,
+            "total_time": 0.2791147232055664
+        }
+    },
+    {
+        "dataset": "spambase",
+        "classifier": "SimilarityBasedForest-[correlation]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8986241853729182,
+            "balanced_accuracy": 0.8959271942845735,
+            "micro_f1": 0.8986241853729182,
+            "macro_f1": 0.8952740619407287,
+            "training_time": 0.24344491958618164,
+            "prediction_time": 0.008136749267578125,
+            "total_time": 0.25158166885375977
+        }
+    },
+    {
+        "dataset": "spambase",
+        "classifier": "SimilarityBasedForest-[hamming]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8942795076031861,
+            "balanced_accuracy": 0.8884118075991563,
+            "micro_f1": 0.8942795076031861,
+            "macro_f1": 0.8901100937431873,
+            "training_time": 0.23252511024475098,
+            "prediction_time": 0.00836324691772461,
+            "total_time": 0.24088835716247559
+        }
+    }
+]

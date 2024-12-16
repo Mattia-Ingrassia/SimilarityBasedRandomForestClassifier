@@ -1,0 +1,210 @@
+[
+    {
+        "dataset": "ecoli",
+        "classifier": "Random Forest",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8811881188118812,
+            "balanced_accuracy": 0.6391304347826088,
+            "micro_f1": 0.8811881188118812,
+            "macro_f1": 0.6096205150912628,
+            "training_time": 0.02344965934753418,
+            "prediction_time": 0.0011363029479980469,
+            "total_time": 0.024585962295532227
+        }
+    },
+    {
+        "dataset": "ecoli",
+        "classifier": "Extra Trees",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8613861386138614,
+            "balanced_accuracy": 0.6253623188405797,
+            "micro_f1": 0.8613861386138614,
+            "macro_f1": 0.5899220362302224,
+            "training_time": 0.017539501190185547,
+            "prediction_time": 0.0012607574462890625,
+            "total_time": 0.01880025863647461
+        }
+    },
+    {
+        "dataset": "ecoli",
+        "classifier": "XGBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8415841584158416,
+            "balanced_accuracy": 0.6225790513833993,
+            "micro_f1": 0.8415841584158416,
+            "macro_f1": 0.5831046211588085,
+            "training_time": 0.04489946365356445,
+            "prediction_time": 0.0008156299591064453,
+            "total_time": 0.0457150936126709
+        }
+    },
+    {
+        "dataset": "ecoli",
+        "classifier": "AdaBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.33663366336633666,
+            "balanced_accuracy": 0.23122255160298638,
+            "micro_f1": 0.33663366336633666,
+            "macro_f1": 0.1594984030197445,
+            "training_time": 0.03290581703186035,
+            "prediction_time": 0.003617525100708008,
+            "total_time": 0.03652334213256836
+        }
+    },
+    {
+        "dataset": "ecoli",
+        "classifier": "Gradient Boosting",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8514851485148515,
+            "balanced_accuracy": 0.6155769653052261,
+            "micro_f1": 0.8514851485148515,
+            "macro_f1": 0.5907498868173026,
+            "training_time": 0.1422877311706543,
+            "prediction_time": 0.0011196136474609375,
+            "total_time": 0.14340734481811523
+        }
+    },
+    {
+        "dataset": "ecoli",
+        "classifier": "SimilarityBasedForest-[cityblock]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7425742574257426,
+            "balanced_accuracy": 0.5073534255599473,
+            "micro_f1": 0.7425742574257426,
+            "macro_f1": 0.4979566356240235,
+            "training_time": 0.049437761306762695,
+            "prediction_time": 0.004990577697753906,
+            "total_time": 0.0544283390045166
+        }
+    },
+    {
+        "dataset": "ecoli",
+        "classifier": "SimilarityBasedForest-[cosine]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.6435643564356436,
+            "balanced_accuracy": 0.38683025911286784,
+            "micro_f1": 0.6435643564356436,
+            "macro_f1": 0.31913919413919417,
+            "training_time": 0.02333378791809082,
+            "prediction_time": 0.005804777145385742,
+            "total_time": 0.029138565063476562
+        }
+    },
+    {
+        "dataset": "ecoli",
+        "classifier": "SimilarityBasedForest-[euclidean]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7326732673267327,
+            "balanced_accuracy": 0.5575949714536671,
+            "micro_f1": 0.7326732673267327,
+            "macro_f1": 0.48669668509784786,
+            "training_time": 0.023427724838256836,
+            "prediction_time": 0.0037577152252197266,
+            "total_time": 0.027185440063476562
+        }
+    },
+    {
+        "dataset": "ecoli",
+        "classifier": "SimilarityBasedForest-[braycurtis]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.6534653465346535,
+            "balanced_accuracy": 0.39226504172156346,
+            "micro_f1": 0.6534653465346535,
+            "macro_f1": 0.32760501909438083,
+            "training_time": 0.022252559661865234,
+            "prediction_time": 0.004522562026977539,
+            "total_time": 0.026775121688842773
+        }
+    },
+    {
+        "dataset": "ecoli",
+        "classifier": "SimilarityBasedForest-[canberra]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.693069306930693,
+            "balanced_accuracy": 0.38230127360562144,
+            "micro_f1": 0.693069306930693,
+            "macro_f1": 0.3566532258064516,
+            "training_time": 0.021988630294799805,
+            "prediction_time": 0.003350973129272461,
+            "total_time": 0.025339603424072266
+        }
+    },
+    {
+        "dataset": "ecoli",
+        "classifier": "SimilarityBasedForest-[chebyshev]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7029702970297029,
+            "balanced_accuracy": 0.4595355731225297,
+            "micro_f1": 0.7029702970297029,
+            "macro_f1": 0.43124330967486324,
+            "training_time": 0.021925926208496094,
+            "prediction_time": 0.0024619102478027344,
+            "total_time": 0.024387836456298828
+        }
+    },
+    {
+        "dataset": "ecoli",
+        "classifier": "SimilarityBasedForest-[correlation]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.5841584158415841,
+            "balanced_accuracy": 0.21689723320158102,
+            "micro_f1": 0.5841584158415841,
+            "macro_f1": 0.21544566544566546,
+            "training_time": 0.022347450256347656,
+            "prediction_time": 0.003583192825317383,
+            "total_time": 0.02593064308166504
+        }
+    },
+    {
+        "dataset": "ecoli",
+        "classifier": "SimilarityBasedForest-[hamming]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.5841584158415841,
+            "balanced_accuracy": 0.22970191040843216,
+            "micro_f1": 0.5841584158415841,
+            "macro_f1": 0.23190280464216634,
+            "training_time": 0.022204160690307617,
+            "prediction_time": 0.003750324249267578,
+            "total_time": 0.025954484939575195
+        }
+    }
+]

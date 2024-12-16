@@ -1,0 +1,210 @@
+[
+    {
+        "dataset": "car",
+        "classifier": "Random Forest",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.930635838150289,
+            "balanced_accuracy": 0.7735937663094364,
+            "micro_f1": 0.930635838150289,
+            "macro_f1": 0.8057738348071206,
+            "training_time": 0.031209230422973633,
+            "prediction_time": 0.002060413360595703,
+            "total_time": 0.033269643783569336
+        }
+    },
+    {
+        "dataset": "car",
+        "classifier": "Extra Trees",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9460500963391136,
+            "balanced_accuracy": 0.8284510183320014,
+            "micro_f1": 0.9460500963391136,
+            "macro_f1": 0.8554668651506596,
+            "training_time": 0.0274655818939209,
+            "prediction_time": 0.0019614696502685547,
+            "total_time": 0.029427051544189453
+        }
+    },
+    {
+        "dataset": "car",
+        "classifier": "XGBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.953757225433526,
+            "balanced_accuracy": 0.8403976075079104,
+            "micro_f1": 0.953757225433526,
+            "macro_f1": 0.8541496904173751,
+            "training_time": 0.052008628845214844,
+            "prediction_time": 0.0010182857513427734,
+            "total_time": 0.05302691459655762
+        }
+    },
+    {
+        "dataset": "car",
+        "classifier": "AdaBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8208092485549133,
+            "balanced_accuracy": 0.4579199012904221,
+            "micro_f1": 0.8208092485549133,
+            "macro_f1": 0.4038387359807038,
+            "training_time": 0.046384334564208984,
+            "prediction_time": 0.003660440444946289,
+            "total_time": 0.05004477500915527
+        }
+    },
+    {
+        "dataset": "car",
+        "classifier": "Gradient Boosting",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8805394990366089,
+            "balanced_accuracy": 0.5668729250502038,
+            "micro_f1": 0.8805394990366089,
+            "macro_f1": 0.5785491131767628,
+            "training_time": 0.12720584869384766,
+            "prediction_time": 0.0016906261444091797,
+            "total_time": 0.12889647483825684
+        }
+    },
+    {
+        "dataset": "car",
+        "classifier": "SimilarityBasedForest-[cityblock]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9383429672447013,
+            "balanced_accuracy": 0.8640427850558435,
+            "micro_f1": 0.9383429672447013,
+            "macro_f1": 0.8790328534514581,
+            "training_time": 0.09763479232788086,
+            "prediction_time": 0.002958536148071289,
+            "total_time": 0.10059332847595215
+        }
+    },
+    {
+        "dataset": "car",
+        "classifier": "SimilarityBasedForest-[cosine]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9633911368015414,
+            "balanced_accuracy": 0.8846394124785981,
+            "micro_f1": 0.9633911368015414,
+            "macro_f1": 0.8901465868678984,
+            "training_time": 0.022799968719482422,
+            "prediction_time": 0.0038666725158691406,
+            "total_time": 0.026666641235351562
+        }
+    },
+    {
+        "dataset": "car",
+        "classifier": "SimilarityBasedForest-[euclidean]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9402697495183044,
+            "balanced_accuracy": 0.8351155409163353,
+            "micro_f1": 0.9402697495183044,
+            "macro_f1": 0.8477037918991084,
+            "training_time": 0.02247905731201172,
+            "prediction_time": 0.0029261112213134766,
+            "total_time": 0.025405168533325195
+        }
+    },
+    {
+        "dataset": "car",
+        "classifier": "SimilarityBasedForest-[braycurtis]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9633911368015414,
+            "balanced_accuracy": 0.8846394124785981,
+            "micro_f1": 0.9633911368015414,
+            "macro_f1": 0.8901465868678984,
+            "training_time": 0.02317523956298828,
+            "prediction_time": 0.0030372142791748047,
+            "total_time": 0.026212453842163086
+        }
+    },
+    {
+        "dataset": "car",
+        "classifier": "SimilarityBasedForest-[canberra]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9383429672447013,
+            "balanced_accuracy": 0.8640427850558435,
+            "micro_f1": 0.9383429672447013,
+            "macro_f1": 0.8790328534514581,
+            "training_time": 0.0227508544921875,
+            "prediction_time": 0.003659486770629883,
+            "total_time": 0.026410341262817383
+        }
+    },
+    {
+        "dataset": "car",
+        "classifier": "SimilarityBasedForest-[chebyshev]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9576107899807321,
+            "balanced_accuracy": 0.8536864389616176,
+            "micro_f1": 0.9576107899807321,
+            "macro_f1": 0.8715994416827316,
+            "training_time": 0.021920204162597656,
+            "prediction_time": 0.003815174102783203,
+            "total_time": 0.02573537826538086
+        }
+    },
+    {
+        "dataset": "car",
+        "classifier": "SimilarityBasedForest-[correlation]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9479768786127167,
+            "balanced_accuracy": 0.8611795296027469,
+            "micro_f1": 0.9479768786127167,
+            "macro_f1": 0.8717980504344142,
+            "training_time": 0.02266979217529297,
+            "prediction_time": 0.003050088882446289,
+            "total_time": 0.025719881057739258
+        }
+    },
+    {
+        "dataset": "car",
+        "classifier": "SimilarityBasedForest-[hamming]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9441233140655106,
+            "balanced_accuracy": 0.8462134064930836,
+            "micro_f1": 0.9441233140655106,
+            "macro_f1": 0.8710207593374446,
+            "training_time": 0.023142337799072266,
+            "prediction_time": 0.0034656524658203125,
+            "total_time": 0.026607990264892578
+        }
+    }
+]

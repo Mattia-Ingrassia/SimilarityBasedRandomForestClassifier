@@ -1,0 +1,210 @@
+[
+    {
+        "dataset": "poker_hand",
+        "classifier": "Random Forest",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7325001707300417,
+            "balanced_accuracy": 0.17891150749761212,
+            "micro_f1": 0.7325001707300417,
+            "macro_f1": 0.19241177356238354,
+            "training_time": 23.629210948944092,
+            "prediction_time": 3.1500329971313477,
+            "total_time": 26.77924394607544
+        }
+    },
+    {
+        "dataset": "poker_hand",
+        "classifier": "Extra Trees",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7142629502801598,
+            "balanced_accuracy": 0.19541844799438396,
+            "micro_f1": 0.7142629502801598,
+            "macro_f1": 0.21720957338913555,
+            "training_time": 22.183765649795532,
+            "prediction_time": 3.760812759399414,
+            "total_time": 25.944578409194946
+        }
+    },
+    {
+        "dataset": "poker_hand",
+        "classifier": "XGBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.6609171292637795,
+            "balanced_accuracy": 0.17342185728622134,
+            "micro_f1": 0.6609171292637795,
+            "macro_f1": 0.18998679715075523,
+            "training_time": 2.551504373550415,
+            "prediction_time": 0.0878305435180664,
+            "total_time": 2.6393349170684814
+        }
+    },
+    {
+        "dataset": "poker_hand",
+        "classifier": "AdaBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.44235015593343807,
+            "balanced_accuracy": 0.10031887427492055,
+            "micro_f1": 0.44235015593343807,
+            "macro_f1": 0.08654079058063678,
+            "training_time": 8.033697366714478,
+            "prediction_time": 0.8239476680755615,
+            "total_time": 8.857645034790039
+        }
+    },
+    {
+        "dataset": "poker_hand",
+        "classifier": "Gradient Boosting",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.5731163598403918,
+            "balanced_accuracy": 0.14830889026179195,
+            "micro_f1": 0.5731163598403918,
+            "macro_f1": 0.15580940788380243,
+            "training_time": 179.92182540893555,
+            "prediction_time": 1.2448201179504395,
+            "total_time": 181.166645526886
+        }
+    },
+    {
+        "dataset": "poker_hand",
+        "classifier": "SimilarityBasedForest-[cityblock]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.6279223292130484,
+            "balanced_accuracy": 0.2442492517185763,
+            "micro_f1": 0.6279223292130484,
+            "macro_f1": 0.23695665863840346,
+            "training_time": 12.637130975723267,
+            "prediction_time": 3.1023221015930176,
+            "total_time": 15.739453077316284
+        }
+    },
+    {
+        "dataset": "poker_hand",
+        "classifier": "SimilarityBasedForest-[cosine]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.6219353957522366,
+            "balanced_accuracy": 0.23768438201312522,
+            "micro_f1": 0.6219353957522366,
+            "macro_f1": 0.2297810889235742,
+            "training_time": 12.496368408203125,
+            "prediction_time": 3.187253952026367,
+            "total_time": 15.683622360229492
+        }
+    },
+    {
+        "dataset": "poker_hand",
+        "classifier": "SimilarityBasedForest-[euclidean]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.6334734945675327,
+            "balanced_accuracy": 0.24313497944474066,
+            "micro_f1": 0.6334734945675327,
+            "macro_f1": 0.2354209644417161,
+            "training_time": 12.296525001525879,
+            "prediction_time": 3.21816086769104,
+            "total_time": 15.514685869216919
+        }
+    },
+    {
+        "dataset": "poker_hand",
+        "classifier": "SimilarityBasedForest-[braycurtis]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.621132151556245,
+            "balanced_accuracy": 0.24305798764098324,
+            "micro_f1": 0.621132151556245,
+            "macro_f1": 0.23279252784437426,
+            "training_time": 12.737438678741455,
+            "prediction_time": 3.3048055171966553,
+            "total_time": 16.04224419593811
+        }
+    },
+    {
+        "dataset": "poker_hand",
+        "classifier": "SimilarityBasedForest-[canberra]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.6257532446837917,
+            "balanced_accuracy": 0.24734264611723322,
+            "micro_f1": 0.6257532446837917,
+            "macro_f1": 0.23929626050861139,
+            "training_time": 13.059637784957886,
+            "prediction_time": 3.332584857940674,
+            "total_time": 16.39222264289856
+        }
+    },
+    {
+        "dataset": "poker_hand",
+        "classifier": "SimilarityBasedForest-[chebyshev]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.6402441602195751,
+            "balanced_accuracy": 0.24711956991978573,
+            "micro_f1": 0.6402441602195751,
+            "macro_f1": 0.23926040619035432,
+            "training_time": 14.284762144088745,
+            "prediction_time": 3.380434036254883,
+            "total_time": 17.665196180343628
+        }
+    },
+    {
+        "dataset": "poker_hand",
+        "classifier": "SimilarityBasedForest-[correlation]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.6210768675427557,
+            "balanced_accuracy": 0.2557892873306081,
+            "micro_f1": 0.6210768675427557,
+            "macro_f1": 0.24581331158087377,
+            "training_time": 12.505921840667725,
+            "prediction_time": 3.2689225673675537,
+            "total_time": 15.774844408035278
+        }
+    },
+    {
+        "dataset": "poker_hand",
+        "classifier": "SimilarityBasedForest-[hamming]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.6193793231285548,
+            "balanced_accuracy": 0.2553457800879874,
+            "micro_f1": 0.6193793231285548,
+            "macro_f1": 0.24756956838717564,
+            "training_time": 14.69928526878357,
+            "prediction_time": 3.3508005142211914,
+            "total_time": 18.05008578300476
+        }
+    }
+]

@@ -1,0 +1,210 @@
+[
+    {
+        "dataset": "default_credit_card",
+        "classifier": "Random Forest",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8105555555555556,
+            "balanced_accuracy": 0.6529890983091935,
+            "micro_f1": 0.8105555555555556,
+            "macro_f1": 0.6743141745241776,
+            "training_time": 1.447495460510254,
+            "prediction_time": 0.03383159637451172,
+            "total_time": 1.4813270568847656
+        }
+    },
+    {
+        "dataset": "default_credit_card",
+        "classifier": "Extra Trees",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8064444444444444,
+            "balanced_accuracy": 0.6465665068563119,
+            "micro_f1": 0.8064444444444444,
+            "macro_f1": 0.6668347155931298,
+            "training_time": 0.48896336555480957,
+            "prediction_time": 0.04877614974975586,
+            "total_time": 0.5377395153045654
+        }
+    },
+    {
+        "dataset": "default_credit_card",
+        "classifier": "XGBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.821,
+            "balanced_accuracy": 0.6564482445155818,
+            "micro_f1": 0.821,
+            "macro_f1": 0.6819390264017371,
+            "training_time": 0.04767942428588867,
+            "prediction_time": 0.0017399787902832031,
+            "total_time": 0.049419403076171875
+        }
+    },
+    {
+        "dataset": "default_credit_card",
+        "classifier": "AdaBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8206666666666667,
+            "balanced_accuracy": 0.6432597295122704,
+            "micro_f1": 0.8206666666666667,
+            "macro_f1": 0.6690176454654461,
+            "training_time": 0.8244483470916748,
+            "prediction_time": 0.011674642562866211,
+            "total_time": 0.836122989654541
+        }
+    },
+    {
+        "dataset": "default_credit_card",
+        "classifier": "Gradient Boosting",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8235555555555556,
+            "balanced_accuracy": 0.6523218030372767,
+            "micro_f1": 0.8235555555555556,
+            "macro_f1": 0.6791383053994476,
+            "training_time": 2.1003143787384033,
+            "prediction_time": 0.004309177398681641,
+            "total_time": 2.104623556137085
+        }
+    },
+    {
+        "dataset": "default_credit_card",
+        "classifier": "SimilarityBasedForest-[cityblock]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7162222222222222,
+            "balanced_accuracy": 0.6014601585554399,
+            "micro_f1": 0.7162222222222222,
+            "macro_f1": 0.5985932847831335,
+            "training_time": 0.26494789123535156,
+            "prediction_time": 0.02845144271850586,
+            "total_time": 0.2933993339538574
+        }
+    },
+    {
+        "dataset": "default_credit_card",
+        "classifier": "SimilarityBasedForest-[cosine]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.721,
+            "balanced_accuracy": 0.6079501825556878,
+            "micro_f1": 0.721,
+            "macro_f1": 0.6050152765353609,
+            "training_time": 0.9865014553070068,
+            "prediction_time": 0.04255032539367676,
+            "total_time": 1.0290517807006836
+        }
+    },
+    {
+        "dataset": "default_credit_card",
+        "classifier": "SimilarityBasedForest-[euclidean]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7238888888888889,
+            "balanced_accuracy": 0.6128675934672496,
+            "micro_f1": 0.7238888888888889,
+            "macro_f1": 0.6096370787281112,
+            "training_time": 0.288754940032959,
+            "prediction_time": 0.029518842697143555,
+            "total_time": 0.31827378273010254
+        }
+    },
+    {
+        "dataset": "default_credit_card",
+        "classifier": "SimilarityBasedForest-[braycurtis]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7212222222222222,
+            "balanced_accuracy": 0.6035877271616005,
+            "micro_f1": 0.7212222222222222,
+            "macro_f1": 0.6017808601184246,
+            "training_time": 1.0313355922698975,
+            "prediction_time": 0.05229330062866211,
+            "total_time": 1.0836288928985596
+        }
+    },
+    {
+        "dataset": "default_credit_card",
+        "classifier": "SimilarityBasedForest-[canberra]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7243333333333334,
+            "balanced_accuracy": 0.6081071425701958,
+            "micro_f1": 0.7243333333333334,
+            "macro_f1": 0.6062249158843409,
+            "training_time": 1.011894702911377,
+            "prediction_time": 0.047286272048950195,
+            "total_time": 1.0591809749603271
+        }
+    },
+    {
+        "dataset": "default_credit_card",
+        "classifier": "SimilarityBasedForest-[chebyshev]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7158888888888889,
+            "balanced_accuracy": 0.6100761729532931,
+            "micro_f1": 0.7158888888888889,
+            "macro_f1": 0.6048426411553409,
+            "training_time": 0.24348711967468262,
+            "prediction_time": 0.0358281135559082,
+            "total_time": 0.2793152332305908
+        }
+    },
+    {
+        "dataset": "default_credit_card",
+        "classifier": "SimilarityBasedForest-[correlation]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.713,
+            "balanced_accuracy": 0.5979506531487844,
+            "micro_f1": 0.713,
+            "macro_f1": 0.5949302701393597,
+            "training_time": 0.9990925788879395,
+            "prediction_time": 0.045649051666259766,
+            "total_time": 1.0447416305541992
+        }
+    },
+    {
+        "dataset": "default_credit_card",
+        "classifier": "SimilarityBasedForest-[hamming]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7212222222222222,
+            "balanced_accuracy": 0.6039481326062479,
+            "micro_f1": 0.7212222222222222,
+            "macro_f1": 0.6020574726569814,
+            "training_time": 1.058734655380249,
+            "prediction_time": 0.04539632797241211,
+            "total_time": 1.1041309833526611
+        }
+    }
+]

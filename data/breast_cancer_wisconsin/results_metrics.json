@@ -1,0 +1,210 @@
+[
+    {
+        "dataset": "breast_cancer_wisconsin",
+        "classifier": "Random Forest",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9824561403508771,
+            "balanced_accuracy": 0.9828042328042328,
+            "micro_f1": 0.9824561403508771,
+            "macro_f1": 0.9812122321919063,
+            "training_time": 0.038233041763305664,
+            "prediction_time": 0.0011489391326904297,
+            "total_time": 0.039381980895996094
+        }
+    },
+    {
+        "dataset": "breast_cancer_wisconsin",
+        "classifier": "Extra Trees",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9824561403508771,
+            "balanced_accuracy": 0.9828042328042328,
+            "micro_f1": 0.9824561403508771,
+            "macro_f1": 0.9812122321919063,
+            "training_time": 0.019221782684326172,
+            "prediction_time": 0.0018336772918701172,
+            "total_time": 0.02105545997619629
+        }
+    },
+    {
+        "dataset": "breast_cancer_wisconsin",
+        "classifier": "XGBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9707602339181286,
+            "balanced_accuracy": 0.966931216931217,
+            "micro_f1": 0.9707602339181286,
+            "macro_f1": 0.968479262672811,
+            "training_time": 0.021869897842407227,
+            "prediction_time": 0.0007467269897460938,
+            "total_time": 0.02261662483215332
+        }
+    },
+    {
+        "dataset": "breast_cancer_wisconsin",
+        "classifier": "AdaBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9707602339181286,
+            "balanced_accuracy": 0.9636243386243386,
+            "micro_f1": 0.9707602339181286,
+            "macro_f1": 0.9682592716338122,
+            "training_time": 0.07626557350158691,
+            "prediction_time": 0.0031473636627197266,
+            "total_time": 0.07941293716430664
+        }
+    },
+    {
+        "dataset": "breast_cancer_wisconsin",
+        "classifier": "Gradient Boosting",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9532163742690059,
+            "balanced_accuracy": 0.9431216931216931,
+            "micro_f1": 0.9532163742690059,
+            "macro_f1": 0.9490312965722802,
+            "training_time": 0.11234521865844727,
+            "prediction_time": 0.000484466552734375,
+            "total_time": 0.11282968521118164
+        }
+    },
+    {
+        "dataset": "breast_cancer_wisconsin",
+        "classifier": "SimilarityBasedForest-[cityblock]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9181286549707602,
+            "balanced_accuracy": 0.9021164021164021,
+            "micro_f1": 0.9181286549707602,
+            "macro_f1": 0.9101351351351351,
+            "training_time": 0.022716522216796875,
+            "prediction_time": 0.0025246143341064453,
+            "total_time": 0.02524113655090332
+        }
+    },
+    {
+        "dataset": "breast_cancer_wisconsin",
+        "classifier": "SimilarityBasedForest-[cosine]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9590643274853801,
+            "balanced_accuracy": 0.9576719576719577,
+            "micro_f1": 0.9590643274853801,
+            "macro_f1": 0.9561618751144478,
+            "training_time": 0.022753238677978516,
+            "prediction_time": 0.002604246139526367,
+            "total_time": 0.025357484817504883
+        }
+    },
+    {
+        "dataset": "breast_cancer_wisconsin",
+        "classifier": "SimilarityBasedForest-[euclidean]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9415204678362573,
+            "balanced_accuracy": 0.9305555555555556,
+            "micro_f1": 0.9415204678362573,
+            "macro_f1": 0.9362891207153503,
+            "training_time": 0.022275447845458984,
+            "prediction_time": 0.0024297237396240234,
+            "total_time": 0.024705171585083008
+        }
+    },
+    {
+        "dataset": "breast_cancer_wisconsin",
+        "classifier": "SimilarityBasedForest-[braycurtis]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9298245614035088,
+            "balanced_accuracy": 0.9312169312169312,
+            "micro_f1": 0.9298245614035088,
+            "macro_f1": 0.9255442670537011,
+            "training_time": 0.02367091178894043,
+            "prediction_time": 0.0027647018432617188,
+            "total_time": 0.02643561363220215
+        }
+    },
+    {
+        "dataset": "breast_cancer_wisconsin",
+        "classifier": "SimilarityBasedForest-[canberra]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9473684210526315,
+            "balanced_accuracy": 0.9451058201058201,
+            "micro_f1": 0.9473684210526315,
+            "macro_f1": 0.9436366965757188,
+            "training_time": 0.022408008575439453,
+            "prediction_time": 0.0028617382049560547,
+            "total_time": 0.025269746780395508
+        }
+    },
+    {
+        "dataset": "breast_cancer_wisconsin",
+        "classifier": "SimilarityBasedForest-[chebyshev]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9532163742690059,
+            "balanced_accuracy": 0.9596560846560847,
+            "micro_f1": 0.9532163742690059,
+            "macro_f1": 0.9506493506493507,
+            "training_time": 0.02210545539855957,
+            "prediction_time": 0.002398967742919922,
+            "total_time": 0.024504423141479492
+        }
+    },
+    {
+        "dataset": "breast_cancer_wisconsin",
+        "classifier": "SimilarityBasedForest-[correlation]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9590643274853801,
+            "balanced_accuracy": 0.9576719576719577,
+            "micro_f1": 0.9590643274853801,
+            "macro_f1": 0.9561618751144478,
+            "training_time": 0.022301912307739258,
+            "prediction_time": 0.002507448196411133,
+            "total_time": 0.02480936050415039
+        }
+    },
+    {
+        "dataset": "breast_cancer_wisconsin",
+        "classifier": "SimilarityBasedForest-[hamming]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9064327485380117,
+            "balanced_accuracy": 0.8994708994708995,
+            "micro_f1": 0.9064327485380117,
+            "macro_f1": 0.8994708994708995,
+            "training_time": 0.022542715072631836,
+            "prediction_time": 0.002887248992919922,
+            "total_time": 0.025429964065551758
+        }
+    }
+]

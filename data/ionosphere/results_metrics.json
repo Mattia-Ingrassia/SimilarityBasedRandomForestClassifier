@@ -1,0 +1,210 @@
+[
+    {
+        "dataset": "ionosphere",
+        "classifier": "Random Forest",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9056603773584906,
+            "balanced_accuracy": 0.8995098039215685,
+            "micro_f1": 0.9056603773584906,
+            "macro_f1": 0.8933601609657947,
+            "training_time": 0.03145265579223633,
+            "prediction_time": 0.001119375228881836,
+            "total_time": 0.032572031021118164
+        }
+    },
+    {
+        "dataset": "ionosphere",
+        "classifier": "Extra Trees",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9433962264150944,
+            "balanced_accuracy": 0.9272875816993464,
+            "micro_f1": 0.9433962264150944,
+            "macro_f1": 0.933997509339975,
+            "training_time": 0.017199277877807617,
+            "prediction_time": 0.0017864704132080078,
+            "total_time": 0.018985748291015625
+        }
+    },
+    {
+        "dataset": "ionosphere",
+        "classifier": "XGBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9245283018867925,
+            "balanced_accuracy": 0.9056372549019608,
+            "micro_f1": 0.9245283018867925,
+            "macro_f1": 0.9119966791199667,
+            "training_time": 0.020610570907592773,
+            "prediction_time": 0.0007877349853515625,
+            "total_time": 0.021398305892944336
+        }
+    },
+    {
+        "dataset": "ionosphere",
+        "classifier": "AdaBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8962264150943396,
+            "balanced_accuracy": 0.8848039215686274,
+            "micro_f1": 0.8962264150943396,
+            "macro_f1": 0.8818283166109253,
+            "training_time": 0.0513303279876709,
+            "prediction_time": 0.0028433799743652344,
+            "total_time": 0.05417370796203613
+        }
+    },
+    {
+        "dataset": "ionosphere",
+        "classifier": "Gradient Boosting",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9339622641509434,
+            "balanced_accuracy": 0.9281045751633987,
+            "micro_f1": 0.9339622641509434,
+            "macro_f1": 0.9247998378433161,
+            "training_time": 0.06270766258239746,
+            "prediction_time": 0.0003151893615722656,
+            "total_time": 0.06302285194396973
+        }
+    },
+    {
+        "dataset": "ionosphere",
+        "classifier": "SimilarityBasedForest-[cityblock]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9056603773584906,
+            "balanced_accuracy": 0.8995098039215685,
+            "micro_f1": 0.9056603773584906,
+            "macro_f1": 0.8933601609657947,
+            "training_time": 0.02252483367919922,
+            "prediction_time": 0.0023267269134521484,
+            "total_time": 0.024851560592651367
+        }
+    },
+    {
+        "dataset": "ionosphere",
+        "classifier": "SimilarityBasedForest-[cosine]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8490566037735849,
+            "balanced_accuracy": 0.8112745098039216,
+            "micro_f1": 0.8490566037735849,
+            "macro_f1": 0.8209459459459459,
+            "training_time": 0.0224611759185791,
+            "prediction_time": 0.002449512481689453,
+            "total_time": 0.024910688400268555
+        }
+    },
+    {
+        "dataset": "ionosphere",
+        "classifier": "SimilarityBasedForest-[euclidean]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8773584905660378,
+            "balanced_accuracy": 0.8786764705882353,
+            "micro_f1": 0.8773584905660378,
+            "macro_f1": 0.8641963141815314,
+            "training_time": 0.023667335510253906,
+            "prediction_time": 0.002639293670654297,
+            "total_time": 0.026306629180908203
+        }
+    },
+    {
+        "dataset": "ionosphere",
+        "classifier": "SimilarityBasedForest-[braycurtis]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8584905660377359,
+            "balanced_accuracy": 0.8492647058823529,
+            "micro_f1": 0.8584905660377359,
+            "macro_f1": 0.8411747078213965,
+            "training_time": 0.022706270217895508,
+            "prediction_time": 0.0023779869079589844,
+            "total_time": 0.025084257125854492
+        }
+    },
+    {
+        "dataset": "ionosphere",
+        "classifier": "SimilarityBasedForest-[canberra]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.839622641509434,
+            "balanced_accuracy": 0.8120915032679739,
+            "micro_f1": 0.839622641509434,
+            "macro_f1": 0.8145136387030365,
+            "training_time": 0.022728919982910156,
+            "prediction_time": 0.0024726390838623047,
+            "total_time": 0.02520155906677246
+        }
+    },
+    {
+        "dataset": "ionosphere",
+        "classifier": "SimilarityBasedForest-[chebyshev]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8773584905660378,
+            "balanced_accuracy": 0.8553921568627451,
+            "micro_f1": 0.8773584905660378,
+            "macro_f1": 0.8581574884199692,
+            "training_time": 0.02180790901184082,
+            "prediction_time": 0.002460002899169922,
+            "total_time": 0.024267911911010742
+        }
+    },
+    {
+        "dataset": "ionosphere",
+        "classifier": "SimilarityBasedForest-[correlation]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8679245283018868,
+            "balanced_accuracy": 0.8484477124183006,
+            "micro_f1": 0.8679245283018868,
+            "macro_f1": 0.8484477124183006,
+            "training_time": 0.022333860397338867,
+            "prediction_time": 0.002540111541748047,
+            "total_time": 0.024873971939086914
+        }
+    },
+    {
+        "dataset": "ionosphere",
+        "classifier": "SimilarityBasedForest-[hamming]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8867924528301887,
+            "balanced_accuracy": 0.8700980392156863,
+            "micro_f1": 0.8867924528301887,
+            "macro_f1": 0.8700980392156863,
+            "training_time": 0.022363901138305664,
+            "prediction_time": 0.0034973621368408203,
+            "total_time": 0.025861263275146484
+        }
+    }
+]

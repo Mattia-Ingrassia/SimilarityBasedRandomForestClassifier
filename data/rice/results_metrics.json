@@ -1,0 +1,210 @@
+[
+    {
+        "dataset": "rice",
+        "classifier": "Random Forest",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9212598425196851,
+            "balanced_accuracy": 0.9151727831332093,
+            "micro_f1": 0.9212598425196851,
+            "macro_f1": 0.9186952673010654,
+            "training_time": 0.10085082054138184,
+            "prediction_time": 0.002674102783203125,
+            "total_time": 0.10352492332458496
+        }
+    },
+    {
+        "dataset": "rice",
+        "classifier": "Extra Trees",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9142607174103237,
+            "balanced_accuracy": 0.9077456451885675,
+            "micro_f1": 0.9142607174103237,
+            "macro_f1": 0.9114110456618982,
+            "training_time": 0.036667585372924805,
+            "prediction_time": 0.0036911964416503906,
+            "total_time": 0.040358781814575195
+        }
+    },
+    {
+        "dataset": "rice",
+        "classifier": "XGBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9221347331583553,
+            "balanced_accuracy": 0.9159338181408196,
+            "micro_f1": 0.9221347331583553,
+            "macro_f1": 0.9195727815450736,
+            "training_time": 0.019466876983642578,
+            "prediction_time": 0.0008776187896728516,
+            "total_time": 0.02034449577331543
+        }
+    },
+    {
+        "dataset": "rice",
+        "classifier": "AdaBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9212598425196851,
+            "balanced_accuracy": 0.9159760978634647,
+            "micro_f1": 0.9212598425196851,
+            "macro_f1": 0.9188492000883532,
+            "training_time": 0.10559272766113281,
+            "prediction_time": 0.0030934810638427734,
+            "total_time": 0.10868620872497559
+        }
+    },
+    {
+        "dataset": "rice",
+        "classifier": "Gradient Boosting",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9186351706036745,
+            "balanced_accuracy": 0.9126219065336265,
+            "micro_f1": 0.9186351706036745,
+            "macro_f1": 0.9160119938845411,
+            "training_time": 0.1898484230041504,
+            "prediction_time": 0.0007765293121337891,
+            "total_time": 0.19062495231628418
+        }
+    },
+    {
+        "dataset": "rice",
+        "classifier": "SimilarityBasedForest-[cityblock]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8792650918635171,
+            "balanced_accuracy": 0.8765009301538982,
+            "micro_f1": 0.8792650918635171,
+            "macro_f1": 0.8765009301538982,
+            "training_time": 0.10001206398010254,
+            "prediction_time": 0.004067659378051758,
+            "total_time": 0.1040797233581543
+        }
+    },
+    {
+        "dataset": "rice",
+        "classifier": "SimilarityBasedForest-[cosine]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8871391076115486,
+            "balanced_accuracy": 0.8820113873386324,
+            "micro_f1": 0.8871391076115486,
+            "macro_f1": 0.8839318958805809,
+            "training_time": 0.04428553581237793,
+            "prediction_time": 0.00419926643371582,
+            "total_time": 0.04848480224609375
+        }
+    },
+    {
+        "dataset": "rice",
+        "classifier": "SimilarityBasedForest-[euclidean]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8696412948381452,
+            "balanced_accuracy": 0.8641129714189075,
+            "micro_f1": 0.8696412948381452,
+            "macro_f1": 0.8659368409783453,
+            "training_time": 0.034467458724975586,
+            "prediction_time": 0.0037994384765625,
+            "total_time": 0.038266897201538086
+        }
+    },
+    {
+        "dataset": "rice",
+        "classifier": "SimilarityBasedForest-[braycurtis]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8827646544181977,
+            "balanced_accuracy": 0.8760640396865663,
+            "micro_f1": 0.8827646544181977,
+            "macro_f1": 0.8790235441310282,
+            "training_time": 0.038242340087890625,
+            "prediction_time": 0.003834962844848633,
+            "total_time": 0.04207730293273926
+        }
+    },
+    {
+        "dataset": "rice",
+        "classifier": "SimilarityBasedForest-[canberra]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.884514435695538,
+            "balanced_accuracy": 0.8781216528552906,
+            "micro_f1": 0.884514435695538,
+            "macro_f1": 0.8809044178938594,
+            "training_time": 0.04305386543273926,
+            "prediction_time": 0.004082679748535156,
+            "total_time": 0.047136545181274414
+        }
+    },
+    {
+        "dataset": "rice",
+        "classifier": "SimilarityBasedForest-[chebyshev]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8810148731408574,
+            "balanced_accuracy": 0.8785585433226224,
+            "micro_f1": 0.8810148731408574,
+            "macro_f1": 0.8783555366354485,
+            "training_time": 0.033515214920043945,
+            "prediction_time": 0.003692626953125,
+            "total_time": 0.037207841873168945
+        }
+    },
+    {
+        "dataset": "rice",
+        "classifier": "SimilarityBasedForest-[correlation]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8871391076115486,
+            "balanced_accuracy": 0.8820113873386324,
+            "micro_f1": 0.8871391076115486,
+            "macro_f1": 0.8839318958805809,
+            "training_time": 0.04474616050720215,
+            "prediction_time": 0.004391670227050781,
+            "total_time": 0.04913783073425293
+        }
+    },
+    {
+        "dataset": "rice",
+        "classifier": "SimilarityBasedForest-[hamming]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8915135608048994,
+            "balanced_accuracy": 0.8876909634139467,
+            "micro_f1": 0.8915135608048994,
+            "macro_f1": 0.888723140989002,
+            "training_time": 0.0423123836517334,
+            "prediction_time": 0.0037102699279785156,
+            "total_time": 0.046022653579711914
+        }
+    }
+]

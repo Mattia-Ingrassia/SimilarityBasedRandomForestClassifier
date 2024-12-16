@@ -1,0 +1,210 @@
+[
+    {
+        "dataset": "wine",
+        "classifier": "Random Forest",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9814814814814815,
+            "balanced_accuracy": 0.9814814814814815,
+            "micro_f1": 0.9814814814814815,
+            "macro_f1": 0.9833839918946302,
+            "training_time": 0.02137923240661621,
+            "prediction_time": 0.001026153564453125,
+            "total_time": 0.022405385971069336
+        }
+    },
+    {
+        "dataset": "wine",
+        "classifier": "Extra Trees",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "micro_f1": 1.0,
+            "macro_f1": 1.0,
+            "training_time": 0.0163419246673584,
+            "prediction_time": 0.0010814666748046875,
+            "total_time": 0.017423391342163086
+        }
+    },
+    {
+        "dataset": "wine",
+        "classifier": "XGBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9814814814814815,
+            "balanced_accuracy": 0.9814814814814815,
+            "micro_f1": 0.9814814814814815,
+            "macro_f1": 0.9833839918946302,
+            "training_time": 0.017298221588134766,
+            "prediction_time": 0.0006582736968994141,
+            "total_time": 0.01795649528503418
+        }
+    },
+    {
+        "dataset": "wine",
+        "classifier": "AdaBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "micro_f1": 1.0,
+            "macro_f1": 1.0,
+            "training_time": 0.03280758857727051,
+            "prediction_time": 0.0027015209197998047,
+            "total_time": 0.03550910949707031
+        }
+    },
+    {
+        "dataset": "wine",
+        "classifier": "Gradient Boosting",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "micro_f1": 1.0,
+            "macro_f1": 1.0,
+            "training_time": 0.06868743896484375,
+            "prediction_time": 0.0011420249938964844,
+            "total_time": 0.06982946395874023
+        }
+    },
+    {
+        "dataset": "wine",
+        "classifier": "SimilarityBasedForest-[cityblock]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9444444444444444,
+            "balanced_accuracy": 0.9524959742351046,
+            "micro_f1": 0.9444444444444444,
+            "macro_f1": 0.9507507507507508,
+            "training_time": 0.09228897094726562,
+            "prediction_time": 0.0023326873779296875,
+            "total_time": 0.09462165832519531
+        }
+    },
+    {
+        "dataset": "wine",
+        "classifier": "SimilarityBasedForest-[cosine]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8518518518518519,
+            "balanced_accuracy": 0.8314133531524837,
+            "micro_f1": 0.8518518518518519,
+            "macro_f1": 0.8437254901960785,
+            "training_time": 0.012155532836914062,
+            "prediction_time": 0.0025408267974853516,
+            "total_time": 0.014696359634399414
+        }
+    },
+    {
+        "dataset": "wine",
+        "classifier": "SimilarityBasedForest-[euclidean]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9444444444444444,
+            "balanced_accuracy": 0.9373219373219372,
+            "micro_f1": 0.9444444444444444,
+            "macro_f1": 0.9466506602641056,
+            "training_time": 0.011922836303710938,
+            "prediction_time": 0.002364635467529297,
+            "total_time": 0.014287471771240234
+        }
+    },
+    {
+        "dataset": "wine",
+        "classifier": "SimilarityBasedForest-[braycurtis]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8888888888888888,
+            "balanced_accuracy": 0.8755728973120277,
+            "micro_f1": 0.8888888888888888,
+            "macro_f1": 0.8794871794871795,
+            "training_time": 0.022351503372192383,
+            "prediction_time": 0.002371549606323242,
+            "total_time": 0.024723052978515625
+        }
+    },
+    {
+        "dataset": "wine",
+        "classifier": "SimilarityBasedForest-[canberra]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9629629629629629,
+            "balanced_accuracy": 0.959866220735786,
+            "micro_f1": 0.9629629629629629,
+            "macro_f1": 0.959866220735786,
+            "training_time": 0.022428512573242188,
+            "prediction_time": 0.002592325210571289,
+            "total_time": 0.025020837783813477
+        }
+    },
+    {
+        "dataset": "wine",
+        "classifier": "SimilarityBasedForest-[chebyshev]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9444444444444444,
+            "balanced_accuracy": 0.9565217391304347,
+            "micro_f1": 0.9444444444444444,
+            "macro_f1": 0.9439256532279788,
+            "training_time": 0.012165069580078125,
+            "prediction_time": 0.0022859573364257812,
+            "total_time": 0.014451026916503906
+        }
+    },
+    {
+        "dataset": "wine",
+        "classifier": "SimilarityBasedForest-[correlation]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8518518518518519,
+            "balanced_accuracy": 0.8314133531524837,
+            "micro_f1": 0.8518518518518519,
+            "macro_f1": 0.8437254901960785,
+            "training_time": 0.0218050479888916,
+            "prediction_time": 0.002470731735229492,
+            "total_time": 0.024275779724121094
+        }
+    },
+    {
+        "dataset": "wine",
+        "classifier": "SimilarityBasedForest-[hamming]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9444444444444444,
+            "balanced_accuracy": 0.9413477022172675,
+            "micro_f1": 0.9444444444444444,
+            "macro_f1": 0.9468715524034673,
+            "training_time": 0.023430824279785156,
+            "prediction_time": 0.0026521682739257812,
+            "total_time": 0.026082992553710938
+        }
+    }
+]

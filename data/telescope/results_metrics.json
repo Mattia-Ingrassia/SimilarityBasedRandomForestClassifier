@@ -1,0 +1,210 @@
+[
+    {
+        "dataset": "telescope",
+        "classifier": "Random Forest",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8759200841219769,
+            "balanced_accuracy": 0.8502855931881477,
+            "micro_f1": 0.8759200841219769,
+            "macro_f1": 0.8608102608472509,
+            "training_time": 1.2151241302490234,
+            "prediction_time": 0.018257617950439453,
+            "total_time": 1.233381748199463
+        }
+    },
+    {
+        "dataset": "telescope",
+        "classifier": "Extra Trees",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8678583946722748,
+            "balanced_accuracy": 0.838029776863453,
+            "micro_f1": 0.8678583946722748,
+            "macro_f1": 0.850465877367619,
+            "training_time": 0.2618119716644287,
+            "prediction_time": 0.024362564086914062,
+            "total_time": 0.2861745357513428
+        }
+    },
+    {
+        "dataset": "telescope",
+        "classifier": "XGBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8689099193831055,
+            "balanced_accuracy": 0.8399150717631606,
+            "micro_f1": 0.8689099193831055,
+            "macro_f1": 0.8519352030742446,
+            "training_time": 0.039437294006347656,
+            "prediction_time": 0.0014219284057617188,
+            "total_time": 0.040859222412109375
+        }
+    },
+    {
+        "dataset": "telescope",
+        "classifier": "AdaBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8193130038555906,
+            "balanced_accuracy": 0.7777593180150624,
+            "micro_f1": 0.8193130038555906,
+            "macro_f1": 0.7913464374187675,
+            "training_time": 0.5085740089416504,
+            "prediction_time": 0.006911516189575195,
+            "total_time": 0.5154855251312256
+        }
+    },
+    {
+        "dataset": "telescope",
+        "classifier": "Gradient Boosting",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8401682439537329,
+            "balanced_accuracy": 0.7952261854066579,
+            "micro_f1": 0.8401682439537329,
+            "macro_f1": 0.8126745150440031,
+            "training_time": 1.2993919849395752,
+            "prediction_time": 0.0027399063110351562,
+            "total_time": 1.3021318912506104
+        }
+    },
+    {
+        "dataset": "telescope",
+        "classifier": "SimilarityBasedForest-[cityblock]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8087977567472836,
+            "balanced_accuracy": 0.7867727469926248,
+            "micro_f1": 0.8087977567472836,
+            "macro_f1": 0.7900522845270331,
+            "training_time": 0.6210880279541016,
+            "prediction_time": 0.022770166397094727,
+            "total_time": 0.6438581943511963
+        }
+    },
+    {
+        "dataset": "telescope",
+        "classifier": "SimilarityBasedForest-[cosine]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8107255520504731,
+            "balanced_accuracy": 0.7921081515513198,
+            "micro_f1": 0.8107255520504731,
+            "macro_f1": 0.7935911735447503,
+            "training_time": 0.5538334846496582,
+            "prediction_time": 0.021152973175048828,
+            "total_time": 0.574986457824707
+        }
+    },
+    {
+        "dataset": "telescope",
+        "classifier": "SimilarityBasedForest-[euclidean]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8024886084822993,
+            "balanced_accuracy": 0.7825871124199549,
+            "micro_f1": 0.8024886084822993,
+            "macro_f1": 0.784346444669883,
+            "training_time": 0.5778074264526367,
+            "prediction_time": 0.02263355255126953,
+            "total_time": 0.6004409790039062
+        }
+    },
+    {
+        "dataset": "telescope",
+        "classifier": "SimilarityBasedForest-[braycurtis]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8107255520504731,
+            "balanced_accuracy": 0.7900873073470522,
+            "micro_f1": 0.8107255520504731,
+            "macro_f1": 0.7927136692567928,
+            "training_time": 0.5356576442718506,
+            "prediction_time": 0.022919893264770508,
+            "total_time": 0.5585775375366211
+        }
+    },
+    {
+        "dataset": "telescope",
+        "classifier": "SimilarityBasedForest-[canberra]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8065194532071503,
+            "balanced_accuracy": 0.7874386979269754,
+            "micro_f1": 0.8065194532071503,
+            "macro_f1": 0.788957798420858,
+            "training_time": 0.6176848411560059,
+            "prediction_time": 0.023279428482055664,
+            "total_time": 0.6409642696380615
+        }
+    },
+    {
+        "dataset": "telescope",
+        "classifier": "SimilarityBasedForest-[chebyshev]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8038906414300736,
+            "balanced_accuracy": 0.78336362200537,
+            "micro_f1": 0.8038906414300736,
+            "macro_f1": 0.785542578605526,
+            "training_time": 0.5422723293304443,
+            "prediction_time": 0.02145671844482422,
+            "total_time": 0.5637290477752686
+        }
+    },
+    {
+        "dataset": "telescope",
+        "classifier": "SimilarityBasedForest-[correlation]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8052926743778479,
+            "balanced_accuracy": 0.7869054973439933,
+            "micro_f1": 0.8052926743778479,
+            "macro_f1": 0.787968837667056,
+            "training_time": 0.6235196590423584,
+            "prediction_time": 0.021902799606323242,
+            "total_time": 0.6454224586486816
+        }
+    },
+    {
+        "dataset": "telescope",
+        "classifier": "SimilarityBasedForest-[hamming]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8119523308797757,
+            "balanced_accuracy": 0.7926413521343018,
+            "micro_f1": 0.8119523308797757,
+            "macro_f1": 0.7945881312098122,
+            "training_time": 0.5413782596588135,
+            "prediction_time": 0.021257400512695312,
+            "total_time": 0.5626356601715088
+        }
+    }
+]

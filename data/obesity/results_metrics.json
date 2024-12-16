@@ -1,0 +1,210 @@
+[
+    {
+        "dataset": "obesity",
+        "classifier": "Random Forest",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.919558359621451,
+            "balanced_accuracy": 0.9184642647986702,
+            "micro_f1": 0.919558359621451,
+            "macro_f1": 0.9199573196645999,
+            "training_time": 0.05537247657775879,
+            "prediction_time": 0.0024161338806152344,
+            "total_time": 0.05778861045837402
+        }
+    },
+    {
+        "dataset": "obesity",
+        "classifier": "Extra Trees",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8927444794952681,
+            "balanced_accuracy": 0.8942698925462704,
+            "micro_f1": 0.8927444794952681,
+            "macro_f1": 0.8944864768244346,
+            "training_time": 0.04043245315551758,
+            "prediction_time": 0.003247976303100586,
+            "total_time": 0.043680429458618164
+        }
+    },
+    {
+        "dataset": "obesity",
+        "classifier": "XGBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9716088328075709,
+            "balanced_accuracy": 0.972484412337434,
+            "micro_f1": 0.9716088328075709,
+            "macro_f1": 0.9725319034833438,
+            "training_time": 0.08348631858825684,
+            "prediction_time": 0.0010249614715576172,
+            "total_time": 0.08451128005981445
+        }
+    },
+    {
+        "dataset": "obesity",
+        "classifier": "AdaBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.4842271293375394,
+            "balanced_accuracy": 0.5159822547276165,
+            "micro_f1": 0.4842271293375394,
+            "macro_f1": 0.43915540174919226,
+            "training_time": 0.07305645942687988,
+            "prediction_time": 0.0043027400970458984,
+            "total_time": 0.07735919952392578
+        }
+    },
+    {
+        "dataset": "obesity",
+        "classifier": "Gradient Boosting",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9337539432176656,
+            "balanced_accuracy": 0.9362340306701847,
+            "micro_f1": 0.9337539432176656,
+            "macro_f1": 0.9354708483822148,
+            "training_time": 0.6883327960968018,
+            "prediction_time": 0.0026319026947021484,
+            "total_time": 0.6909646987915039
+        }
+    },
+    {
+        "dataset": "obesity",
+        "classifier": "SimilarityBasedForest-[cityblock]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.916403785488959,
+            "balanced_accuracy": 0.9186158455915704,
+            "micro_f1": 0.916403785488959,
+            "macro_f1": 0.9159191005602201,
+            "training_time": 0.0990447998046875,
+            "prediction_time": 0.0035016536712646484,
+            "total_time": 0.10254645347595215
+        }
+    },
+    {
+        "dataset": "obesity",
+        "classifier": "SimilarityBasedForest-[cosine]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8706624605678234,
+            "balanced_accuracy": 0.8703831727948333,
+            "micro_f1": 0.8706624605678234,
+            "macro_f1": 0.8710037874956356,
+            "training_time": 0.03310871124267578,
+            "prediction_time": 0.0036721229553222656,
+            "total_time": 0.03678083419799805
+        }
+    },
+    {
+        "dataset": "obesity",
+        "classifier": "SimilarityBasedForest-[euclidean]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8785488958990536,
+            "balanced_accuracy": 0.8833866119350213,
+            "micro_f1": 0.8785488958990536,
+            "macro_f1": 0.8799803022305578,
+            "training_time": 0.022281408309936523,
+            "prediction_time": 0.0037572383880615234,
+            "total_time": 0.026038646697998047
+        }
+    },
+    {
+        "dataset": "obesity",
+        "classifier": "SimilarityBasedForest-[braycurtis]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9069400630914827,
+            "balanced_accuracy": 0.9108218446403972,
+            "micro_f1": 0.9069400630914827,
+            "macro_f1": 0.9068762114184554,
+            "training_time": 0.03257417678833008,
+            "prediction_time": 0.003609895706176758,
+            "total_time": 0.036184072494506836
+        }
+    },
+    {
+        "dataset": "obesity",
+        "classifier": "SimilarityBasedForest-[canberra]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9022082018927445,
+            "balanced_accuracy": 0.905047723036403,
+            "micro_f1": 0.9022082018927445,
+            "macro_f1": 0.9029086850265958,
+            "training_time": 0.03311300277709961,
+            "prediction_time": 0.003924369812011719,
+            "total_time": 0.03703737258911133
+        }
+    },
+    {
+        "dataset": "obesity",
+        "classifier": "SimilarityBasedForest-[chebyshev]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8927444794952681,
+            "balanced_accuracy": 0.8958616718494128,
+            "micro_f1": 0.8927444794952681,
+            "macro_f1": 0.8925337199931261,
+            "training_time": 0.022640228271484375,
+            "prediction_time": 0.0038232803344726562,
+            "total_time": 0.02646350860595703
+        }
+    },
+    {
+        "dataset": "obesity",
+        "classifier": "SimilarityBasedForest-[correlation]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8738170347003155,
+            "balanced_accuracy": 0.8743972669903217,
+            "micro_f1": 0.8738170347003155,
+            "macro_f1": 0.8749041776645462,
+            "training_time": 0.03281998634338379,
+            "prediction_time": 0.003473520278930664,
+            "total_time": 0.03629350662231445
+        }
+    },
+    {
+        "dataset": "obesity",
+        "classifier": "SimilarityBasedForest-[hamming]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.944794952681388,
+            "balanced_accuracy": 0.9469889400138777,
+            "micro_f1": 0.944794952681388,
+            "macro_f1": 0.9455612043309477,
+            "training_time": 0.033097267150878906,
+            "prediction_time": 0.0033948421478271484,
+            "total_time": 0.036492109298706055
+        }
+    }
+]

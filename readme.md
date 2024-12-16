@@ -1,73 +1,139 @@
-# Spiegazione variante RandomForestClassifier
+# Similarity Based Random Forest Classifier
 
-La classe utilizza la struttura che viene usata per i modelli di sklearn.
+This project implements a Similarity Based Random Forest Classifier and evaluates its performance on various datasets, confronting the results with other ensemble methods.
+More information on the model can be found in the classifier folder.
 
-Viene quindi definito un costruttore come segue
+---
 
-``` python
-class VariantOfRandomForestClassifier: 
-    def __init__(self, n_estimators=10, max_depth=None, random_state=None): 
-        self.n_estimators = n_estimators 
-        self.max_depth = max_depth 
-        self.random_state = random_state 
-        self.classifiers = [] 
-        self.dataset_seed = None 
+## Table of Contents
+- [Similarity Based Random Forest Classifier](#similarity-based-random-forest-classifier)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Project Structure](#project-structure)
+  - [Datasets](#datasets)
+  - [Configuration](#configuration)
+  - [Running the Project](#running-the-project)
+  - [Results](#results)
+
+---
+
+## Installation
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/Mattia-Ingrassia/SimilarityBasedRandomForestClassifier.git
+    cd SimilarityBasedRandomForestClassifier
+    ```
+
+2. Create a virtual environment:
+    ```sh
+    python -m venv venv
+    ```
+
+3. Activate the virtual environment:
+
+   - On Windows:
+        ```sh
+        venv\Scripts\activate
+        ```
+    - On macOS and Linux:
+        ```sh
+        source venv/bin/activate
+        ```
+
+4. Install the required packages:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+---
+
+## Project Structure
+
+```
+├── classifier/
+│   ├── README.md
+│   └── SimilarityBasedRandomForestClassifier.py
+|
+├── data/ 
+│   ├── adult/ 
+│   ├── bank/ 
+│   ├── banknote/ 
+│   ├── breast_cancer_wisconsin/ 
+│   ├── car/ 
+│   ├── connect_4/ 
+│   ├── covertype/ 
+│   ├── default_credit_card/ 
+│   ├── dropout/ 
+│   ├── dry_bean/ 
+│   ├── ecoli/ 
+│   ├── glass/ 
+│   ├── heart_failure/ 
+│   ├── ionosphere/ 
+│   ├── iris/ 
+│   ├── letter_recognition/
+│   ├── mushroom/
+│   ├── obesity/ 
+│   ├── poker_hand/ 
+│   ├── rice/
+│   ├── seeds/
+│   ├── seismic_bumps/
+│   ├── shuttle/
+│   ├── spambase/
+│   ├── telescope/
+│   ├── tic_tac_toe/
+│   ├── vehicles/
+│   ├── wine/ 
+│   └── zoo/ 
+|
+├── .gitignore
+├── DatasetPreprocessor.py 
+├── requirements.txt 
+├── run_configuration.json 
+└── run_handler.py
+
 ```
 
-La classe conterrà i metodi che sono necessari per implementare l'interfaccia di sklearn
+---
 
-``` python
-def fit(self, X, y): 
-# Implementazione del metodo di addestramento 
- 
-def predict_proba(self, X): 
-# Implementazione del metodo di predizione delle probabilità 
- 
-def predict(self, X):  
-# Implementazione del metodo di predizione delle classi  
- 
-def selected_seed(self, X): 
-# Implementazione del metodo di selezione dei seed  
-         
-def create_dataset(self, X, seed_istances): 
-# Implementazione del metodo di creazione dei dataset
+## Datasets
+
+The `data` directory contains various datasets used for evaluating the classifier. Each dataset has its own subdirectory containing the dataset files and a `README.md` file with detailed information about the dataset.
+
+---
+
+## Configuration
+
+The `run_configuration.json` file contains the configuration for running the project. It includes parameters such as random states, number of estimators, test sizes, and distance metrics.
+
+```json
+{   
+    "random_states": [23],
+    "number_of_estimators": [25],
+    "test_sizes": [0.3],
+    "distance_metrics": ["cityblock", "cosine", "euclidean","braycurtis", "canberra", "chebyshev", "correlation", "hamming"]
+}
+
 ```
 
-## Metodo init
+---
 
-Il metodo init è il costruttore della classe e inizializza i seguenti parametri:
+## Running the Project
 
-- n_estimators: numero di alberi decisionali da creare;
-- max_depth: la profondità massima degli alberi decisionali;
-- random_state: serve a controllare la generazione dei numeri casuali garantendo la
-riproducibilità dei risultati;
-- classifiers: una lista vuota che conterrà gli alberi decisionali;
-- dataset_seed: una matrice che conterrà i seed selezionati per ogni albero.
-
-## Metodo fit
-
-Il metodo fit addestra l’algoritmo sui dati di training X e y:
-
-1. Inizializza la lista classifiers e la matrice dataset_seed;
-2. Per ogni albero decisionale:  
-    - Seleziona un seed in base alla dissimilarità media
-    - Costruisce un sottoinsieme del dataset in base al seed selezionato in  precedenza;
-    - Addestra un albero decisionale su questo sottoinsieme e lo aggiunge alla lista classifiers
-
-## Metodo predict_proba
-
-Il metodo predict_proba calcola la probabilità delle classi per ciascuna istanza nel dataset X:
-
-1. Inizializza una matrice all_proba per conservare le probabilità di ogni istanza;
-
-2. Per ogni istanza x in X:
-    - Calcola le distanze tra x e i seed dei vari alberi decisionali;
-    - Calcola le similarità e le normalizza in pesi;
-    - Calcola le probabilità predette dai vari alberi per x;
-    - Media le probabilità predette utilizzando i pesi;
-    - Conserva le probabilità mediate nella matrice all_proba.
-
-3. Restituisce la matrice all_proba.
+To run the project, execute the run_handler.py script. This script will load the datasets, preprocess them, initialize the classifiers, and evaluate their performance.
 
 
-#TODO da sistemare
+```bash
+python run_handler.py
+```
+
+This scripts uses ```DatasetPreprocessor.py``` for prepraring the datasets for the models.
+After the first execution, it is possible to avoid the preprocessing part if you don't need to edit the configuration of the datasets by setting the value of ```FROM_SCRATCH``` variable to false.
+
+---
+
+## Results
+
+The results of the evaluations are saved in the ```results_metrics.json``` file within each dataset's subdirectory.
+The results include metrics such as accuracy, balanced accuracy, micro F1, macro F1, training time, and prediction time.
+

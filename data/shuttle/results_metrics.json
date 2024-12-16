@@ -1,0 +1,210 @@
+[
+    {
+        "dataset": "shuttle",
+        "classifier": "Random Forest",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9996551724137931,
+            "balanced_accuracy": 0.8518948264849904,
+            "micro_f1": 0.9996551724137931,
+            "macro_f1": 0.8935227019755763,
+            "training_time": 0.3835594654083252,
+            "prediction_time": 0.017728328704833984,
+            "total_time": 0.4012877941131592
+        }
+    },
+    {
+        "dataset": "shuttle",
+        "classifier": "Extra Trees",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9996551724137931,
+            "balanced_accuracy": 0.9870025366001958,
+            "micro_f1": 0.9996551724137931,
+            "macro_f1": 0.9918823999785502,
+            "training_time": 0.24882721900939941,
+            "prediction_time": 0.0312039852142334,
+            "total_time": 0.2800312042236328
+        }
+    },
+    {
+        "dataset": "shuttle",
+        "classifier": "XGBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9997126436781609,
+            "balanced_accuracy": 0.9946455184160102,
+            "micro_f1": 0.9997126436781609,
+            "macro_f1": 0.9972484932611287,
+            "training_time": 0.11098647117614746,
+            "prediction_time": 0.0042650699615478516,
+            "total_time": 0.11525154113769531
+        }
+    },
+    {
+        "dataset": "shuttle",
+        "classifier": "AdaBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.994367816091954,
+            "balanced_accuracy": 0.42729611970328735,
+            "micro_f1": 0.994367816091954,
+            "macro_f1": 0.42684175116873396,
+            "training_time": 0.39678359031677246,
+            "prediction_time": 0.020802736282348633,
+            "total_time": 0.4175863265991211
+        }
+    },
+    {
+        "dataset": "shuttle",
+        "classifier": "Gradient Boosting",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9994252873563219,
+            "balanced_accuracy": 0.9893338118822906,
+            "micro_f1": 0.9994252873563219,
+            "macro_f1": 0.9931390080831325,
+            "training_time": 5.207479238510132,
+            "prediction_time": 0.03192567825317383,
+            "total_time": 5.239404916763306
+        }
+    },
+    {
+        "dataset": "shuttle",
+        "classifier": "SimilarityBasedForest-[cityblock]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9988505747126437,
+            "balanced_accuracy": 0.6881162906597591,
+            "micro_f1": 0.9988505747126437,
+            "macro_f1": 0.6847466491032492,
+            "training_time": 0.33959436416625977,
+            "prediction_time": 0.04031848907470703,
+            "total_time": 0.3799128532409668
+        }
+    },
+    {
+        "dataset": "shuttle",
+        "classifier": "SimilarityBasedForest-[cosine]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9994252873563219,
+            "balanced_accuracy": 0.8514941280967517,
+            "micro_f1": 0.9994252873563219,
+            "macro_f1": 0.8363655478648815,
+            "training_time": 0.2899289131164551,
+            "prediction_time": 0.03200411796569824,
+            "total_time": 0.3219330310821533
+        }
+    },
+    {
+        "dataset": "shuttle",
+        "classifier": "SimilarityBasedForest-[euclidean]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9989080459770115,
+            "balanced_accuracy": 0.6882122911730909,
+            "micro_f1": 0.9989080459770115,
+            "macro_f1": 0.6788478877726041,
+            "training_time": 0.33334803581237793,
+            "prediction_time": 0.041080474853515625,
+            "total_time": 0.37442851066589355
+        }
+    },
+    {
+        "dataset": "shuttle",
+        "classifier": "SimilarityBasedForest-[braycurtis]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9994827586206897,
+            "balanced_accuracy": 0.9843161872769869,
+            "micro_f1": 0.9994827586206897,
+            "macro_f1": 0.9714068915662688,
+            "training_time": 0.3652980327606201,
+            "prediction_time": 0.03417539596557617,
+            "total_time": 0.3994734287261963
+        }
+    },
+    {
+        "dataset": "shuttle",
+        "classifier": "SimilarityBasedForest-[canberra]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9996551724137931,
+            "balanced_accuracy": 0.9920481158186076,
+            "micro_f1": 0.9996551724137931,
+            "macro_f1": 0.994581606338672,
+            "training_time": 0.3209061622619629,
+            "prediction_time": 0.03354525566101074,
+            "total_time": 0.35445141792297363
+        }
+    },
+    {
+        "dataset": "shuttle",
+        "classifier": "SimilarityBasedForest-[chebyshev]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9989080459770115,
+            "balanced_accuracy": 0.6678678037836375,
+            "micro_f1": 0.9989080459770115,
+            "macro_f1": 0.6789467867870104,
+            "training_time": 0.28083229064941406,
+            "prediction_time": 0.04184460639953613,
+            "total_time": 0.3226768970489502
+        }
+    },
+    {
+        "dataset": "shuttle",
+        "classifier": "SimilarityBasedForest-[correlation]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9996551724137931,
+            "balanced_accuracy": 0.8993667503729802,
+            "micro_f1": 0.9996551724137931,
+            "macro_f1": 0.9162596172752737,
+            "training_time": 0.40572071075439453,
+            "prediction_time": 0.034287452697753906,
+            "total_time": 0.44000816345214844
+        }
+    },
+    {
+        "dataset": "shuttle",
+        "classifier": "SimilarityBasedForest-[hamming]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9993103448275862,
+            "balanced_accuracy": 0.8838081871563374,
+            "micro_f1": 0.9993103448275862,
+            "macro_f1": 0.8938466508329469,
+            "training_time": 0.28227686882019043,
+            "prediction_time": 0.03121209144592285,
+            "total_time": 0.3134889602661133
+        }
+    }
+]

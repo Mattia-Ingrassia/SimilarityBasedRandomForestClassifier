@@ -1,0 +1,210 @@
+[
+    {
+        "dataset": "seismic_bumps",
+        "classifier": "Random Forest",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9329896907216495,
+            "balanced_accuracy": 0.5079338842975206,
+            "micro_f1": 0.9329896907216495,
+            "macro_f1": 0.501162043218118,
+            "training_time": 0.04825544357299805,
+            "prediction_time": 0.002274036407470703,
+            "total_time": 0.05052947998046875
+        }
+    },
+    {
+        "dataset": "seismic_bumps",
+        "classifier": "Extra Trees",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9278350515463918,
+            "balanced_accuracy": 0.5051790633608815,
+            "micro_f1": 0.9278350515463918,
+            "macro_f1": 0.49849974611088027,
+            "training_time": 0.03496122360229492,
+            "prediction_time": 0.0029134750366210938,
+            "total_time": 0.037874698638916016
+        }
+    },
+    {
+        "dataset": "seismic_bumps",
+        "classifier": "XGBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9329896907216495,
+            "balanced_accuracy": 0.5265564738292011,
+            "micro_f1": 0.9329896907216495,
+            "macro_f1": 0.534321192817246,
+            "training_time": 0.02100658416748047,
+            "prediction_time": 0.0007424354553222656,
+            "total_time": 0.021749019622802734
+        }
+    },
+    {
+        "dataset": "seismic_bumps",
+        "classifier": "AdaBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9355670103092784,
+            "balanced_accuracy": 0.5,
+            "micro_f1": 0.9355670103092784,
+            "macro_f1": 0.4833555259653795,
+            "training_time": 0.06259584426879883,
+            "prediction_time": 0.00365447998046875,
+            "total_time": 0.06625032424926758
+        }
+    },
+    {
+        "dataset": "seismic_bumps",
+        "classifier": "Gradient Boosting",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9291237113402062,
+            "balanced_accuracy": 0.5058677685950413,
+            "micro_f1": 0.9291237113402062,
+            "macro_f1": 0.4991492108196914,
+            "training_time": 0.0852820873260498,
+            "prediction_time": 0.0006585121154785156,
+            "total_time": 0.08594059944152832
+        }
+    },
+    {
+        "dataset": "seismic_bumps",
+        "classifier": "SimilarityBasedForest-[cityblock]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8634020618556701,
+            "balanced_accuracy": 0.5917906336088155,
+            "micro_f1": 0.8634020618556701,
+            "macro_f1": 0.5671010251984085,
+            "training_time": 0.0862116813659668,
+            "prediction_time": 0.0056688785552978516,
+            "total_time": 0.09188055992126465
+        }
+    },
+    {
+        "dataset": "seismic_bumps",
+        "classifier": "SimilarityBasedForest-[cosine]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8775773195876289,
+            "balanced_accuracy": 0.5341873278236915,
+            "micro_f1": 0.8775773195876289,
+            "macro_f1": 0.5313026505687056,
+            "training_time": 0.02525019645690918,
+            "prediction_time": 0.0038521289825439453,
+            "total_time": 0.029102325439453125
+        }
+    },
+    {
+        "dataset": "seismic_bumps",
+        "classifier": "SimilarityBasedForest-[euclidean]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8698453608247423,
+            "balanced_accuracy": 0.5766115702479339,
+            "micro_f1": 0.8698453608247423,
+            "macro_f1": 0.5606110721793973,
+            "training_time": 0.02263784408569336,
+            "prediction_time": 0.003751993179321289,
+            "total_time": 0.02638983726501465
+        }
+    },
+    {
+        "dataset": "seismic_bumps",
+        "classifier": "SimilarityBasedForest-[braycurtis]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8853092783505154,
+            "balanced_accuracy": 0.5383195592286502,
+            "micro_f1": 0.8853092783505154,
+            "macro_f1": 0.5372503299898825,
+            "training_time": 0.032617807388305664,
+            "prediction_time": 0.004094362258911133,
+            "total_time": 0.0367121696472168
+        }
+    },
+    {
+        "dataset": "seismic_bumps",
+        "classifier": "SimilarityBasedForest-[canberra]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8634020618556701,
+            "balanced_accuracy": 0.5266115702479339,
+            "micro_f1": 0.8634020618556701,
+            "macro_f1": 0.5213221601489758,
+            "training_time": 0.03621482849121094,
+            "prediction_time": 0.00433039665222168,
+            "total_time": 0.04054522514343262
+        }
+    },
+    {
+        "dataset": "seismic_bumps",
+        "classifier": "SimilarityBasedForest-[chebyshev]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9072164948453608,
+            "balanced_accuracy": 0.5220936639118458,
+            "micro_f1": 0.9072164948453608,
+            "macro_f1": 0.5255434782608696,
+            "training_time": 0.022134065628051758,
+            "prediction_time": 0.003493070602416992,
+            "total_time": 0.02562713623046875
+        }
+    },
+    {
+        "dataset": "seismic_bumps",
+        "classifier": "SimilarityBasedForest-[correlation]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8672680412371134,
+            "balanced_accuracy": 0.5100550964187328,
+            "micro_f1": 0.8672680412371134,
+            "macro_f1": 0.5084590454285486,
+            "training_time": 0.03493475914001465,
+            "prediction_time": 0.003789186477661133,
+            "total_time": 0.03872394561767578
+        }
+    },
+    {
+        "dataset": "seismic_bumps",
+        "classifier": "SimilarityBasedForest-[hamming]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.895618556701031,
+            "balanced_accuracy": 0.5438292011019283,
+            "micro_f1": 0.895618556701031,
+            "macro_f1": 0.5458873676985876,
+            "training_time": 0.02419590950012207,
+            "prediction_time": 0.003638029098510742,
+            "total_time": 0.027833938598632812
+        }
+    }
+]

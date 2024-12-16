@@ -1,0 +1,210 @@
+[
+    {
+        "dataset": "glass",
+        "classifier": "Random Forest",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8,
+            "balanced_accuracy": 0.8079805996472663,
+            "micro_f1": 0.8,
+            "macro_f1": 0.767073667073667,
+            "training_time": 0.023195981979370117,
+            "prediction_time": 0.0011653900146484375,
+            "total_time": 0.024361371994018555
+        }
+    },
+    {
+        "dataset": "glass",
+        "classifier": "Extra Trees",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7692307692307693,
+            "balanced_accuracy": 0.6735008818342152,
+            "micro_f1": 0.7692307692307693,
+            "macro_f1": 0.6869149369149369,
+            "training_time": 0.01834249496459961,
+            "prediction_time": 0.0013947486877441406,
+            "total_time": 0.01973724365234375
+        }
+    },
+    {
+        "dataset": "glass",
+        "classifier": "XGBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7846153846153846,
+            "balanced_accuracy": 0.7982804232804233,
+            "micro_f1": 0.7846153846153846,
+            "macro_f1": 0.7750319983755701,
+            "training_time": 0.03618454933166504,
+            "prediction_time": 0.0008249282836914062,
+            "total_time": 0.037009477615356445
+        }
+    },
+    {
+        "dataset": "glass",
+        "classifier": "AdaBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.49230769230769234,
+            "balanced_accuracy": 0.3697089947089947,
+            "micro_f1": 0.49230769230769234,
+            "macro_f1": 0.3519248826291079,
+            "training_time": 0.03253626823425293,
+            "prediction_time": 0.0028684139251708984,
+            "total_time": 0.03540468215942383
+        }
+    },
+    {
+        "dataset": "glass",
+        "classifier": "Gradient Boosting",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.6615384615384615,
+            "balanced_accuracy": 0.6545414462081129,
+            "micro_f1": 0.6615384615384615,
+            "macro_f1": 0.6480555555555556,
+            "training_time": 0.11959671974182129,
+            "prediction_time": 0.0008070468902587891,
+            "total_time": 0.12040376663208008
+        }
+    },
+    {
+        "dataset": "glass",
+        "classifier": "SimilarityBasedForest-[cityblock]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.4153846153846154,
+            "balanced_accuracy": 0.18959435626102294,
+            "micro_f1": 0.4153846153846154,
+            "macro_f1": 0.18002136752136752,
+            "training_time": 0.012280702590942383,
+            "prediction_time": 0.004738807678222656,
+            "total_time": 0.01701951026916504
+        }
+    },
+    {
+        "dataset": "glass",
+        "classifier": "SimilarityBasedForest-[cosine]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.6,
+            "balanced_accuracy": 0.6159611992945326,
+            "micro_f1": 0.6,
+            "macro_f1": 0.564890180878553,
+            "training_time": 0.022689104080200195,
+            "prediction_time": 0.002638578414916992,
+            "total_time": 0.025327682495117188
+        }
+    },
+    {
+        "dataset": "glass",
+        "classifier": "SimilarityBasedForest-[euclidean]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.6307692307692307,
+            "balanced_accuracy": 0.5218253968253969,
+            "micro_f1": 0.6307692307692307,
+            "macro_f1": 0.48080936826000453,
+            "training_time": 0.022524595260620117,
+            "prediction_time": 0.0022144317626953125,
+            "total_time": 0.02473902702331543
+        }
+    },
+    {
+        "dataset": "glass",
+        "classifier": "SimilarityBasedForest-[braycurtis]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.5538461538461539,
+            "balanced_accuracy": 0.6216931216931216,
+            "micro_f1": 0.5538461538461539,
+            "macro_f1": 0.5480852508911154,
+            "training_time": 0.011940240859985352,
+            "prediction_time": 0.0022089481353759766,
+            "total_time": 0.014149188995361328
+        }
+    },
+    {
+        "dataset": "glass",
+        "classifier": "SimilarityBasedForest-[canberra]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.6,
+            "balanced_accuracy": 0.4704585537918871,
+            "micro_f1": 0.6,
+            "macro_f1": 0.4630356896789307,
+            "training_time": 0.011891841888427734,
+            "prediction_time": 0.0022516250610351562,
+            "total_time": 0.01414346694946289
+        }
+    },
+    {
+        "dataset": "glass",
+        "classifier": "SimilarityBasedForest-[chebyshev]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.6153846153846154,
+            "balanced_accuracy": 0.4825837742504409,
+            "micro_f1": 0.6153846153846154,
+            "macro_f1": 0.4331081081081081,
+            "training_time": 0.012011051177978516,
+            "prediction_time": 0.002095460891723633,
+            "total_time": 0.014106512069702148
+        }
+    },
+    {
+        "dataset": "glass",
+        "classifier": "SimilarityBasedForest-[correlation]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.6,
+            "balanced_accuracy": 0.6159611992945326,
+            "micro_f1": 0.6,
+            "macro_f1": 0.564890180878553,
+            "training_time": 0.012126445770263672,
+            "prediction_time": 0.0022439956665039062,
+            "total_time": 0.014370441436767578
+        }
+    },
+    {
+        "dataset": "glass",
+        "classifier": "SimilarityBasedForest-[hamming]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.5384615384615384,
+            "balanced_accuracy": 0.4753086419753086,
+            "micro_f1": 0.5384615384615384,
+            "macro_f1": 0.4436512669070809,
+            "training_time": 0.02180624008178711,
+            "prediction_time": 0.002798318862915039,
+            "total_time": 0.02460455894470215
+        }
+    }
+]

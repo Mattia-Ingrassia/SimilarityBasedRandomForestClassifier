@@ -1,0 +1,210 @@
+[
+    {
+        "dataset": "mushroom",
+        "classifier": "Random Forest",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "micro_f1": 1.0,
+            "macro_f1": 1.0,
+            "training_time": 0.0410609245300293,
+            "prediction_time": 0.0026640892028808594,
+            "total_time": 0.043725013732910156
+        }
+    },
+    {
+        "dataset": "mushroom",
+        "classifier": "Extra Trees",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "micro_f1": 1.0,
+            "macro_f1": 1.0,
+            "training_time": 0.038976430892944336,
+            "prediction_time": 0.0032775402069091797,
+            "total_time": 0.042253971099853516
+        }
+    },
+    {
+        "dataset": "mushroom",
+        "classifier": "XGBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "micro_f1": 1.0,
+            "macro_f1": 1.0,
+            "training_time": 0.022695302963256836,
+            "prediction_time": 0.0011529922485351562,
+            "total_time": 0.023848295211791992
+        }
+    },
+    {
+        "dataset": "mushroom",
+        "classifier": "AdaBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9982290436835891,
+            "balanced_accuracy": 0.9976816074188563,
+            "micro_f1": 0.9982290436835891,
+            "macro_f1": 0.9981228024099937,
+            "training_time": 0.12456393241882324,
+            "prediction_time": 0.008017778396606445,
+            "total_time": 0.1325817108154297
+        }
+    },
+    {
+        "dataset": "mushroom",
+        "classifier": "Gradient Boosting",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "micro_f1": 1.0,
+            "macro_f1": 1.0,
+            "training_time": 0.15420746803283691,
+            "prediction_time": 0.001127481460571289,
+            "total_time": 0.1553349494934082
+        }
+    },
+    {
+        "dataset": "mushroom",
+        "classifier": "SimilarityBasedForest-[cityblock]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "micro_f1": 1.0,
+            "macro_f1": 1.0,
+            "training_time": 0.1611635684967041,
+            "prediction_time": 0.010238409042358398,
+            "total_time": 0.1714019775390625
+        }
+    },
+    {
+        "dataset": "mushroom",
+        "classifier": "SimilarityBasedForest-[cosine]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "micro_f1": 1.0,
+            "macro_f1": 1.0,
+            "training_time": 0.15744805335998535,
+            "prediction_time": 0.008492708206176758,
+            "total_time": 0.1659407615661621
+        }
+    },
+    {
+        "dataset": "mushroom",
+        "classifier": "SimilarityBasedForest-[euclidean]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "micro_f1": 1.0,
+            "macro_f1": 1.0,
+            "training_time": 0.15852022171020508,
+            "prediction_time": 0.0075604915618896484,
+            "total_time": 0.16608071327209473
+        }
+    },
+    {
+        "dataset": "mushroom",
+        "classifier": "SimilarityBasedForest-[braycurtis]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "micro_f1": 1.0,
+            "macro_f1": 1.0,
+            "training_time": 0.1550273895263672,
+            "prediction_time": 0.010589838027954102,
+            "total_time": 0.1656172275543213
+        }
+    },
+    {
+        "dataset": "mushroom",
+        "classifier": "SimilarityBasedForest-[canberra]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "micro_f1": 1.0,
+            "macro_f1": 1.0,
+            "training_time": 0.15677118301391602,
+            "prediction_time": 0.01107645034790039,
+            "total_time": 0.1678476333618164
+        }
+    },
+    {
+        "dataset": "mushroom",
+        "classifier": "SimilarityBasedForest-[chebyshev]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "micro_f1": 1.0,
+            "macro_f1": 1.0,
+            "training_time": 0.14690566062927246,
+            "prediction_time": 0.00911402702331543,
+            "total_time": 0.1560196876525879
+        }
+    },
+    {
+        "dataset": "mushroom",
+        "classifier": "SimilarityBasedForest-[correlation]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "micro_f1": 1.0,
+            "macro_f1": 1.0,
+            "training_time": 0.17758917808532715,
+            "prediction_time": 0.009243011474609375,
+            "total_time": 0.18683218955993652
+        }
+    },
+    {
+        "dataset": "mushroom",
+        "classifier": "SimilarityBasedForest-[hamming]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "micro_f1": 1.0,
+            "macro_f1": 1.0,
+            "training_time": 0.17935681343078613,
+            "prediction_time": 0.009612798690795898,
+            "total_time": 0.18896961212158203
+        }
+    }
+]

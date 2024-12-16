@@ -1,0 +1,210 @@
+[
+    {
+        "dataset": "heart_failure",
+        "classifier": "Random Forest",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8111111111111111,
+            "balanced_accuracy": 0.7693965517241379,
+            "micro_f1": 0.8111111111111111,
+            "macro_f1": 0.7817715019255456,
+            "training_time": 0.022563695907592773,
+            "prediction_time": 0.0010731220245361328,
+            "total_time": 0.023636817932128906
+        }
+    },
+    {
+        "dataset": "heart_failure",
+        "classifier": "Extra Trees",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8333333333333334,
+            "balanced_accuracy": 0.8006465517241379,
+            "micro_f1": 0.8333333333333334,
+            "macro_f1": 0.8108978848578232,
+            "training_time": 0.018189668655395508,
+            "prediction_time": 0.001302480697631836,
+            "total_time": 0.019492149353027344
+        }
+    },
+    {
+        "dataset": "heart_failure",
+        "classifier": "XGBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8,
+            "balanced_accuracy": 0.7537715517241379,
+            "micro_f1": 0.8,
+            "macro_f1": 0.7667050691244239,
+            "training_time": 0.014814138412475586,
+            "prediction_time": 0.0006921291351318359,
+            "total_time": 0.015506267547607422
+        }
+    },
+    {
+        "dataset": "heart_failure",
+        "classifier": "AdaBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7666666666666667,
+            "balanced_accuracy": 0.7209051724137931,
+            "micro_f1": 0.7666666666666667,
+            "macro_f1": 0.730423620025674,
+            "training_time": 0.03276515007019043,
+            "prediction_time": 0.002965211868286133,
+            "total_time": 0.03573036193847656
+        }
+    },
+    {
+        "dataset": "heart_failure",
+        "classifier": "Gradient Boosting",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7777777777777778,
+            "balanced_accuracy": 0.7295258620689655,
+            "micro_f1": 0.7777777777777778,
+            "macro_f1": 0.7407834101382489,
+            "training_time": 0.02311992645263672,
+            "prediction_time": 0.00029778480529785156,
+            "total_time": 0.02341771125793457
+        }
+    },
+    {
+        "dataset": "heart_failure",
+        "classifier": "SimilarityBasedForest-[cityblock]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7222222222222222,
+            "balanced_accuracy": 0.6794181034482758,
+            "micro_f1": 0.7222222222222222,
+            "macro_f1": 0.6848298080963721,
+            "training_time": 0.012093067169189453,
+            "prediction_time": 0.002367258071899414,
+            "total_time": 0.014460325241088867
+        }
+    },
+    {
+        "dataset": "heart_failure",
+        "classifier": "SimilarityBasedForest-[cosine]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7777777777777778,
+            "balanced_accuracy": 0.7225215517241379,
+            "micro_f1": 0.7777777777777778,
+            "macro_f1": 0.7354497354497355,
+            "training_time": 0.021863937377929688,
+            "prediction_time": 0.002688169479370117,
+            "total_time": 0.024552106857299805
+        }
+    },
+    {
+        "dataset": "heart_failure",
+        "classifier": "SimilarityBasedForest-[euclidean]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.6555555555555556,
+            "balanced_accuracy": 0.5646551724137931,
+            "micro_f1": 0.6555555555555556,
+            "macro_f1": 0.5536714125739881,
+            "training_time": 0.03481864929199219,
+            "prediction_time": 0.005156517028808594,
+            "total_time": 0.03997516632080078
+        }
+    },
+    {
+        "dataset": "heart_failure",
+        "classifier": "SimilarityBasedForest-[braycurtis]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7222222222222222,
+            "balanced_accuracy": 0.7004310344827587,
+            "micro_f1": 0.7222222222222222,
+            "macro_f1": 0.6989966555183946,
+            "training_time": 0.024983882904052734,
+            "prediction_time": 0.0024328231811523438,
+            "total_time": 0.027416706085205078
+        }
+    },
+    {
+        "dataset": "heart_failure",
+        "classifier": "SimilarityBasedForest-[canberra]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7333333333333333,
+            "balanced_accuracy": 0.709051724137931,
+            "micro_f1": 0.7333333333333333,
+            "macro_f1": 0.709051724137931,
+            "training_time": 0.012207269668579102,
+            "prediction_time": 0.0023665428161621094,
+            "total_time": 0.014573812484741211
+        }
+    },
+    {
+        "dataset": "heart_failure",
+        "classifier": "SimilarityBasedForest-[chebyshev]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.6555555555555556,
+            "balanced_accuracy": 0.5646551724137931,
+            "micro_f1": 0.6555555555555556,
+            "macro_f1": 0.5536714125739881,
+            "training_time": 0.011908769607543945,
+            "prediction_time": 0.002196788787841797,
+            "total_time": 0.014105558395385742
+        }
+    },
+    {
+        "dataset": "heart_failure",
+        "classifier": "SimilarityBasedForest-[correlation]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7777777777777778,
+            "balanced_accuracy": 0.7225215517241379,
+            "micro_f1": 0.7777777777777778,
+            "macro_f1": 0.7354497354497355,
+            "training_time": 0.022257566452026367,
+            "prediction_time": 0.002315044403076172,
+            "total_time": 0.02457261085510254
+        }
+    },
+    {
+        "dataset": "heart_failure",
+        "classifier": "SimilarityBasedForest-[hamming]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7444444444444445,
+            "balanced_accuracy": 0.7316810344827587,
+            "micro_f1": 0.7444444444444445,
+            "macro_f1": 0.7265882974507991,
+            "training_time": 0.022359132766723633,
+            "prediction_time": 0.0022313594818115234,
+            "total_time": 0.024590492248535156
+        }
+    }
+]

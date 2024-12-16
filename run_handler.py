@@ -8,11 +8,14 @@ from sklearn.model_selection import train_test_split
 from xgboost import XGBClassifier
 
 from DatasetPreprocessor import DatasetPreprocessor
-from SimilarityBasedRandomForestClassifier import SimilarityBasedRandomForestClassifier
+from classifier.SimilarityBasedRandomForestClassifier import SimilarityBasedRandomForestClassifier
+
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
 
 PATH_RUN_CONFIGURATION = "run_configuration.json"
 PATH_DATA = "data"
-PATH_RESULTS = "results_metrics.json"
+RESULTS_FILE_NAME = "results_metrics.json"
 
 # False if the preprocessing has already been done (if it has
 # been already done, the files X.npy and Y.npy already exists), 
@@ -27,7 +30,7 @@ DISTANCE_METRICS = []
 
 # For running only explicit datasets, add the name of them
 # inside this variable.
-datasets = ["iris"]
+datasets = []
 
 # function for loading the datasets configuration.
 # returns a json object containing all the datasets configuration.
@@ -82,7 +85,8 @@ def init_classifiers(random_state: int, number_of_estimators: int) -> dict:
                 SimilarityBasedRandomForestClassifier(
                     n_estimators=number_of_estimators,
                     random_state=random_state,
-                    distance_metric=metric
+                    distance_metric=metric,
+                    n_jobs=-1
                 )
             }
         )            
@@ -150,7 +154,7 @@ def save_metrics_to_json(dataset_name: str, classifier_name: str, random_state: 
         "metrics": metrics
     }
 
-    dataset_results_path = os.path.join(PATH_DATA, dataset_name, "results_metrics.json")
+    dataset_results_path = os.path.join(PATH_DATA, dataset_name, RESULTS_FILE_NAME)
 
     if os.path.exists(dataset_results_path):
         with open(dataset_results_path, 'r') as file:
@@ -162,7 +166,7 @@ def save_metrics_to_json(dataset_name: str, classifier_name: str, random_state: 
 
     with open(dataset_results_path, 'w') as file:
         json.dump(results, file, indent=4)
-        print(f"Metrics saved for {classifier_name} on dataset {dataset_name} in {dataset_results_path}.")
+        #print(f"Metrics saved for {classifier_name} on dataset {dataset_name} in {dataset_results_path}.")
 
 def load_datasets() -> list:
     # if no datasets where specified, load all the datasets
@@ -194,14 +198,16 @@ def main():
     datasets = load_datasets()
     load_run_configuration()
 
-    # Initialize the results file
-    with open(PATH_RESULTS, 'w') as file:
-        json.dump([], file, indent=4)
-        print(f"Results file {PATH_RESULTS} has been created.")
-
-
+    total_iterations = len(TEST_SIZES) * len(RANDOM_STATES) * len(NUMBER_OF_ESTIMATORS) * (len(DISTANCE_METRICS) + 5)
     for dataset_name in datasets:
         dataset_configuration = load_config(dataset_name)
+        
+        dataset_results_path = os.path.join(PATH_DATA, dataset_name, RESULTS_FILE_NAME)
+        with open(dataset_results_path, 'w') as file:
+            json.dump([], file, indent=4)
+        print(f"Results file {RESULTS_FILE_NAME} for dataset {dataset_name} has been created.")
+        
+        progress_tracker = 0
         if dataset_configuration is not None:
             print(f"Processing Dataset: {dataset_name}")
             for test_size in TEST_SIZES:
@@ -211,11 +217,13 @@ def main():
                         classifiers = init_classifiers(random_state, number_of_estimators)
                         for classifier_name, classifier in classifiers.items():
                             metrics = evaluate_classifier(classifier, X_train, X_test, y_train, y_test)
-                            print_metrics(classifier_name, metrics)
+                            # print_metrics(classifier_name, metrics)
                             save_metrics_to_json(dataset_name, classifier_name, random_state, test_size, number_of_estimators, metrics)
+                            progress_tracker += 1
+                            print(f"{dataset_name} - progress: {progress_tracker}/{total_iterations}")
         else:
             print(f"Configuration not found for dataset: {dataset_name}")
-                    
+        print(f"Dataset: {dataset_name} processed.")            
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,210 @@
+[
+    {
+        "dataset": "banknote",
+        "classifier": "Random Forest",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9927184466019418,
+            "balanced_accuracy": 0.9933333333333334,
+            "micro_f1": 0.9927184466019418,
+            "macro_f1": 0.9926655154611645,
+            "training_time": 0.03952288627624512,
+            "prediction_time": 0.0014569759368896484,
+            "total_time": 0.040979862213134766
+        }
+    },
+    {
+        "dataset": "banknote",
+        "classifier": "Extra Trees",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9854368932038835,
+            "balanced_accuracy": 0.9866666666666667,
+            "micro_f1": 0.9854368932038835,
+            "macro_f1": 0.985348506401138,
+            "training_time": 0.020188331604003906,
+            "prediction_time": 0.0017206668853759766,
+            "total_time": 0.021908998489379883
+        }
+    },
+    {
+        "dataset": "banknote",
+        "classifier": "XGBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9902912621359223,
+            "balanced_accuracy": 0.9902079619726678,
+            "micro_f1": 0.9902912621359223,
+            "macro_f1": 0.9902079619726678,
+            "training_time": 0.014360427856445312,
+            "prediction_time": 0.0007967948913574219,
+            "total_time": 0.015157222747802734
+        }
+    },
+    {
+        "dataset": "banknote",
+        "classifier": "AdaBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.970873786407767,
+            "balanced_accuracy": 0.9728817587641116,
+            "micro_f1": 0.970873786407767,
+            "macro_f1": 0.9707386363636363,
+            "training_time": 0.049745798110961914,
+            "prediction_time": 0.0033440589904785156,
+            "total_time": 0.05308985710144043
+        }
+    },
+    {
+        "dataset": "banknote",
+        "classifier": "Gradient Boosting",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9781553398058253,
+            "balanced_accuracy": 0.9790968508615567,
+            "micro_f1": 0.9781553398058253,
+            "macro_f1": 0.9780142895259554,
+            "training_time": 0.06344342231750488,
+            "prediction_time": 0.0005567073822021484,
+            "total_time": 0.06400012969970703
+        }
+    },
+    {
+        "dataset": "banknote",
+        "classifier": "SimilarityBasedForest-[cityblock]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9805825242718447,
+            "balanced_accuracy": 0.9808674985145573,
+            "micro_f1": 0.9805825242718447,
+            "macro_f1": 0.9804331306990881,
+            "training_time": 0.09700894355773926,
+            "prediction_time": 0.003359079360961914,
+            "total_time": 0.10036802291870117
+        }
+    },
+    {
+        "dataset": "banknote",
+        "classifier": "SimilarityBasedForest-[cosine]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.970873786407767,
+            "balanced_accuracy": 0.9715270350564469,
+            "micro_f1": 0.970873786407767,
+            "macro_f1": 0.9706740693287779,
+            "training_time": 0.022361278533935547,
+            "prediction_time": 0.002717256546020508,
+            "total_time": 0.025078535079956055
+        }
+    },
+    {
+        "dataset": "banknote",
+        "classifier": "SimilarityBasedForest-[euclidean]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9854368932038835,
+            "balanced_accuracy": 0.9853119429590018,
+            "micro_f1": 0.9854368932038835,
+            "macro_f1": 0.9853119429590018,
+            "training_time": 0.02221202850341797,
+            "prediction_time": 0.002583742141723633,
+            "total_time": 0.0247957706451416
+        }
+    },
+    {
+        "dataset": "banknote",
+        "classifier": "SimilarityBasedForest-[braycurtis]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9854368932038835,
+            "balanced_accuracy": 0.9848603683897802,
+            "micro_f1": 0.9854368932038835,
+            "macro_f1": 0.9852983157293749,
+            "training_time": 0.022871017456054688,
+            "prediction_time": 0.0028009414672851562,
+            "total_time": 0.025671958923339844
+        }
+    },
+    {
+        "dataset": "banknote",
+        "classifier": "SimilarityBasedForest-[canberra]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9854368932038835,
+            "balanced_accuracy": 0.9857635175282233,
+            "micro_f1": 0.9854368932038835,
+            "macro_f1": 0.9853248480243162,
+            "training_time": 0.022236347198486328,
+            "prediction_time": 0.002828359603881836,
+            "total_time": 0.025064706802368164
+        }
+    },
+    {
+        "dataset": "banknote",
+        "classifier": "SimilarityBasedForest-[chebyshev]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9854368932038835,
+            "balanced_accuracy": 0.9866666666666667,
+            "micro_f1": 0.9854368932038835,
+            "macro_f1": 0.985348506401138,
+            "training_time": 0.02208876609802246,
+            "prediction_time": 0.0026242733001708984,
+            "total_time": 0.02471303939819336
+        }
+    },
+    {
+        "dataset": "banknote",
+        "classifier": "SimilarityBasedForest-[correlation]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.970873786407767,
+            "balanced_accuracy": 0.9715270350564469,
+            "micro_f1": 0.970873786407767,
+            "macro_f1": 0.9706740693287779,
+            "training_time": 0.022533893585205078,
+            "prediction_time": 0.002848386764526367,
+            "total_time": 0.025382280349731445
+        }
+    },
+    {
+        "dataset": "banknote",
+        "classifier": "SimilarityBasedForest-[hamming]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9733009708737864,
+            "balanced_accuracy": 0.9728461081402258,
+            "micro_f1": 0.9733009708737864,
+            "macro_f1": 0.9730595697377885,
+            "training_time": 0.022391319274902344,
+            "prediction_time": 0.004463911056518555,
+            "total_time": 0.0268552303314209
+        }
+    }
+]

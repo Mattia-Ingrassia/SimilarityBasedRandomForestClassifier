@@ -1,0 +1,210 @@
+[
+    {
+        "dataset": "vehicles",
+        "classifier": "Random Forest",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7401574803149606,
+            "balanced_accuracy": 0.7612153759185981,
+            "micro_f1": 0.7401574803149606,
+            "macro_f1": 0.742581343387795,
+            "training_time": 0.038988351821899414,
+            "prediction_time": 0.0014562606811523438,
+            "total_time": 0.04044461250305176
+        }
+    },
+    {
+        "dataset": "vehicles",
+        "classifier": "Extra Trees",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7283464566929134,
+            "balanced_accuracy": 0.7496853212737894,
+            "micro_f1": 0.7283464566929134,
+            "macro_f1": 0.7341832144463724,
+            "training_time": 0.025791645050048828,
+            "prediction_time": 0.0018727779388427734,
+            "total_time": 0.0276644229888916
+        }
+    },
+    {
+        "dataset": "vehicles",
+        "classifier": "XGBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7598425196850394,
+            "balanced_accuracy": 0.7770487092519315,
+            "micro_f1": 0.7598425196850394,
+            "macro_f1": 0.7692739156389803,
+            "training_time": 0.040297508239746094,
+            "prediction_time": 0.000885009765625,
+            "total_time": 0.041182518005371094
+        }
+    },
+    {
+        "dataset": "vehicles",
+        "classifier": "AdaBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.6259842519685039,
+            "balanced_accuracy": 0.6548831731675147,
+            "micro_f1": 0.6259842519685039,
+            "macro_f1": 0.6107290353776763,
+            "training_time": 0.04466700553894043,
+            "prediction_time": 0.003172636032104492,
+            "total_time": 0.04783964157104492
+        }
+    },
+    {
+        "dataset": "vehicles",
+        "classifier": "Gradient Boosting",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7362204724409449,
+            "balanced_accuracy": 0.7572606934237799,
+            "micro_f1": 0.7362204724409449,
+            "macro_f1": 0.7351120995371762,
+            "training_time": 0.19037437438964844,
+            "prediction_time": 0.0012238025665283203,
+            "total_time": 0.19159817695617676
+        }
+    },
+    {
+        "dataset": "vehicles",
+        "classifier": "SimilarityBasedForest-[cityblock]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.65748031496063,
+            "balanced_accuracy": 0.6675376860749953,
+            "micro_f1": 0.65748031496063,
+            "macro_f1": 0.6646846976927094,
+            "training_time": 0.022642850875854492,
+            "prediction_time": 0.00262451171875,
+            "total_time": 0.025267362594604492
+        }
+    },
+    {
+        "dataset": "vehicles",
+        "classifier": "SimilarityBasedForest-[cosine]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7007874015748031,
+            "balanced_accuracy": 0.7137408140192198,
+            "micro_f1": 0.7007874015748031,
+            "macro_f1": 0.7146009249667786,
+            "training_time": 0.02213573455810547,
+            "prediction_time": 0.0026094913482666016,
+            "total_time": 0.02474522590637207
+        }
+    },
+    {
+        "dataset": "vehicles",
+        "classifier": "SimilarityBasedForest-[euclidean]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7047244094488189,
+            "balanced_accuracy": 0.7164527981910684,
+            "micro_f1": 0.7047244094488189,
+            "macro_f1": 0.7067573860311749,
+            "training_time": 0.02260899543762207,
+            "prediction_time": 0.002796649932861328,
+            "total_time": 0.0254056453704834
+        }
+    },
+    {
+        "dataset": "vehicles",
+        "classifier": "SimilarityBasedForest-[braycurtis]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.6929133858267716,
+            "balanced_accuracy": 0.7035971358583003,
+            "micro_f1": 0.6929133858267716,
+            "macro_f1": 0.7008726570735565,
+            "training_time": 0.02372288703918457,
+            "prediction_time": 0.0030431747436523438,
+            "total_time": 0.026766061782836914
+        }
+    },
+    {
+        "dataset": "vehicles",
+        "classifier": "SimilarityBasedForest-[canberra]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.6771653543307087,
+            "balanced_accuracy": 0.6898473713962691,
+            "micro_f1": 0.6771653543307087,
+            "macro_f1": 0.6827655751955954,
+            "training_time": 0.022314786911010742,
+            "prediction_time": 0.0026226043701171875,
+            "total_time": 0.02493739128112793
+        }
+    },
+    {
+        "dataset": "vehicles",
+        "classifier": "SimilarityBasedForest-[chebyshev]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.6496062992125984,
+            "balanced_accuracy": 0.6614061616732617,
+            "micro_f1": 0.6496062992125984,
+            "macro_f1": 0.655866129488267,
+            "training_time": 0.04781389236450195,
+            "prediction_time": 0.002536773681640625,
+            "total_time": 0.05035066604614258
+        }
+    },
+    {
+        "dataset": "vehicles",
+        "classifier": "SimilarityBasedForest-[correlation]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.7322834645669292,
+            "balanced_accuracy": 0.744444601469757,
+            "micro_f1": 0.7322834645669292,
+            "macro_f1": 0.7393577332356974,
+            "training_time": 0.021913766860961914,
+            "prediction_time": 0.0026242733001708984,
+            "total_time": 0.024538040161132812
+        }
+    },
+    {
+        "dataset": "vehicles",
+        "classifier": "SimilarityBasedForest-[hamming]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.6692913385826772,
+            "balanced_accuracy": 0.6785217637083099,
+            "micro_f1": 0.6692913385826772,
+            "macro_f1": 0.6817571261902847,
+            "training_time": 0.0227358341217041,
+            "prediction_time": 0.0032410621643066406,
+            "total_time": 0.025976896286010742
+        }
+    }
+]

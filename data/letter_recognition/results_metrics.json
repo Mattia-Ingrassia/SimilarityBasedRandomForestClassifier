@@ -1,0 +1,210 @@
+[
+    {
+        "dataset": "letter_recognition",
+        "classifier": "Random Forest",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9491666666666667,
+            "balanced_accuracy": 0.9496787309963571,
+            "micro_f1": 0.9491666666666667,
+            "macro_f1": 0.9496761942274253,
+            "training_time": 0.36602187156677246,
+            "prediction_time": 0.03005838394165039,
+            "total_time": 0.39608025550842285
+        }
+    },
+    {
+        "dataset": "letter_recognition",
+        "classifier": "Extra Trees",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.9605,
+            "balanced_accuracy": 0.9609419239501743,
+            "micro_f1": 0.9605,
+            "macro_f1": 0.9607731636699568,
+            "training_time": 0.2821371555328369,
+            "prediction_time": 0.03398585319519043,
+            "total_time": 0.31612300872802734
+        }
+    },
+    {
+        "dataset": "letter_recognition",
+        "classifier": "XGBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.935,
+            "balanced_accuracy": 0.9357332397078892,
+            "micro_f1": 0.935,
+            "macro_f1": 0.9357652326091551,
+            "training_time": 0.37308192253112793,
+            "prediction_time": 0.0074994564056396484,
+            "total_time": 0.3805813789367676
+        }
+    },
+    {
+        "dataset": "letter_recognition",
+        "classifier": "AdaBoost",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.16516666666666666,
+            "balanced_accuracy": 0.16753209226705948,
+            "micro_f1": 0.16516666666666666,
+            "macro_f1": 0.11579540929886246,
+            "training_time": 0.20294880867004395,
+            "prediction_time": 0.03691720962524414,
+            "total_time": 0.23986601829528809
+        }
+    },
+    {
+        "dataset": "letter_recognition",
+        "classifier": "Gradient Boosting",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8183333333333334,
+            "balanced_accuracy": 0.8193313387087856,
+            "micro_f1": 0.8183333333333334,
+            "macro_f1": 0.8217209657809469,
+            "training_time": 9.921769618988037,
+            "prediction_time": 0.0523686408996582,
+            "total_time": 9.974138259887695
+        }
+    },
+    {
+        "dataset": "letter_recognition",
+        "classifier": "SimilarityBasedForest-[cityblock]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8418333333333333,
+            "balanced_accuracy": 0.8429161658443788,
+            "micro_f1": 0.8418333333333333,
+            "macro_f1": 0.8431585775014696,
+            "training_time": 0.34856677055358887,
+            "prediction_time": 0.0444948673248291,
+            "total_time": 0.39306163787841797
+        }
+    },
+    {
+        "dataset": "letter_recognition",
+        "classifier": "SimilarityBasedForest-[cosine]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8328333333333333,
+            "balanced_accuracy": 0.8341486665055556,
+            "micro_f1": 0.8328333333333333,
+            "macro_f1": 0.8339951308275407,
+            "training_time": 0.2824380397796631,
+            "prediction_time": 0.04782986640930176,
+            "total_time": 0.33026790618896484
+        }
+    },
+    {
+        "dataset": "letter_recognition",
+        "classifier": "SimilarityBasedForest-[euclidean]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8406666666666667,
+            "balanced_accuracy": 0.8413468713550105,
+            "micro_f1": 0.8406666666666667,
+            "macro_f1": 0.8419200169089517,
+            "training_time": 0.2575805187225342,
+            "prediction_time": 0.05109834671020508,
+            "total_time": 0.30867886543273926
+        }
+    },
+    {
+        "dataset": "letter_recognition",
+        "classifier": "SimilarityBasedForest-[braycurtis]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8476666666666667,
+            "balanced_accuracy": 0.8488932794083309,
+            "micro_f1": 0.8476666666666667,
+            "macro_f1": 0.8488250479656825,
+            "training_time": 0.28122401237487793,
+            "prediction_time": 0.04581117630004883,
+            "total_time": 0.32703518867492676
+        }
+    },
+    {
+        "dataset": "letter_recognition",
+        "classifier": "SimilarityBasedForest-[canberra]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8433333333333334,
+            "balanced_accuracy": 0.8443518875574786,
+            "micro_f1": 0.8433333333333334,
+            "macro_f1": 0.8442629704524791,
+            "training_time": 0.29608654975891113,
+            "prediction_time": 0.043788909912109375,
+            "total_time": 0.3398754596710205
+        }
+    },
+    {
+        "dataset": "letter_recognition",
+        "classifier": "SimilarityBasedForest-[chebyshev]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.839,
+            "balanced_accuracy": 0.8397309753166342,
+            "micro_f1": 0.839,
+            "macro_f1": 0.839987965745412,
+            "training_time": 0.2703688144683838,
+            "prediction_time": 0.04474830627441406,
+            "total_time": 0.31511712074279785
+        }
+    },
+    {
+        "dataset": "letter_recognition",
+        "classifier": "SimilarityBasedForest-[correlation]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8331666666666667,
+            "balanced_accuracy": 0.8343441890659664,
+            "micro_f1": 0.8331666666666667,
+            "macro_f1": 0.8340216072131338,
+            "training_time": 0.27251219749450684,
+            "prediction_time": 0.050333261489868164,
+            "total_time": 0.322845458984375
+        }
+    },
+    {
+        "dataset": "letter_recognition",
+        "classifier": "SimilarityBasedForest-[hamming]",
+        "random_state": 23,
+        "test_size": 0.3,
+        "n_estimators": 25,
+        "metrics": {
+            "accuracy": 0.8336666666666667,
+            "balanced_accuracy": 0.835475824569295,
+            "micro_f1": 0.8336666666666667,
+            "macro_f1": 0.8349579918022674,
+            "training_time": 0.2730724811553955,
+            "prediction_time": 0.04259204864501953,
+            "total_time": 0.31566452980041504
+        }
+    }
+]
