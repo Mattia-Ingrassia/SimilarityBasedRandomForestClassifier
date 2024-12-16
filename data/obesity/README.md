@@ -80,7 +80,7 @@ This dataset include data for the estimation of obesity levels in individuals fr
   - Overweight_Level_I = 290 instances
   - Overweight_Level_II = 290 instances
   - Obesity_Type_I = 351 instances
-  - Obesity_Type_II = 197 instances
+  - Obesity_Type_II = 297 instances
   - Obesity_Type_III = 324 instances
  
 ---

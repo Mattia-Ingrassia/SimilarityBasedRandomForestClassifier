@@ -68,7 +68,7 @@ This dataset contains information about various properties of yeast cells. The g
 ## Dataset Details
 
 - **Has missing values?**: no
-- **Number of Instances**: 1,484 instances 
+- **Number of Instances**: 1484 instances 
 - **Number of Features**: 8
 - **Class Distribution**:
   - CYT = 463 instances
