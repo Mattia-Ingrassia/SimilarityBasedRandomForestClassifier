@@ -1,8 +1,8 @@
 # Ionosphere
 
-**Description**:  
+**Description**:
 
-This radar data was collected by a system in Goose Bay, Labrador.  This system consists of a phased array of 16 high-frequency antennas with a total transmitted power on the order of 6.4 kilowatts.  See the paper for more details.  The targets were free electrons in the ionosphere. "Good" radar returns are those showing evidence of some type of structure in the ionosphere.  "Bad" returns are those that do not; their signals pass through the ionosphere.  
+This radar data was collected by a system in Goose Bay, Labrador.  This system consists of a phased array of 16 high-frequency antennas with a total transmitted power on the order of 6.4 kilowatts.  See the paper for more details.  The targets were free electrons in the ionosphere. "Good" radar returns are those showing evidence of some type of structure in the ionosphere.  "Bad" returns are those that do not; their signals pass through the ionosphere.
 
 Received signals were processed using an autocorrelation function whose arguments are the time of a pulse and the pulse number.  There were 17 pulse numbers for the Goose Bay system.
 
@@ -27,10 +27,10 @@ Instances in this databse are described by 2 attributes per pulse number, corres
 ## Dataset Overview
 
 - **Source**: This dataset comes from [UC Irvine Machine Learning Repository - Ionosphere](https://archive.ics.uci.edu/dataset/52/ionosphere)
-  
+
 - **Domain**: Physics and Chemistry
 
-- **Format**: CSV  
+- **Format**: CSV
 
 ---
 
@@ -76,7 +76,7 @@ Instances in this databse are described by 2 attributes per pulse number, corres
 
 ## Target Variable
 
-- **Name**: *class*  
+- **Name**: *class*
 - **Type**: Categorical
 - **Values**:
   - g for good radar return
@@ -87,19 +87,21 @@ Instances in this databse are described by 2 attributes per pulse number, corres
 ## Dataset Details
 
 - **Has missing values?**: no
-- **Number of Instances**: 351 instances 
+- **Number of Instances**: 351 instances
 - **Number of Features**: 34
 - **Class Distribution**:
   - g for good radar return = 225 instances
   - b for bad radar return = 126 instances
- 
+
 ---
 
 ## File Structure
 
-- `ionosphere.csv`: Main dataset file.  
-- `README.md`: Documentation file (this file).  
-- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.  
+- `ionosphere.csv`: Main dataset file.
+- `README.md`: Documentation file (this file).
+- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.
+- `results_images/`: A folder containing the charts of the metrics analyzed.
+- `results_metrics.json`: The json file containing the results of the models for this dataset.
 
 ---
 
@@ -117,14 +119,21 @@ An example of how the dataset is structured:
 
 ## Performance Metrics
 
-TODO
-
-(Optional) Include baseline metrics from using simple models, such as accuracy, precision, recall, etc. Example:
-
-| Model         | Accuracy | Precision | Recall | F1 Score |
-|---------------|----------|-----------|--------|----------|
-| Logistic Reg. | 85%      | 83%       | 82%    | 82.5%    |
-| Random Forest | 90%      | 88%       | 87%    | 87.5%    |
+| Classifier | Accuracy | Balanced Accuracy | Micro F1 | Macro F1 | Training Time | Prediction Time | Total Time |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Random Forest | 90.6% | 90.0% | 90.6% | 89.3% | 0.031s | 0.001s | 0.033s |
+| ***Extra Trees*** | ***94.3%*** | ***92.7%*** | ***94.3%*** | ***93.4%*** | 0.017s | 0.002s | 0.019s |
+| XGBoost | 92.5% | 90.6% | 92.5% | 91.2% | 0.021s | 0.001s | 0.021s |
+| AdaBoost | 89.6% | 88.5% | 89.6% | 88.2% | 0.051s | 0.003s | 0.054s |
+| Gradient Boosting | 93.4% | 92.8% | 93.4% | 92.5% | 0.063s | 0.000s | 0.063s |
+| SimilarityForest[cityblock] | 90.6% | 90.0% | 90.6% | 89.3% | 0.023s | 0.002s | 0.025s |
+| SimilarityForest[cosine] | 84.9% | 81.1% | 84.9% | 82.1% | 0.022s | 0.002s | 0.025s |
+| SimilarityForest[euclidean] | 87.7% | 87.9% | 87.7% | 86.4% | 0.024s | 0.003s | 0.026s |
+| SimilarityForest[braycurtis] | 85.8% | 84.9% | 85.8% | 84.1% | 0.023s | 0.002s | 0.025s |
+| SimilarityForest[canberra] | 84.0% | 81.2% | 84.0% | 81.5% | 0.023s | 0.002s | 0.025s |
+| SimilarityForest[chebyshev] | 87.7% | 85.5% | 87.7% | 85.8% | 0.022s | 0.002s | 0.024s |
+| SimilarityForest[correlation] | 86.8% | 84.8% | 86.8% | 84.8% | 0.022s | 0.003s | 0.025s |
+| SimilarityForest[hamming] | 88.7% | 87.0% | 88.7% | 87.0% | 0.022s | 0.003s | 0.026s |
 
 ---
 
