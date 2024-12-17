@@ -1,6 +1,6 @@
 # Shuttle
 
-**Description**:  
+**Description**:
 
 This dataset contains information about the shuttle's flight data. The goal is to classify the different states of the shuttle based on various features.
 The shuttle dataset contains 9 attributes all of which are numerical. Approximately 80% of the data belongs to class 1
@@ -25,10 +25,10 @@ The shuttle dataset contains 9 attributes all of which are numerical. Approximat
 ## Dataset Overview
 
 - **Source**: This dataset comes from [UC Irvine Machine Learning Repository - Statlog (Shuttle)](https://archive.ics.uci.edu/dataset/148/statlog+shuttle)
-  
+
 - **Domain**: Physics and Chemistry
 
-- **Format**: CSV  
+- **Format**: CSV
 
 ---
 
@@ -51,7 +51,7 @@ The shuttle dataset contains 9 attributes all of which are numerical. Approximat
 
 ## Target Variable
 
-- **Name**: *class*  
+- **Name**: *class*
 - **Type**: Categorical
 - **Values**:
   - 1 = Rad Flow
@@ -67,7 +67,7 @@ The shuttle dataset contains 9 attributes all of which are numerical. Approximat
 ## Dataset Details
 
 - **Has missing values?**: no
-- **Number of Instances**: 58000 instances 
+- **Number of Instances**: 58000 instances
 - **Number of Features**: 9
 - **Class Distribution**:
   - 1 = Rad Flow = 45586 instances
@@ -82,9 +82,11 @@ The shuttle dataset contains 9 attributes all of which are numerical. Approximat
 
 ## File Structure
 
-- `shuttle.csv`: Main dataset file.  
-- `README.md`: Documentation file (this file).  
-- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.  
+- `shuttle.csv`: Main dataset file.
+- `README.md`: Documentation file (this file).
+- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.
+- `results_images/`: A folder containing the charts of the metrics analyzed.
+- `results_metrics.json`: The json file containing the results of the models for this dataset.
 
 ---
 
@@ -102,14 +104,21 @@ An example of how the dataset is structured:
 
 ## Performance Metrics
 
-TODO
-
-(Optional) Include baseline metrics from using simple models, such as accuracy, precision, recall, etc. Example:
-
-| Model         | Accuracy | Precision | Recall | F1 Score |
-|---------------|----------|-----------|--------|----------|
-| Logistic Reg. | 85%      | 83%       | 82%    | 82.5%    |
-| Random Forest | 90%      | 88%       | 87%    | 87.5%    |
+| Classifier | Accuracy | Balanced Accuracy | Micro F1 | Macro F1 | Training Time | Prediction Time | Total Time |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Random Forest | 100.0% | 85.2% | 100.0% | 89.4% | 0.384s | 0.018s | 0.401s |
+| Extra Trees | 100.0% | 98.7% | 100.0% | 99.2% | 0.249s | 0.031s | 0.280s |
+| XGBoost | 100.0% | 99.5% | 100.0% | 99.7% | 0.111s | 0.004s | 0.115s |
+| AdaBoost | 99.4% | 42.7% | 99.4% | 42.7% | 0.397s | 0.021s | 0.418s |
+| Gradient Boosting | 99.9% | 98.9% | 99.9% | 99.3% | 5.207s | 0.032s | 5.239s |
+| SimilarityForest[cityblock] | 99.9% | 68.8% | 99.9% | 68.5% | 0.340s | 0.040s | 0.380s |
+| SimilarityForest[cosine] | 99.9% | 85.1% | 99.9% | 83.6% | 0.290s | 0.032s | 0.322s |
+| SimilarityForest[euclidean] | 99.9% | 68.8% | 99.9% | 67.9% | 0.333s | 0.041s | 0.374s |
+| SimilarityForest[braycurtis] | 99.9% | 98.4% | 99.9% | 97.1% | 0.365s | 0.034s | 0.399s |
+| SimilarityForest[canberra] | 100.0% | 99.2% | 100.0% | 99.5% | 0.321s | 0.034s | 0.354s |
+| SimilarityForest[chebyshev] | 99.9% | 66.8% | 99.9% | 67.9% | 0.281s | 0.042s | 0.323s |
+| SimilarityForest[correlation] | 100.0% | 89.9% | 100.0% | 91.6% | 0.406s | 0.034s | 0.440s |
+| SimilarityForest[hamming] | 99.9% | 88.4% | 99.9% | 89.4% | 0.282s | 0.031s | 0.313s |
 
 ---
 
