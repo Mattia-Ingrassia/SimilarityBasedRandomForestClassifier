@@ -1,6 +1,6 @@
 # Obesity
 
-**Description**:  
+**Description**:
 
 This dataset include data for the estimation of obesity levels in individuals from the countries of Mexico, Peru and Colombia, based on their eating habits and physical condition.
 
@@ -23,10 +23,10 @@ This dataset include data for the estimation of obesity levels in individuals fr
 ## Dataset Overview
 
 - **Source**: This dataset comes from [UC Irvine Machine Learning Repository - Estimation of Obesity Levels Based On Eating Habits and Physical Condition](https://archive.ics.uci.edu/dataset/544/estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition)
-  
+
 - **Domain**: Health and Medicine
 
-- **Format**: CSV  
+- **Format**: CSV
 
 ---
 
@@ -56,7 +56,7 @@ This dataset include data for the estimation of obesity levels in individuals fr
 
 ## Target Variable
 
-- **Name**: *NObeyesdad*  
+- **Name**: *NObeyesdad*
 - **Type**: Categorical
 - **Values**:
   - Insufficient_Weight
@@ -72,7 +72,7 @@ This dataset include data for the estimation of obesity levels in individuals fr
 ## Dataset Details
 
 - **Has missing values?**: no
-- **Number of Instances**: 2111 instances 
+- **Number of Instances**: 2111 instances
 - **Number of Features**: 16
 - **Class Distribution**:
   - Insufficient_Weight = 272 instances
@@ -82,14 +82,16 @@ This dataset include data for the estimation of obesity levels in individuals fr
   - Obesity_Type_I = 351 instances
   - Obesity_Type_II = 297 instances
   - Obesity_Type_III = 324 instances
- 
+
 ---
 
 ## File Structure
 
-- `obesity.csv`: Main dataset file.  
-- `README.md`: Documentation file (this file).  
-- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.  
+- `obesity.csv`: Main dataset file.
+- `README.md`: Documentation file (this file).
+- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.
+- `results_images/`: A folder containing the charts of the metrics analyzed.
+- `results_metrics.json`: The json file containing the results of the models for this datase
 
 ---
 
@@ -107,17 +109,24 @@ An example of how the dataset is structured:
 
 ## Performance Metrics
 
-TODO
-
-(Optional) Include baseline metrics from using simple models, such as accuracy, precision, recall, etc. Example:
-
-| Model         | Accuracy | Precision | Recall | F1 Score |
-|---------------|----------|-----------|--------|----------|
-| Logistic Reg. | 85%      | 83%       | 82%    | 82.5%    |
-| Random Forest | 90%      | 88%       | 87%    | 87.5%    |
+| Classifier | Accuracy | Balanced Accuracy | Micro F1 | Macro F1 | Training Time | Prediction Time | Total Time |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Random Forest | 92.0% | 91.8% | 92.0% | 92.0% | 0.055s | 0.002s | 0.058s |
+| Extra Trees | 89.3% | 89.4% | 89.3% | 89.4% | 0.040s | 0.003s | 0.044s |
+| ***XGBoost*** | ***97.2%*** | ***97.2%*** | ***97.2%*** | ***97.3%*** | 0.083s | 0.001s | 0.085s |
+| AdaBoost | 48.4% | 51.6% | 48.4% | 43.9% | 0.073s | 0.004s | 0.077s |
+| Gradient Boosting | 93.4% | 93.6% | 93.4% | 93.5% | 0.688s | 0.003s | 0.691s |
+| SimilarityForest[cityblock] | 91.6% | 91.9% | 91.6% | 91.6% | 0.099s | 0.004s | 0.103s |
+| SimilarityForest[cosine] | 87.1% | 87.0% | 87.1% | 87.1% | 0.033s | 0.004s | 0.037s |
+| SimilarityForest[euclidean] | 87.9% | 88.3% | 87.9% | 88.0% | 0.022s | 0.004s | 0.026s |
+| SimilarityForest[braycurtis] | 90.7% | 91.1% | 90.7% | 90.7% | 0.033s | 0.004s | 0.036s |
+| SimilarityForest[canberra] | 90.2% | 90.5% | 90.2% | 90.3% | 0.033s | 0.004s | 0.037s |
+| SimilarityForest[chebyshev] | 89.3% | 89.6% | 89.3% | 89.3% | 0.023s | 0.004s | 0.026s |
+| SimilarityForest[correlation] | 87.4% | 87.4% | 87.4% | 87.5% | 0.033s | 0.003s | 0.036s |
+| SimilarityForest[hamming] | 94.5% | 94.7% | 94.5% | 94.6% | 0.033s | 0.003s | 0.036s |
 
 ---
 
 ## Acknowledgments
 
-Estimation of Obesity Levels Based On Eating Habits and Physical Condition  [Dataset]. (2019). UCI Machine Learning Repository. https://doi.org/10.24432/C5H31Z.
+Estimation of Obesity Levels Based On Eating Habits and Physical Condition [Dataset]. (2019). UCI Machine Learning Repository. https://doi.org/10.24432/C5H31Z.
