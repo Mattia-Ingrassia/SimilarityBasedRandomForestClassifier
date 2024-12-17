@@ -1,6 +1,6 @@
 # Telescope
 
-**Description**:  
+**Description**:
 
 The data are MC generated (see below) to simulate registration of high energy gamma particles in a ground-based atmospheric Cherenkov gamma telescope using the imaging technique. Cherenkov gamma telescope observes high energy gamma rays, taking advantage of the radiation emitted by charged particles produced inside the electromagnetic showers initiated by the gammas, and developing in the atmosphere. This Cherenkov radiation (of visible to UV wavelengths) leaks through the atmosphere and gets recorded in the detector, allowing reconstruction of the shower parameters. The available information consists of pulses left by the incoming Cherenkov photons on the photomultiplier tubes, arranged in a plane, the camera. Depending on the energy of the primary gamma, a total of few hundreds to some 10000 Cherenkov photons get collected, in patterns (called the shower image), allowing to discriminate statistically those caused by primary gammas (signal) from the images of hadronic showers initiated by cosmic rays in the upper atmosphere (background).
 
@@ -23,10 +23,10 @@ The data are MC generated (see below) to simulate registration of high energy ga
 ## Dataset Overview
 
 - **Source**: This dataset comes from [UC Irvine Machine Learning Repository - MAGIC Gamma Telescope](https://archive.ics.uci.edu/dataset/159/magic+gamma+telescope)
-  
+
 - **Domain**: Physics and Chemistry
 
-- **Format**: CSV  
+- **Format**: CSV
 
 ---
 
@@ -50,7 +50,7 @@ The data are MC generated (see below) to simulate registration of high energy ga
 
 ## Target Variable
 
-- **Name**: *class*  
+- **Name**: *class*
 - **Type**: Categorical
 - **Values**:
   - g = Gamma (signal)
@@ -61,19 +61,21 @@ The data are MC generated (see below) to simulate registration of high energy ga
 ## Dataset Details
 
 - **Has missing values?**: no
-- **Number of Instances**: 19020 instances 
+- **Number of Instances**: 19020 instances
 - **Number of Features**: 10
 - **Class Distribution**:
   - g = 12332 instances
   - h = 6688 instances
- 
+
 ---
 
 ## File Structure
 
-- `telescope.csv`: Main dataset file.  
-- `README.md`: Documentation file (this file).  
-- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.  
+- `telescope.csv`: Main dataset file.
+- `README.md`: Documentation file (this file).
+- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.
+- `results_images/`: A folder containing the charts of the metrics analyzed.
+- `results_metrics.json`: The json file containing the results of the models for this dataset.
 
 ---
 
@@ -91,14 +93,21 @@ An example of how the dataset is structured:
 
 ## Performance Metrics
 
-TODO
-
-(Optional) Include baseline metrics from using simple models, such as accuracy, precision, recall, etc. Example:
-
-| Model         | Accuracy | Precision | Recall | F1 Score |
-|---------------|----------|-----------|--------|----------|
-| Logistic Reg. | 85%      | 83%       | 82%    | 82.5%    |
-| Random Forest | 90%      | 88%       | 87%    | 87.5%    |
+| Classifier | Accuracy | Balanced Accuracy | Micro F1 | Macro F1 | Training Time | Prediction Time | Total Time |
+|  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |
+| Random Forest | 87.6% | 85.0% | 87.6% | 86.1% | 1.215s | 0.018s | 1.233s |
+| Extra Trees | 86.8% | 83.8% | 86.8% | 85.0% | 0.262s | 0.024s | 0.286s |
+| XGBoost | 86.9% | 84.0% | 86.9% | 85.2% | 0.039s | 0.001s | 0.041s |
+| AdaBoost | 81.9% | 77.8% | 81.9% | 79.1% | 0.509s | 0.007s | 0.515s |
+| Gradient Boosting | 84.0% | 79.5% | 84.0% | 81.3% | 1.299s | 0.003s | 1.302s |
+| SimilarityForest[cityblock] | 80.9% | 78.7% | 80.9% | 79.0% | 0.621s | 0.023s | 0.644s |
+| SimilarityForest[cosine] | 81.1% | 79.2% | 81.1% | 79.4% | 0.554s | 0.021s | 0.575s |
+| SimilarityForest[euclidean] | 80.2% | 78.3% | 80.2% | 78.4% | 0.578s | 0.023s | 0.600s |
+| SimilarityForest[braycurtis] | 81.1% | 79.0% | 81.1% | 79.3% | 0.536s | 0.023s | 0.559s |
+| SimilarityForest[canberra] | 80.7% | 78.7% | 80.7% | 78.9% | 0.618s | 0.023s | 0.641s |
+| SimilarityForest[chebyshev] | 80.4% | 78.3% | 80.4% | 78.6% | 0.542s | 0.021s | 0.564s |
+| SimilarityForest[correlation] | 80.5% | 78.7% | 80.5% | 78.8% | 0.624s | 0.022s | 0.645s |
+| SimilarityForest[hamming] | 81.2% | 79.3% | 81.2% | 79.5% | 0.541s | 0.021s | 0.563s |
 
 ---
 
