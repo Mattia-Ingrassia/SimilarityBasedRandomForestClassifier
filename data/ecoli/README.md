@@ -1,6 +1,6 @@
 # Ecoli
 
-**Description**:  
+**Description**:
 
 This data contains protein localization sites
 
@@ -11,7 +11,6 @@ This data contains protein localization sites
   - [Table of Contents](#table-of-contents)
   - [Dataset Overview](#dataset-overview)
   - [Variables](#variables)
-  - [Variables](#variables-1)
   - [Target Variable](#target-variable)
   - [Dataset Details](#dataset-details)
   - [File Structure](#file-structure)
@@ -24,14 +23,12 @@ This data contains protein localization sites
 ## Dataset Overview
 
 - **Source**: This dataset comes from [UC Irvine Machine Learning Repository - Ecoli](https://archive.ics.uci.edu/dataset/39/ecoli)
-  
+
 - **Domain**: Biology
 
-- **Format**: CSV  
+- **Format**: CSV
 
 ---
-
-## Variables
 
 ## Variables
 
@@ -60,7 +57,7 @@ This data contains protein localization sites
 ## Dataset Details
 
 - **Has missing values?**: no
-- **Number of Instances**: 336 instances 
+- **Number of Instances**: 336 instances
 - **Number of Features**: 7
 - **Class Distribution**:
   - cp: 143 instances
@@ -76,9 +73,11 @@ This data contains protein localization sites
 
 ## File Structure
 
-- `ecoli.csv`: Main dataset file.  
-- `README.md`: Documentation file (this file).  
-- `configuration.json`: Configuration file containing the istructions for DatasetPreprocessor.  
+- `ecoli.csv`: Main dataset file.
+- `README.md`: Documentation file (this file).
+- `configuration.json`: Configuration file containing the istructions for DatasetPreprocessor.
+- `results_images/`: A folder containing the charts of the metrics analyzed.
+- `results_metrics.json`: The json file containing the results of the models for this dataset.
 
 ---
 
@@ -96,14 +95,21 @@ An example of how the dataset is structured:
 
 ## Performance Metrics
 
-TODO
-
-(Optional) Include baseline metrics from using simple models, such as accuracy, precision, recall, etc. Example:
-
-| Model         | Accuracy | Precision | Recall | F1 Score |
-|---------------|----------|-----------|--------|----------|
-| Logistic Reg. | 85%      | 83%       | 82%    | 82.5%    |
-| Random Forest | 90%      | 88%       | 87%    | 87.5%    |
+| Classifier | Accuracy | Balanced Accuracy | Micro F1 | Macro F1 | Training Time | Prediction Time | Total Time |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ***Random Forest*** | ***88.1%*** | ***63.9%*** | ***88.1%*** | ***61.0%*** | 0.023s | 0.001s | 0.025s |
+| Extra Trees | 86.1% | 62.5% | 86.1% | 59.0% | 0.018s | 0.001s | 0.019s |
+| XGBoost | 84.2% | 62.3% | 84.2% | 58.3% | 0.045s | 0.001s | 0.046s |
+| AdaBoost | 33.7% | 23.1% | 33.7% | 15.9% | 0.033s | 0.004s | 0.037s |
+| Gradient Boosting | 85.1% | 61.6% | 85.1% | 59.1% | 0.142s | 0.001s | 0.143s |
+| SimilarityForest[cityblock] | 74.3% | 50.7% | 74.3% | 49.8% | 0.049s | 0.005s | 0.054s |
+| SimilarityForest[cosine] | 64.4% | 38.7% | 64.4% | 31.9% | 0.023s | 0.006s | 0.029s |
+| SimilarityForest[euclidean] | 73.3% | 55.8% | 73.3% | 48.7% | 0.023s | 0.004s | 0.027s |
+| SimilarityForest[braycurtis] | 65.3% | 39.2% | 65.3% | 32.8% | 0.022s | 0.005s | 0.027s |
+| SimilarityForest[canberra] | 69.3% | 38.2% | 69.3% | 35.7% | 0.022s | 0.003s | 0.025s |
+| SimilarityForest[chebyshev] | 70.3% | 46.0% | 70.3% | 43.1% | 0.022s | 0.002s | 0.024s |
+| SimilarityForest[correlation] | 58.4% | 21.7% | 58.4% | 21.5% | 0.022s | 0.004s | 0.026s |
+| SimilarityForest[hamming] | 58.4% | 23.0% | 58.4% | 23.2% | 0.022s | 0.004s | 0.026s |
 
 ---
 
