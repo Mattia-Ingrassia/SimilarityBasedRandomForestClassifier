@@ -300,10 +300,10 @@ def process_dataset(dataset_name: str, path_data: str) -> None:
         # Append the unique best SimilarityForest models to df_others
         df_others = pd.concat([df_others, best_similarity_models], ignore_index=True)
 
-        generate_comparison_charts(df_others, images_path, "comparison with state-of-the-art ensemble models and SimilarityForest", "plasma")
+        generate_comparison_charts(df_others, images_path, "comparison between state-of-the-art ensemble models and SimilarityForest", "plasma")
 
     if not df_similarity_forests.empty:
-        generate_comparison_charts(df_similarity_forests, images_path, "comparison with different similarity metrics", "mako", is_similarity_forest=True)
+        generate_comparison_charts(df_similarity_forests, images_path, "comparison between SimilarityForests with different similarity metrics", "mako", is_similarity_forest=True)
 
 
 def create_accuracy_plot_with_confidence_interval(dataframe: pd.DataFrame, metric: list, file_path: str, title: str, is_similarity_forest: bool = False) -> None:
