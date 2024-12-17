@@ -79,7 +79,7 @@ Predict whether annual income of an individual exceeds $50K/yr based on census d
 - `README.md`: Documentation file (this file).
 - `configuration.json`: Configuration file containing the istructions for DatasetPreprocessor.
 - `results_images/`: A folder containing the charts of the metrics analyzed.
-- `results_metric.json`: The json file containing the results of the models for this dataset.
+- `results_metrics.json`: The json file containing the results of the models for this dataset.
 
 ---
 
