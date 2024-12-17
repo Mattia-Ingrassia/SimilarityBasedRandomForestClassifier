@@ -1,6 +1,6 @@
 # Glass
 
-**Description**:  
+**Description**:
 
 From USA Forensic Science Service; 6 types of glass; defined in terms of their oxide content (i.e. Na, Fe, K, etc)
 
@@ -23,10 +23,10 @@ From USA Forensic Science Service; 6 types of glass; defined in terms of their o
 ## Dataset Overview
 
 - **Source**: This dataset comes from [UC Irvine Machine Learning Repository - Glass Identification](https://archive.ics.uci.edu/dataset/42/glass+identification)
-  
+
 - **Domain**: Physics and Chemistry
 
-- **Format**: CSV  
+- **Format**: CSV
 
 ---
 
@@ -50,7 +50,7 @@ From USA Forensic Science Service; 6 types of glass; defined in terms of their o
 
 ## Target Variable
 
-- **Name**: Type_of_glass  
+- **Name**: Type_of_glass
 - **Type**: Categorical
 - **Values**: [1, 2, 3, 5, 6, 7]
 
@@ -59,7 +59,7 @@ From USA Forensic Science Service; 6 types of glass; defined in terms of their o
 ## Dataset Details
 
 - **Has missing values?**: no
-- **Number of Instances**: 214 instances 
+- **Number of Instances**: 214 instances
 - **Number of Features**: 9
 - **Class Distribution**:
   - 1: 70 instances
@@ -73,9 +73,11 @@ From USA Forensic Science Service; 6 types of glass; defined in terms of their o
 
 ## File Structure
 
-- `glass.csv`: Main dataset file.  
-- `README.md`: Documentation file (this file).  
-- `configuration.json`: Configuration file containing the istructions for DatasetPreprocessor.  
+- `glass.csv`: Main dataset file.
+- `README.md`: Documentation file (this file).
+- `configuration.json`: Configuration file containing the istructions for DatasetPreprocessor.
+- `results_images/`: A folder containing the charts of the metrics analyzed.
+- `results_metrics.json`: The json file containing the results of the models for this dataset.
 
 ---
 
@@ -83,24 +85,31 @@ From USA Forensic Science Service; 6 types of glass; defined in terms of their o
 
 An example of how the dataset is structured:
 
-| Id | RI | Na | Mg | Al | Si | K | Ca | Ba | Fe | class | 
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | 
-| 70 | 1.52300 | 13.31 | 3.58 | 0.82 | 71.99 | 0.12 | 10.17 | 0.00 | 0.03 | 1 | 
-| 71 | 1.51574 | 14.86 | 3.67 | 1.74 | 71.87 | 0.16 | 7.36 | 0.00 | 0.12 | 2 | 
-| 189 | 1.52247 | 14.86 | 2.20 | 2.06 | 70.26 | 0.76 | 9.76 | 0.00 | 0.00 | 7 | 
+| Id | RI | Na | Mg | Al | Si | K | Ca | Ba | Fe | class |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 70 | 1.52300 | 13.31 | 3.58 | 0.82 | 71.99 | 0.12 | 10.17 | 0.00 | 0.03 | 1 |
+| 71 | 1.51574 | 14.86 | 3.67 | 1.74 | 71.87 | 0.16 | 7.36 | 0.00 | 0.12 | 2 |
+| 189 | 1.52247 | 14.86 | 2.20 | 2.06 | 70.26 | 0.76 | 9.76 | 0.00 | 0.00 | 7 |
 
 ---
 
 ## Performance Metrics
 
-TODO
-
-(Optional) Include baseline metrics from using simple models, such as accuracy, precision, recall, etc. Example:
-
-| Model         | Accuracy | Precision | Recall | F1 Score |
-|---------------|----------|-----------|--------|----------|
-| Logistic Reg. | 85%      | 83%       | 82%    | 82.5%    |
-| Random Forest | 90%      | 88%       | 87%    | 87.5%    |
+| Classifier | Accuracy | Balanced Accuracy | Micro F1 | Macro F1 | Training Time | Prediction Time | Total Time |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ***Random Forest*** | ***80.0%*** | ***80.8%*** | ***80.0%*** | 76.7% | 0.023s | 0.001s | 0.024s |
+| Extra Trees | 76.9% | 67.4% | 76.9% | 68.7% | 0.018s | 0.001s | 0.020s |
+| ***XGBoost*** | 78.5% | 79.8% | 78.5% | ***77.5%*** | 0.036s | 0.001s | 0.037s |
+| AdaBoost | 49.2% | 37.0% | 49.2% | 35.2% | 0.033s | 0.003s | 0.035s |
+| Gradient Boosting | 66.2% | 65.5% | 66.2% | 64.8% | 0.120s | 0.001s | 0.120s |
+| SimilarityForest[cityblock] | 41.5% | 19.0% | 41.5% | 18.0% | 0.012s | 0.005s | 0.017s |
+| SimilarityForest[cosine] | 60.0% | 61.6% | 60.0% | 56.5% | 0.023s | 0.003s | 0.025s |
+| SimilarityForest[euclidean] | 63.1% | 52.2% | 63.1% | 48.1% | 0.023s | 0.002s | 0.025s |
+| SimilarityForest[braycurtis] | 55.4% | 62.2% | 55.4% | 54.8% | 0.012s | 0.002s | 0.014s |
+| SimilarityForest[canberra] | 60.0% | 47.0% | 60.0% | 46.3% | 0.012s | 0.002s | 0.014s |
+| SimilarityForest[chebyshev] | 61.5% | 48.3% | 61.5% | 43.3% | 0.012s | 0.002s | 0.014s |
+| SimilarityForest[correlation] | 60.0% | 61.6% | 60.0% | 56.5% | 0.012s | 0.002s | 0.014s |
+| SimilarityForest[hamming] | 53.8% | 47.5% | 53.8% | 44.4% | 0.022s | 0.003s | 0.025s |
 
 ---
 
