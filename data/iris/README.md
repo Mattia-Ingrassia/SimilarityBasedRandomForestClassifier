@@ -1,6 +1,6 @@
 # Iris
 
-**Description**:  
+**Description**:
 
 This is one of the earliest datasets used in the literature on classification methods and widely used in statistics and machine learning.  The data set contains 3 classes of 50 instances each, where each class refers to a type of iris plant.  One class is linearly separable from the other 2; the latter are not linearly separable from each other.
 
@@ -23,10 +23,10 @@ This is one of the earliest datasets used in the literature on classification me
 ## Dataset Overview
 
 - **Source**: This dataset comes from [UC Irvine Machine Learning Repository - Iris](https://archive.ics.uci.edu/dataset/53/iris)
-  
+
 - **Domain**: Biology
 
-- **Format**: CSV  
+- **Format**: CSV
 
 ---
 
@@ -44,7 +44,7 @@ This is one of the earliest datasets used in the literature on classification me
 
 ## Target Variable
 
-- **Name**: *class*  
+- **Name**: *class*
 - **Type**: Categorical
 - **Values**:
   - Iris-setosa
@@ -56,20 +56,22 @@ This is one of the earliest datasets used in the literature on classification me
 ## Dataset Details
 
 - **Has missing values?**: no
-- **Number of Instances**: 150 instances 
+- **Number of Instances**: 150 instances
 - **Number of Features**: 4
 - **Class Distribution**:
   - Iris-setosa = 50 instances
   - Iris-versicolor = 50 instances
   - Iris-virginica = 50 instances
- 
+
 ---
 
 ## File Structure
 
-- `iris.csv`: Main dataset file.  
-- `README.md`: Documentation file (this file).  
-- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.  
+- `iris.csv`: Main dataset file.
+- `README.md`: Documentation file (this file).
+- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.
+- `results_images/`: A folder containing the charts of the metrics analyzed.
+- `results_metrics.json`: The json file containing the results of the models for this dataset.
 
 ---
 
@@ -88,14 +90,21 @@ An example of how the dataset is structured:
 
 ## Performance Metrics
 
-TODO
-
-(Optional) Include baseline metrics from using simple models, such as accuracy, precision, recall, etc. Example:
-
-| Model         | Accuracy | Precision | Recall | F1 Score |
-|---------------|----------|-----------|--------|----------|
-| Logistic Reg. | 95%      | 94%       | 94%    | 94.5%    |
-| Random Forest | 97%      | 96%       | 96%    | 96.5%    |
+| Classifier | Accuracy | Balanced Accuracy | Micro F1 | Macro F1 | Training Time | Prediction Time | Total Time |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Random Forest | 97.8% | 97.4% | 97.8% | 97.5% | 0.022s | 0.001s | 0.023s |
+| Extra Trees | 97.8% | 97.4% | 97.8% | 97.5% | 0.015s | 0.001s | 0.017s |
+| XGBoost | 97.8% | 97.4% | 97.8% | 97.5% | 0.018s | 0.001s | 0.018s |
+| AdaBoost | 95.6% | 94.9% | 95.6% | 95.0% | 0.029s | 0.003s | 0.032s |
+| Gradient Boosting | 97.8% | 97.4% | 97.8% | 97.5% | 0.040s | 0.001s | 0.041s |
+| SimilarityForest[cityblock] | 95.6% | 95.1% | 95.6% | 95.1% | 0.012s | 0.002s | 0.014s |
+| SimilarityForest[cosine] | 95.6% | 94.9% | 95.6% | 95.0% | 0.012s | 0.002s | 0.014s |
+| SimilarityForest[euclidean] | 95.6% | 95.1% | 95.6% | 95.1% | 0.012s | 0.002s | 0.014s |
+| SimilarityForest[braycurtis] | 97.8% | 97.4% | 97.8% | 97.5% | 0.012s | 0.002s | 0.014s |
+| SimilarityForest[canberra] | 97.8% | 97.4% | 97.8% | 97.5% | 0.012s | 0.002s | 0.014s |
+| SimilarityForest[chebyshev] | 97.8% | 97.4% | 97.8% | 97.5% | 0.012s | 0.002s | 0.014s |
+| SimilarityForest[correlation] | 93.3% | 92.5% | 93.3% | 92.6% | 0.012s | 0.002s | 0.014s |
+| ***SimilarityForest[hamming]*** | ***100.0%*** | ***100.0%*** | ***100.0%*** | ***100.0%*** | 0.012s | 0.004s | 0.016s |
 
 ---
 
