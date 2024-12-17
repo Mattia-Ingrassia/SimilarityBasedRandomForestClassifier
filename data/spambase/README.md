@@ -1,6 +1,6 @@
 # Spambase
 
-**Description**:  
+**Description**:
 
 This dataset contains information about emails, with the goal of classifying them as spam or non-spam based on various attributes extracted from the email content.
 
@@ -23,10 +23,10 @@ This dataset contains information about emails, with the goal of classifying the
 ## Dataset Overview
 
 - **Source**: This dataset comes from [UC Irvine Machine Learning Repository - Spambase](https://archive.ics.uci.edu/ml/datasets/Spambase)
-  
+
 - **Domain**: Email Filtering
 
-- **Format**: CSV  
+- **Format**: CSV
 
 ---
 
@@ -99,7 +99,7 @@ List the features (columns) in the dataset along with descriptions, data types, 
 
 ## Target Variable
 
-- **Name**: *class*  
+- **Name**: *class*
 - **Type**: Binary
 - **Values**:
   - 0 = Non-spam
@@ -110,19 +110,21 @@ List the features (columns) in the dataset along with descriptions, data types, 
 ## Dataset Details
 
 - **Has missing values?**: no
-- **Number of Instances**: 4601 instances 
+- **Number of Instances**: 4601 instances
 - **Number of Features**: 57
 - **Class Distribution**:
   - 0 = Non-spam = 2788 instances
   - 1 = Spam = 1813 instances
- 
+
 ---
 
 ## File Structure
 
-- `spambase.csv`: Main dataset file.  
-- `README.md`: Documentation file (this file).  
-- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.  
+- `spambase.csv`: Main dataset file.
+- `README.md`: Documentation file (this file).
+- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.
+- `results_images/`: A folder containing the charts of the metrics analyzed.
+- `results_metrics.json`: The json file containing the results of the models for this dataset.
 
 ---
 
@@ -141,14 +143,21 @@ An example of how the dataset is structured:
 
 ## Performance Metrics
 
-TODO
-
-(Optional) Include baseline metrics from using simple models, such as accuracy, precision, recall, etc. Example:
-
-| Model         | Accuracy | Precision | Recall | F1 Score |
-|---------------|----------|-----------|--------|----------|
-| Logistic Reg. | 85%      | 83%       | 82%    | 82.5%    |
-| Random Forest | 90%      | 88%       | 87%    | 87.5%    |
+| Classifier | Accuracy | Balanced Accuracy | Micro F1 | Macro F1 | Training Time | Prediction Time | Total Time |
+|  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |
+| Random Forest | 95.0% | 94.6% | 95.0% | 94.8% | 0.122s | 0.004s | 0.126s |
+| Extra Trees | 94.4% | 93.9% | 94.4% | 94.1% | 0.084s | 0.006s | 0.089s |
+| XGBoost | 95.1% | 94.9% | 95.1% | 95.0% | 0.036s | 0.001s | 0.037s |
+| AdaBoost | 92.5% | 92.0% | 92.5% | 92.2% | 0.146s | 0.004s | 0.150s |
+| Gradient Boosting | 93.0% | 92.3% | 93.0% | 92.7% | 0.306s | 0.001s | 0.307s |
+| SimilarityForest[cityblock] | 89.4% | 88.8% | 89.4% | 88.9% | 0.266s | 0.007s | 0.274s |
+| SimilarityForest[cosine] | 89.1% | 88.8% | 89.1% | 88.8% | 0.239s | 0.009s | 0.248s |
+| SimilarityForest[euclidean] | 90.2% | 90.4% | 90.2% | 90.0% | 0.203s | 0.007s | 0.210s |
+| SimilarityForest[braycurtis] | 90.6% | 90.0% | 90.6% | 90.2% | 0.241s | 0.009s | 0.250s |
+| SimilarityForest[canberra] | 90.7% | 90.3% | 90.7% | 90.4% | 0.216s | 0.010s | 0.226s |
+| SimilarityForest[chebyshev] | 90.2% | 89.6% | 90.2% | 89.8% | 0.271s | 0.008s | 0.279s |
+| SimilarityForest[correlation] | 89.9% | 89.6% | 89.9% | 89.5% | 0.243s | 0.008s | 0.252s |
+| SimilarityForest[hamming] | 89.4% | 88.8% | 89.4% | 89.0% | 0.233s | 0.008s | 0.241s |
 
 ---
 
