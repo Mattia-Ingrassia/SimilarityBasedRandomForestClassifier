@@ -1,8 +1,8 @@
 # Letter Recognition
 
-**Description**:  
+**Description**:
 
-The objective is to identify each of a large number of black-and-white rectangular pixel displays as one of the 26 capital letters in the English alphabet.  The character images were based on 20 different fonts and each letter within these 20 fonts was randomly distorted to produce a file of 20,000 unique stimuli.  Each stimulus was converted into 16 primitive numerical attributes (statistical moments and edge counts) which were then scaled to fit into a range of integer values from 0 through 15.  We typically train on the first 16000 items and then use the resulting model to predict the letter category for the remaining 4000.  See the article cited below for more details.
+The objective is to identify each of a large number of black-and-white rectangular pixel displays as one of the 26 capital letters in the English alphabet. The character images were based on 20 different fonts and each letter within these 20 fonts was randomly distorted to produce a file of 20,000 unique stimuli. Each stimulus was converted into 16 primitive numerical attributes (statistical moments and edge counts) which were then scaled to fit into a range of integer values from 0 through 15. We typically train on the first 16000 items and then use the resulting model to predict the letter category for the remaining 4000. See the article cited below for more details.
 
 ---
 
@@ -23,10 +23,10 @@ The objective is to identify each of a large number of black-and-white rectangul
 ## Dataset Overview
 
 - **Source**: This dataset comes from [UC Irvine Machine Learning Repository - Letter Recognition](https://archive.ics.uci.edu/dataset/59/letter+recognition)
-  
+
 - **Domain**: Computer Science
 
-- **Format**: CSV  
+- **Format**: CSV
 
 ---
 
@@ -56,7 +56,7 @@ The objective is to identify each of a large number of black-and-white rectangul
 
 ## Target Variable
 
-- **Name**: *letter*  
+- **Name**: *letter*
 - **Type**: Categorical
 - **Values**:
   - A-Z (26 capital letters)
@@ -66,9 +66,9 @@ The objective is to identify each of a large number of black-and-white rectangul
 ## Dataset Details
 
 - **Has missing values?**: no
-- **Number of Instances**: 20000 instances 
+- **Number of Instances**: 20000 instances
 - **Number of Features**: 16
-- **Class Distribution**: 
+- **Class Distribution**:
   - A: 789 instances
   - B: 766 instances
   - C: 736 instances
@@ -100,9 +100,11 @@ The objective is to identify each of a large number of black-and-white rectangul
 
 ## File Structure
 
-- `letter_recognition.csv`: Main dataset file.  
-- `README.md`: Documentation file (this file).  
-- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.  
+- `letter_recognition.csv`: Main dataset file.
+- `README.md`: Documentation file (this file).
+- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.
+- `results_images/`: A folder containing the charts of the metrics analyzed.
+- `results_metrics.json`: The json file containing the results of the models for this dataset.
 
 ---
 
@@ -120,14 +122,21 @@ An example of how the dataset is structured:
 
 ## Performance Metrics
 
-TODO
-
-(Optional) Include baseline metrics from using simple models, such as accuracy, precision, recall, etc. Example:
-
-| Model         | Accuracy | Precision | Recall | F1 Score |
-|---------------|----------|-----------|--------|----------|
-| Logistic Reg. | 85%      | 83%       | 82%    | 82.5%    |
-| Random Forest | 90%      | 88%       | 87%    | 87.5%    |
+| Classifier | Accuracy | Balanced Accuracy | Micro F1 | Macro F1 | Training Time | Prediction Time | Total Time |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Random Forest | 94.9% | 95.0% | 94.9% | 95.0% | 0.366s | 0.030s | 0.396s |
+| ***Extra Trees*** | ***96.0%*** | ***96.1%*** | ***96.0%*** | ***96.1%*** | 0.282s | 0.034s | 0.316s |
+| XGBoost | 93.5% | 93.6% | 93.5% | 93.6% | 0.373s | 0.007s | 0.381s |
+| AdaBoost | 16.5% | 16.8% | 16.5% | 11.6% | 0.203s | 0.037s | 0.240s |
+| Gradient Boosting | 81.8% | 81.9% | 81.8% | 82.2% | 9.922s | 0.052s | 9.974s |
+| SimilarityForest[cityblock] | 84.2% | 84.3% | 84.2% | 84.3% | 0.349s | 0.044s | 0.393s |
+| SimilarityForest[cosine] | 83.3% | 83.4% | 83.3% | 83.4% | 0.282s | 0.048s | 0.330s |
+| SimilarityForest[euclidean] | 84.1% | 84.1% | 84.1% | 84.2% | 0.258s | 0.051s | 0.309s |
+| SimilarityForest[braycurtis] | 84.8% | 84.9% | 84.8% | 84.9% | 0.281s | 0.046s | 0.327s |
+| SimilarityForest[canberra] | 84.3% | 84.4% | 84.3% | 84.4% | 0.296s | 0.044s | 0.340s |
+| SimilarityForest[chebyshev] | 83.9% | 84.0% | 83.9% | 84.0% | 0.270s | 0.045s | 0.315s |
+| SimilarityForest[correlation] | 83.3% | 83.4% | 83.3% | 83.4% | 0.273s | 0.050s | 0.323s |
+| SimilarityForest[hamming] | 83.4% | 83.5% | 83.4% | 83.5% | 0.273s | 0.043s | 0.316s |
 
 ---
 
