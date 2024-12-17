@@ -1,6 +1,6 @@
 # Yeast
 
-**Description**:  
+**Description**:
 
 This dataset contains information about various properties of yeast cells. The goal is to classify the localization sites of proteins within the cell based on their attributes.
 
@@ -23,10 +23,10 @@ This dataset contains information about various properties of yeast cells. The g
 ## Dataset Overview
 
 - **Source**: This dataset comes from [UC Irvine Machine Learning Repository - Yeast](https://archive.ics.uci.edu/dataset/110/yeast)
-  
+
 - **Domain**: Biology
 
-- **Format**: CSV  
+- **Format**: CSV
 
 ---
 
@@ -49,7 +49,7 @@ This dataset contains information about various properties of yeast cells. The g
 
 ## Target Variable
 
-- **Name**: *localization_site*  
+- **Name**: *localization_site*
 - **Type**: Categorical
 - **Values**:
   - CYT = Cytoplasm
@@ -68,7 +68,7 @@ This dataset contains information about various properties of yeast cells. The g
 ## Dataset Details
 
 - **Has missing values?**: no
-- **Number of Instances**: 1484 instances 
+- **Number of Instances**: 1484 instances
 - **Number of Features**: 8
 - **Class Distribution**:
   - CYT = 463 instances
@@ -81,14 +81,16 @@ This dataset contains information about various properties of yeast cells. The g
   - VAC = 30 instances
   - POX = 20 instances
   - ERL = 5 instances
- 
+
 ---
 
 ## File Structure
 
-- `yeast.csv`: Main dataset file.  
-- `README.md`: Documentation file (this file).  
-- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.  
+- `yeast.csv`: Main dataset file.
+- `README.md`: Documentation file (this file).
+- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.
+- `results_images/`: A folder containing the charts of the metrics analyzed.
+- `results_metrics.json`: The json file containing the results of the models for this dataset.
 
 ---
 
@@ -106,14 +108,21 @@ An example of how the dataset is structured:
 
 ## Performance Metrics
 
-TODO
-
-(Optional) Include baseline metrics from using simple models, such as accuracy, precision, recall, etc. Example:
-
-| Model | Accuracy | Precision | Recall | F1 Score |
-|---|---|---|---|---|
-| Logistic Reg. | 85%      | 83%       | 82%    | 82.5%    |
-| Random Forest | 90%      | 88%       | 87%    | 87.5%    |
+| Classifier | Accuracy | Balanced Accuracy | Micro F1 | Macro F1 | Training Time | Prediction Time | Total Time |
+|  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |
+| Random Forest | 60.1% | 52.6% | 60.1% | 53.4% | 0.043s | 0.002s | 0.046s |
+| Extra Trees | 59.4% | 52.5% | 59.4% | 47.7% | 0.035s | 0.003s | 0.037s |
+| XGBoost | 58.5% | 52.4% | 58.5% | 47.5% | 0.101s | 0.001s | 0.102s |
+| AdaBoost | 47.5% | 27.1% | 47.5% | 21.8% | 0.040s | 0.004s | 0.044s |
+| Gradient Boosting | 58.5% | 46.1% | 58.5% | 42.4% | 0.327s | 0.002s | 0.330s |
+| SimilarityForest[cityblock] | 46.9% | 38.4% | 46.9% | 38.4% | 0.023s | 0.004s | 0.026s |
+| SimilarityForest[cosine] | 48.9% | 39.2% | 48.9% | 35.6% | 0.023s | 0.004s | 0.027s |
+| SimilarityForest[euclidean] | 50.9% | 38.7% | 50.9% | 35.1% | 0.022s | 0.003s | 0.025s |
+| SimilarityForest[braycurtis] | 45.7% | 39.5% | 45.7% | 38.3% | 0.022s | 0.003s | 0.025s |
+| SimilarityForest[canberra] | 47.5% | 41.5% | 47.5% | 42.3% | 0.023s | 0.004s | 0.027s |
+| SimilarityForest[chebyshev] | 46.2% | 37.3% | 46.2% | 32.5% | 0.063s | 0.007s | 0.071s |
+| SimilarityForest[correlation] | 48.0% | 44.6% | 48.0% | 44.5% | 0.022s | 0.004s | 0.026s |
+| SimilarityForest[hamming] | 46.9% | 42.6% | 46.9% | 42.7% | 0.023s | 0.003s | 0.026s |
 
 ---
 
