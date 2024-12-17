@@ -1,6 +1,6 @@
 # Seeds
 
-**Description**:  
+**Description**:
 
 Measurements of geometrical properties of kernels belonging to three different varieties of wheat. A soft X-ray technique and GRAINS package were used to construct all seven, real-valued attributes.
 
@@ -23,10 +23,10 @@ Measurements of geometrical properties of kernels belonging to three different v
 ## Dataset Overview
 
 - **Source**: This dataset comes from [UC Irvine Machine Learning Repository - Seeds](https://archive.ics.uci.edu/dataset/236/seeds)
-  
+
 - **Domain**: Biology
 
-- **Format**: CSV  
+- **Format**: CSV
 
 ---
 
@@ -47,7 +47,7 @@ Measurements of geometrical properties of kernels belonging to three different v
 
 ## Target Variable
 
-- **Name**: *Class*  
+- **Name**: *Class*
 - **Type**: Categorical
 - **Values**:
   - 1 = Kama
@@ -59,20 +59,22 @@ Measurements of geometrical properties of kernels belonging to three different v
 ## Dataset Details
 
 - **Has missing values?**: no
-- **Number of Instances**: 210 instances 
+- **Number of Instances**: 210 instances
 - **Number of Features**: 7
 - **Class Distribution**:
   - 1 = Kama = 70 instances
   - 2 = Rosa = 70 instances
   - 3 = Canadian = 70 instances
- 
+
 ---
 
 ## File Structure
 
-- `seeds.csv`: Main dataset file.  
-- `README.md`: Documentation file (this file).  
-- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.  
+- `seeds.csv`: Main dataset file.
+- `README.md`: Documentation file (this file).
+- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.
+- `results_images/`: A folder containing the charts of the metrics analyzed.
+- `results_metrics.json`: The json file containing the results of the models for this dataset.
 
 ---
 
@@ -90,14 +92,23 @@ An example of how the dataset is structured:
 
 ## Performance Metrics
 
-TODO
+| Classifier | Accuracy | Balanced Accuracy | Micro F1 | Macro F1 | Training Time | Prediction Time | Total Time |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Random Forest | 93.7% | 93.3% | 93.7% | 93.2% | 0.023s | 0.001s | 0.024s |
+| Extra Trees | 93.7% | 93.3% | 93.7% | 93.2% | 0.016s | 0.001s | 0.017s |
+| ***XGBoost*** | ***95.2%*** | ***95.2%*** | ***95.2%*** | ***94.9%*** | 0.021s | 0.001s | 0.022s |
+| AdaBoost | 93.7% | 93.3% | 93.7% | 93.2% | 0.035s | 0.003s | 0.038s |
+| ***Gradient Boosting*** | ***95.2%*** | ***95.2%*** | ***95.2%*** | ***94.9%*** | 0.062s | 0.001s | 0.063s |
+| SimilarityForest[cityblock] | 92.1% | 91.7% | 92.1% | 91.4% | 0.023s | 0.003s | 0.025s |
+| SimilarityForest[cosine] | 92.1% | 91.3% | 92.1% | 91.4% | 0.023s | 0.002s | 0.025s |
+| SimilarityForest[euclidean] | 92.1% | 91.7% | 92.1% | 91.4% | 0.012s | 0.002s | 0.014s |
+| SimilarityForest[braycurtis] | 90.5% | 90.1% | 90.5% | 90.0% | 0.012s | 0.002s | 0.014s |
+| SimilarityForest[canberra] | 90.5% | 90.1% | 90.5% | 90.0% | 0.012s | 0.002s | 0.014s |
+| ***SimilarityForest[chebyshev]*** | ***95.2%*** | ***95.2%*** | 95.2% | 94.9% | 0.023s | 0.002s | 0.025s |
+| SimilarityForest[correlation] | 92.1% | 91.3% | 92.1% | 91.4% | 0.023s | 0.002s | 0.025s |
+| ***SimilarityForest[hamming]*** | ***95.2%*** | ***95.2%*** | ***95.2%*** | ***94.9%*** | 0.024s | 0.002s | 0.026s |
 
-(Optional) Include baseline metrics from using simple models, such as accuracy, precision, recall, etc. Example:
 
-| Model         | Accuracy | Precision | Recall | F1 Score |
-|---------------|----------|-----------|--------|----------|
-| Logistic Reg. | 85%      | 83%       | 82%    | 82.5%    |
-| Random Forest | 90%      | 88%       | 87%    | 87.5%    |
 
 ---
 
