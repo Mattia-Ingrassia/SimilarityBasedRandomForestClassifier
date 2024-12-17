@@ -1,8 +1,8 @@
 # Wine
 
-**Description**:  
+**Description**:
 
-These data are the results of a chemical analysis of wines grown in the same region in Italy but derived from three different cultivars. The analysis determined the quantities of 13 constituents found in each of the three types of wines. 
+These data are the results of a chemical analysis of wines grown in the same region in Italy but derived from three different cultivars. The analysis determined the quantities of 13 constituents found in each of the three types of wines.
 
 ---
 
@@ -23,10 +23,10 @@ These data are the results of a chemical analysis of wines grown in the same reg
 ## Dataset Overview
 
 - **Source**: This dataset comes from [UC Irvine Machine Learning Repository - Wine](https://archive.ics.uci.edu/dataset/109/wine)
-  
+
 - **Domain**: Physics and Chemistry
 
-- **Format**: CSV  
+- **Format**: CSV
 
 ---
 
@@ -53,7 +53,7 @@ These data are the results of a chemical analysis of wines grown in the same reg
 
 ## Target Variable
 
-- **Name**: *Class*  
+- **Name**: *Class*
 - **Type**: Categorical
 - **Values**:
   - 1 = Class 1
@@ -65,20 +65,22 @@ These data are the results of a chemical analysis of wines grown in the same reg
 ## Dataset Details
 
 - **Has missing values?**: no
-- **Number of Instances**: 178 instances 
+- **Number of Instances**: 178 instances
 - **Number of Features**: 13
 - **Class Distribution**:
   - Class 1 = 59 instances
   - Class 2 = 71 instances
   - Class 3 = 48 instances
- 
+
 ---
 
 ## File Structure
 
-- `wine.csv`: Main dataset file.  
-- `README.md`: Documentation file (this file).  
-- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.  
+- `wine.csv`: Main dataset file.
+- `README.md`: Documentation file (this file).
+- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.
+- `results_images/`: A folder containing the charts of the metrics analyzed.
+- `results_metrics.json`: The json file containing the results of the models for this dataset.
 
 ---
 
@@ -97,14 +99,21 @@ An example of how the dataset is structured:
 
 ## Performance Metrics
 
-TODO
-
-(Optional) Include baseline metrics from using simple models, such as accuracy, precision, recall, etc. Example:
-
-| Model         | Accuracy | Precision | Recall | F1 Score |
-|---------------|----------|-----------|--------|----------|
-| Logistic Reg. | 85%      | 83%       | 82%    | 82.5%    |
-| Random Forest | 90%      | 88%       | 87%    | 87.5%    |
+| Classifier | Accuracy | Balanced Accuracy | Micro F1 | Macro F1 | Training Time | Prediction Time | Total Time |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Random Forest | 98.1% | 98.1% | 98.1% | 98.3% | 0.021s | 0.001s | 0.022s |
+| Extra Trees | 100.0% | 100.0% | 100.0% | 100.0% | 0.016s | 0.001s | 0.017s |
+| XGBoost | 98.1% | 98.1% | 98.1% | 98.3% | 0.017s | 0.001s | 0.018s |
+| AdaBoost | 100.0% | 100.0% | 100.0% | 100.0% | 0.033s | 0.003s | 0.036s |
+| Gradient Boosting | 100.0% | 100.0% | 100.0% | 100.0% | 0.069s | 0.001s | 0.070s |
+| SimilarityForest[cityblock] | 94.4% | 95.2% | 94.4% | 95.1% | 0.092s | 0.002s | 0.095s |
+| SimilarityForest[cosine] | 85.2% | 83.1% | 85.2% | 84.4% | 0.012s | 0.003s | 0.015s |
+| SimilarityForest[euclidean] | 94.4% | 93.7% | 94.4% | 94.7% | 0.012s | 0.002s | 0.014s |
+| SimilarityForest[braycurtis] | 88.9% | 87.6% | 88.9% | 87.9% | 0.022s | 0.002s | 0.025s |
+| SimilarityForest[canberra] | 96.3% | 96.0% | 96.3% | 96.0% | 0.022s | 0.003s | 0.025s |
+| SimilarityForest[chebyshev] | 94.4% | 95.7% | 94.4% | 94.4% | 0.012s | 0.002s | 0.014s |
+| SimilarityForest[correlation] | 85.2% | 83.1% | 85.2% | 84.4% | 0.022s | 0.002s | 0.024s |
+| SimilarityForest[hamming] | 94.4% | 94.1% | 94.4% | 94.7% | 0.023s | 0.003s | 0.026s |
 
 ---
 
