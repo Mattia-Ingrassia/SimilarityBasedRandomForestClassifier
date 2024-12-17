@@ -1,6 +1,6 @@
 # Poker Hand
 
-**Description**:  
+**Description**:
 
 Each record is an example of a hand consisting of five playing cards drawn from a standard deck of 52. Each card is described using two attributes (suit and rank), for a total of 10 predictive attributes. There is one Class attribute that describes the "Poker Hand". The order of cards is important, which is why there are 480 possible Royal Flush hands as compared to 4 (one for each suit)
 
@@ -23,10 +23,10 @@ Each record is an example of a hand consisting of five playing cards drawn from 
 ## Dataset Overview
 
 - **Source**: This dataset comes from [UC Irvine Machine Learning Repository - Poker Hand](https://archive.ics.uci.edu/dataset/158/poker+hand)
-  
+
 - **Domain**: Games
 
-- **Format**: CSV  
+- **Format**: CSV
 
 ---
 
@@ -50,7 +50,7 @@ Each record is an example of a hand consisting of five playing cards drawn from 
 
 ## Target Variable
 
-- **Name**: *hand*  
+- **Name**: *hand*
 - **Type**: Categorical
 - **Values**:
   - 0 = Nothing
@@ -69,7 +69,7 @@ Each record is an example of a hand consisting of five playing cards drawn from 
 ## Dataset Details
 
 - **Has missing values?**: no
-- **Number of Instances**: 1025010 instances 
+- **Number of Instances**: 1025010 instances
 - **Number of Features**: 10
 - **Class Distribution**:
   - 0 = Nothing = 513702 instances
@@ -82,14 +82,16 @@ Each record is an example of a hand consisting of five playing cards drawn from 
   - 7 = Four of a kind = 236 instances
   - 8 = Straight flush = 17 instances
   - 9 = Royal flush = 8 instances
- 
+
 ---
 
 ## File Structure
 
-- `poker_hand.csv`: Main dataset file.  
-- `README.md`: Documentation file (this file).  
-- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.  
+- `poker_hand.csv`: Main dataset file.
+- `README.md`: Documentation file (this file).
+- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.
+- `results_images/`: A folder containing the charts of the metrics analyzed.
+- `results_metrics.json`: The json file containing the results of the models for this dataset.
 
 ---
 
@@ -107,14 +109,21 @@ An example of how the dataset is structured:
 
 ## Performance Metrics
 
-TODO
-
-(Optional) Include baseline metrics from using simple models, such as accuracy, precision, recall, etc. Example:
-
-| Model         | Accuracy | Precision | Recall | F1 Score |
-|---------------|----------|-----------|--------|----------|
-| Logistic Reg. | 85%      | 83%       | 82%    | 82.5%    |
-| Random Forest | 90%      | 88%       | 87%    | 87.5%    |
+| Classifier | Accuracy | Balanced Accuracy | Micro F1 | Macro F1 | Training Time | Prediction Time | Total Time |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ***Random Forest*** | ***73.3%*** | 17.9% | ***73.3%*** | 19.2% | 23.629s | 3.150s | 26.779s |
+| Extra Trees | 71.4% | 19.5% | 71.4% | 21.7% | 22.184s | 3.761s | 25.945s |
+| XGBoost | 66.1% | 17.3% | 66.1% | 19.0% | 2.552s | 0.088s | 2.639s |
+| AdaBoost | 44.2% | 10.0% | 44.2% | 8.7% | 8.034s | 0.824s | 8.858s |
+| Gradient Boosting | 57.3% | 14.8% | 57.3% | 15.6% | 179.922s | 1.245s | 181.167s |
+| SimilarityForest[cityblock] | 62.8% | 24.4% | 62.8% | 23.7% | 12.637s | 3.102s | 15.739s |
+| SimilarityForest[cosine] | 62.2% | 23.8% | 62.2% | 23.0% | 12.496s | 3.187s | 15.684s |
+| SimilarityForest[euclidean] | 63.3% | 24.3% | 63.3% | 23.5% | 12.297s | 3.218s | 15.515s |
+| SimilarityForest[braycurtis] | 62.1% | 24.3% | 62.1% | 23.3% | 12.737s | 3.305s | 16.042s |
+| SimilarityForest[canberra] | 62.6% | 24.7% | 62.6% | 23.9% | 13.060s | 3.333s | 16.392s |
+| SimilarityForest[chebyshev] | 64.0% | 24.7% | 64.0% | 23.9% | 14.285s | 3.380s | 17.665s |
+| ***SimilarityForest[correlation]*** | 62.1% | ***25.6%*** | 62.1% | ***24.6%*** | 12.506s | 3.269s | 15.775s |
+| SimilarityForest[hamming] | 61.9% | 25.5% | 61.9% | 24.8% | 14.699s | 3.351s | 18.050s |
 
 ---
 
