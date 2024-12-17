@@ -1,6 +1,6 @@
 # Rice
 
-**Description**:  
+**Description**:
 
 A total of 3810 rice grain's images were taken for the two species, processed and feature inferences were made. 7 morphological features were obtained for each grain of rice.
 
@@ -23,10 +23,10 @@ A total of 3810 rice grain's images were taken for the two species, processed an
 ## Dataset Overview
 
 - **Source**: This dataset comes from [UC Irvine Machine Learning Repository - Rice](https://archive.ics.uci.edu/dataset/545/rice+cammeo+and+osmancik)
-  
+
 - **Domain**: Biology
 
-- **Format**: CSV  
+- **Format**: CSV
 
 ---
 
@@ -47,7 +47,7 @@ A total of 3810 rice grain's images were taken for the two species, processed an
 
 ## Target Variable
 
-- **Name**: *Class*  
+- **Name**: *Class*
 - **Type**: Categorical
 - **Values**:
   - Cammeo
@@ -58,19 +58,21 @@ A total of 3810 rice grain's images were taken for the two species, processed an
 ## Dataset Details
 
 - **Has missing values?**: no
-- **Number of Instances**: 3810 instances 
+- **Number of Instances**: 3810 instances
 - **Number of Features**: 7
 - **Class Distribution**:
   - Osmanick = 2180 instances
   - Cammeo = 1630 instances
- 
+
 ---
 
 ## File Structure
 
-- `rice.csv`: Main dataset file.  
-- `README.md`: Documentation file (this file).  
-- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.  
+- `rice.csv`: Main dataset file.
+- `README.md`: Documentation file (this file).
+- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.
+- `results_images/`: A folder containing the charts of the metrics analyzed.
+- `results_metrics.json`: The json file containing the results of the models for this dataset.
 
 ---
 
@@ -88,14 +90,21 @@ An example of how the dataset is structured:
 
 ## Performance Metrics
 
-TODO
-
-(Optional) Include baseline metrics from using simple models, such as accuracy, precision, recall, etc. Example:
-
-| Model         | Accuracy | Precision | Recall | F1 Score |
-|---------------|----------|-----------|--------|----------|
-| Logistic Reg. | 85%      | 83%       | 82%    | 82.5%    |
-| Random Forest | 90%      | 88%       | 87%    | 87.5%    |
+| Classifier | Accuracy | Balanced Accuracy | Micro F1 | Macro F1 | Training Time | Prediction Time | Total Time |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Random Forest | 92.1% | 91.5% | 92.1% | 91.9% | 0.101s | 0.003s | 0.104s |
+| Extra Trees | 91.4% | 90.8% | 91.4% | 91.1% | 0.037s | 0.004s | 0.040s |
+| ***XGBoost*** | ***92.2%*** | ***91.6%*** | ***92.2%*** | ***92.0%*** | 0.019s | 0.001s | 0.020s |
+| ***AdaBoost*** | 92.1% | ***91.6%*** | 92.1% | 91.9% | 0.106s | 0.003s | 0.109s |
+| Gradient Boosting | 91.9% | 91.3% | 91.9% | 91.6% | 0.190s | 0.001s | 0.191s |
+| SimilarityForest[cityblock] | 87.9% | 87.7% | 87.9% | 87.7% | 0.100s | 0.004s | 0.104s |
+| SimilarityForest[cosine] | 88.7% | 88.2% | 88.7% | 88.4% | 0.044s | 0.004s | 0.048s |
+| SimilarityForest[euclidean] | 87.0% | 86.4% | 87.0% | 86.6% | 0.034s | 0.004s | 0.038s |
+| SimilarityForest[braycurtis] | 88.3% | 87.6% | 88.3% | 87.9% | 0.038s | 0.004s | 0.042s |
+| SimilarityForest[canberra] | 88.5% | 87.8% | 88.5% | 88.1% | 0.043s | 0.004s | 0.047s |
+| SimilarityForest[chebyshev] | 88.1% | 87.9% | 88.1% | 87.8% | 0.034s | 0.004s | 0.037s |
+| SimilarityForest[correlation] | 88.7% | 88.2% | 88.7% | 88.4% | 0.045s | 0.004s | 0.049s |
+| SimilarityForest[hamming] | 89.2% | 88.8% | 89.2% | 88.9% | 0.042s | 0.004s | 0.046s |
 
 ---
 
