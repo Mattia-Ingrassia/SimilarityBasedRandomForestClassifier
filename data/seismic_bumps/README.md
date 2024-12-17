@@ -1,6 +1,6 @@
 # Seismic Bumps
 
-**Description**:  
+**Description**:
 
 The data describe the problem of high energy (higher than 10^4 J) seismic bumps forecasting in a coal mine. Data come from two of longwalls located in a Polish coal mine.
 
@@ -23,10 +23,10 @@ The data describe the problem of high energy (higher than 10^4 J) seismic bumps 
 ## Dataset Overview
 
 - **Source**: This dataset comes from [UC Irvine Machine Learning Repository - Seismic Bumps](https://archive.ics.uci.edu/dataset/266/seismic+bumps)
-  
+
 - **Domain**: Other
 
-- **Format**: CSV  
+- **Format**: CSV
 
 ---
 
@@ -58,7 +58,7 @@ The data describe the problem of high energy (higher than 10^4 J) seismic bumps 
 
 ## Target Variable
 
-- **Name**: *class*  
+- **Name**: *class*
 - **Type**: Categorical
 - **Values**:
   - 0 = No dangerous seismic bump
@@ -69,19 +69,21 @@ The data describe the problem of high energy (higher than 10^4 J) seismic bumps 
 ## Dataset Details
 
 - **Has missing values?**: no
-- **Number of Instances**: 2584 instances 
+- **Number of Instances**: 2584 instances
 - **Number of Features**: 18
 - **Class Distribution**:
   - 0 = 2414 instances
   - 1 = 170 instances
- 
+
 ---
 
 ## File Structure
 
-- `seismic_bumps.csv`: Main dataset file.  
-- `README.md`: Documentation file (this file).  
-- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.  
+- `seismic_bumps.csv`: Main dataset file.
+- `README.md`: Documentation file (this file).
+- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.
+- `results_images/`: A folder containing the charts of the metrics analyzed.
+- `results_metrics.json`: The json file containing the results of the models for this dataset.
 
 ---
 
@@ -99,14 +101,21 @@ An example of how the dataset is structured:
 
 ## Performance Metrics
 
-TODO
-
-(Optional) Include baseline metrics from using simple models, such as accuracy, precision, recall, etc. Example:
-
-| Model         | Accuracy | Precision | Recall | F1 Score |
-|---------------|----------|-----------|--------|----------|
-| Logistic Reg. | 85%      | 83%       | 82%    | 82.5%    |
-| Random Forest | 90%      | 88%       | 87%    | 87.5%    |
+| Classifier | Accuracy | Balanced Accuracy | Micro F1 | Macro F1 | Training Time | Prediction Time | Total Time |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Random Forest | 93.3% | 50.8% | 93.3% | 50.1% | 0.048s | 0.002s | 0.051s |
+| Extra Trees | 92.8% | 50.5% | 92.8% | 49.8% | 0.035s | 0.003s | 0.038s |
+| XGBoost | 93.3% | 52.7% | 93.3% | 53.4% | 0.021s | 0.001s | 0.022s |
+| ***AdaBoost*** | ***93.6%*** | 50.0% | ***93.6%*** | 48.3% | 0.063s | 0.004s | 0.066s |
+| Gradient Boosting | 92.9% | 50.6% | 92.9% | 49.9% | 0.085s | 0.001s | 0.086s |
+| ***SimilarityForest[cityblock]*** | 86.3% | ***59.2%*** | 86.3% | ***56.7%*** | 0.086s | 0.006s | 0.092s |
+| SimilarityForest[cosine] | 87.8% | 53.4% | 87.8% | 53.1% | 0.025s | 0.004s | 0.029s |
+| SimilarityForest[euclidean] | 87.0% | 57.7% | 87.0% | 56.1% | 0.023s | 0.004s | 0.026s |
+| SimilarityForest[braycurtis] | 88.5% | 53.8% | 88.5% | 53.7% | 0.033s | 0.004s | 0.037s |
+| SimilarityForest[canberra] | 86.3% | 52.7% | 86.3% | 52.1% | 0.036s | 0.004s | 0.041s |
+| SimilarityForest[chebyshev] | 90.7% | 52.2% | 90.7% | 52.6% | 0.022s | 0.003s | 0.026s |
+| SimilarityForest[correlation] | 86.7% | 51.0% | 86.7% | 50.8% | 0.035s | 0.004s | 0.039s |
+| SimilarityForest[hamming] | 89.6% | 54.4% | 89.6% | 54.6% | 0.024s | 0.004s | 0.028s |
 
 ---
 
