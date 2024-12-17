@@ -11,7 +11,7 @@ from DatasetPreprocessor import DatasetPreprocessor
 from classifier.SimilarityBasedRandomForestClassifier import SimilarityBasedRandomForestClassifier
 
 import warnings
-warnings.simplefilter(action='ignore', category=FutureWarning)
+warnings.simplefilter(action="ignore", category=FutureWarning)
 
 PATH_RUN_CONFIGURATION = "run_configuration.json"
 PATH_DATA = "data"
@@ -37,7 +37,7 @@ datasets = []
 def load_config(dataset_name: str):
     configuration_path = os.path.join(PATH_DATA, dataset_name, "configuration.json")
     try:
-        with open(configuration_path, 'r') as file:
+        with open(configuration_path, "r") as file:
             return json.load(file)
     except FileNotFoundError:
         print(f"Error: Configuration file {configuration_path} not found.")
@@ -53,13 +53,13 @@ def init_classifiers(random_state: int, number_of_estimators: int) -> dict:
             n_estimators=number_of_estimators,
             random_state=random_state,
             min_samples_leaf=1,
-            max_features='sqrt'
+            max_features="sqrt"
         ),
         "Extra Trees": ExtraTreesClassifier(
             n_estimators=number_of_estimators,
             random_state=random_state,
             min_samples_leaf=1,
-            max_features='sqrt'
+            max_features="sqrt"
         ),
         "XGBoost": XGBClassifier(
             n_estimators=number_of_estimators,
@@ -126,8 +126,8 @@ def evaluate_classifier(classifier, X_train, X_test, y_train, y_test) -> dict:
     return {
         "accuracy": accuracy_score(y_test, predictions),
         "balanced_accuracy": balanced_accuracy_score(y_test, predictions),
-        "micro_f1": f1_score(y_test, predictions, average='micro'),
-        "macro_f1": f1_score(y_test, predictions, average='macro'),
+        "micro_f1": f1_score(y_test, predictions, average="micro"),
+        "macro_f1": f1_score(y_test, predictions, average="macro"),
         "training_time": training_time,
         "prediction_time": prediction_time,
         "total_time": total_time
@@ -135,13 +135,13 @@ def evaluate_classifier(classifier, X_train, X_test, y_train, y_test) -> dict:
 
 def print_metrics(classifier_name: str, metrics: dict):
     print(f"{classifier_name}:")
-    print(f"  Accuracy: {metrics['accuracy']:.5f}")
-    print(f"  Balanced Accuracy: {metrics['balanced_accuracy']:.5f}")
-    print(f"  Micro F1: {metrics['micro_f1']:.5f}")
-    print(f"  Macro F1: {metrics['macro_f1']:.5f}")
-    print(f"  Training Time: {metrics['training_time']:.5f} seconds")
-    print(f"  Prediction Time: {metrics['prediction_time']:.5f} seconds")
-    print(f"  Total Time: {metrics['total_time']:.5f} seconds")
+    print(f"  Accuracy: {metrics["accuracy"]:.5f}")
+    print(f"  Balanced Accuracy: {metrics["balanced_accuracy"]:.5f}")
+    print(f"  Micro F1: {metrics["micro_f1"]:.5f}")
+    print(f"  Macro F1: {metrics["macro_f1"]:.5f}")
+    print(f"  Training Time: {metrics["training_time"]:.5f} seconds")
+    print(f"  Prediction Time: {metrics["prediction_time"]:.5f} seconds")
+    print(f"  Total Time: {metrics["total_time"]:.5f} seconds")
     print("-" * 50)
 
 def save_metrics_to_json(dataset_name: str, classifier_name: str, random_state: int, test_size: float, number_of_estimators: int, metrics: dict):
@@ -157,14 +157,14 @@ def save_metrics_to_json(dataset_name: str, classifier_name: str, random_state: 
     dataset_results_path = os.path.join(PATH_DATA, dataset_name, RESULTS_FILE_NAME)
 
     if os.path.exists(dataset_results_path):
-        with open(dataset_results_path, 'r') as file:
+        with open(dataset_results_path, "r") as file:
             results = json.load(file)
     else:
         results = []
 
     results.append(result_entry)
 
-    with open(dataset_results_path, 'w') as file:
+    with open(dataset_results_path, "w") as file:
         json.dump(results, file, indent=4)
         #print(f"Metrics saved for {classifier_name} on dataset {dataset_name} in {dataset_results_path}.")
 
@@ -180,7 +180,7 @@ def load_run_configuration():
     global NUMBER_OF_ESTIMATORS, TEST_SIZES, RANDOM_STATES, DISTANCE_METRICS
     
     try:
-        with open(PATH_RUN_CONFIGURATION, 'r') as file:
+        with open(PATH_RUN_CONFIGURATION, "r") as file:
             run_configuration = json.load(file)
             if run_configuration is not None:
                 NUMBER_OF_ESTIMATORS = run_configuration.get("number_of_estimators")
@@ -203,7 +203,7 @@ def main():
         dataset_configuration = load_config(dataset_name)
         
         dataset_results_path = os.path.join(PATH_DATA, dataset_name, RESULTS_FILE_NAME)
-        with open(dataset_results_path, 'w') as file:
+        with open(dataset_results_path, "w") as file:
             json.dump([], file, indent=4)
         print(f"Results file {RESULTS_FILE_NAME} for dataset {dataset_name} has been created.")
         
