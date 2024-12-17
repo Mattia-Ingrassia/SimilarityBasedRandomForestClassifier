@@ -1,8 +1,8 @@
 # Dry Bean
 
-**Description**:  
+**Description**:
 
-Images of 13,611 grains of 7 different registered dry beans were taken with a high-resolution camera. A total of 16 features; 12 dimensions and 4 shape forms, were obtained from the grains.
+Images of 13611 grains of 7 different registered dry beans were taken with a high-resolution camera. A total of 16 features; 12 dimensions and 4 shape forms, were obtained from the grains.
 
 ---
 
@@ -23,10 +23,10 @@ Images of 13,611 grains of 7 different registered dry beans were taken with a hi
 ## Dataset Overview
 
 - **Source**: This dataset comes from [UC Irvine Machine Learning Repository - Dry Bean](https://archive.ics.uci.edu/dataset/602/dry+bean+dataset)
-  
+
 - **Domain**: Biology
 
-- **Format**: CSV  
+- **Format**: CSV
 
 ---
 
@@ -58,9 +58,9 @@ Images of 13,611 grains of 7 different registered dry beans were taken with a hi
 ## Target Variable
 
 - **Name**: *Class*
-- **Type**: Categorical 
-- **Values**: 
-- Possible classes or ranges.  
+- **Type**: Categorical
+- **Values**:
+- Possible classes or ranges.
   - SEKER
   - BARBUNYA
   - BOMBAY
@@ -74,7 +74,7 @@ Images of 13,611 grains of 7 different registered dry beans were taken with a hi
 ## Dataset Details
 
 - **Has missing values?**: no
-- **Number of Instances**: 13611 instances 
+- **Number of Instances**: 13611 instances
 - **Number of Features**: 16
 - **Class Distribution**:
   - SEKER: 2027 instances
@@ -84,14 +84,16 @@ Images of 13,611 grains of 7 different registered dry beans were taken with a hi
   - HOROZ: 1928 instances
   - SIRA: 2636 instances
   - DERMASON: 3546 instances
- 
+
 ---
 
 ## File Structure
 
-- `dry_bean.csv`: Main dataset file.  
-- `README.md`: Documentation file (this file).  
-- `configuration.json`: Configuration file containing the istructions for DatasetPreprocessor.  
+- `dry_bean.csv`: Main dataset file.
+- `README.md`: Documentation file (this file).
+- `configuration.json`: Configuration file containing the istructions for DatasetPreprocessor.
+- `results_images/`: A folder containing the charts of the metrics analyzed.
+- `results_metrics.json`: The json file containing the results of the models for this dataset.
 
 ---
 
@@ -110,14 +112,21 @@ An example of how the dataset is structured:
 
 ## Performance Metrics
 
-TODO
-
-(Optional) Include baseline metrics from using simple models, such as accuracy, precision, recall, etc. Example:
-
-| Model         | Accuracy | Precision | Recall | F1 Score |
-|---------------|----------|-----------|--------|----------|
-| Logistic Reg. | 85%      | 83%       | 82%    | 82.5%    |
-| Random Forest | 90%      | 88%       | 87%    | 87.5%    |
+| Classifier | Accuracy | Balanced Accuracy | Micro F1 | Macro F1 | Training Time | Prediction Time | Total Time |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Random Forest | 92.5% | 93.1% | 92.5% | 93.3% | 0.880s | 0.010s | 0.889s |
+| Extra Trees | 92.1% | 92.9% | 92.1% | 93.1% | 0.146s | 0.013s | 0.159s |
+| ***XGBoost*** | ***93.0%*** | ***93.6%*** | ***93.0%*** | ***93.8%*** | 0.143s | 0.002s | 0.146s |
+| AdaBoost | 77.8% | 65.1% | 77.8% | 62.0% | 0.626s | 0.009s | 0.635s |
+| Gradient Boosting | 91.6% | 92.4% | 91.6% | 92.6% | 10.636s | 0.011s | 10.646s |
+| SimilarityForest[cityblock] | 87.0% | 87.2% | 87.0% | 87.6% | 0.365s | 0.014s | 0.379s |
+| SimilarityForest[cosine] | 88.3% | 89.3% | 88.3% | 89.6% | 0.526s | 0.014s | 0.540s |
+| SimilarityForest[euclidean] | 85.7% | 85.9% | 85.7% | 86.3% | 0.297s | 0.012s | 0.310s |
+| SimilarityForest[braycurtis] | 89.3% | 90.4% | 89.3% | 90.5% | 0.550s | 0.014s | 0.564s |
+| SimilarityForest[canberra] | 88.8% | 90.0% | 88.8% | 90.0% | 0.508s | 0.014s | 0.522s |
+| SimilarityForest[chebyshev] | 86.1% | 82.7% | 86.1% | 84.1% | 0.314s | 0.012s | 0.326s |
+| SimilarityForest[correlation] | 88.3% | 89.3% | 88.3% | 89.6% | 0.533s | 0.014s | 0.546s |
+| SimilarityForest[hamming] | 89.5% | 90.6% | 89.5% | 90.7% | 0.500s | 0.013s | 0.512s |
 
 ---
 
