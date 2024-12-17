@@ -1,6 +1,6 @@
 # Default_credit_card
 
-**Description**:  
+**Description**:
 
 This research aimed at the case of customers' default payments in Taiwan and compares the predictive accuracy of probability of default among six data mining methods.
 
@@ -23,10 +23,10 @@ This research aimed at the case of customers' default payments in Taiwan and com
 ## Dataset Overview
 
 - **Source**: This dataset comes from [UC Irvine Machine Learning Repository - Default of Credit Card Clients](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients)
-  
+
 - **Domain**: Business
 
-- **Format**: CSV  
+- **Format**: CSV
 
 ---
 
@@ -68,8 +68,8 @@ List the features (columns) in the dataset along with descriptions, data types, 
 ## Target Variable
 
 - **Name**: *default_payment_next_month*
-- **Type**: Categorical  
-- **Values**: Yes = 1, No = 0  
+- **Type**: Categorical
+- **Values**: Yes = 1, No = 0
 
 ---
 
@@ -85,9 +85,11 @@ List the features (columns) in the dataset along with descriptions, data types, 
 
 ## File Structure
 
-- `default_credit_card.csv`: Main dataset file.  
-- `README.md`: Documentation file (this file).  
-- `configuration.json`: Configuration file containing the istructions for DatasetPreprocessor.  
+- `default_credit_card.csv`: Main dataset file.
+- `README.md`: Documentation file (this file).
+- `configuration.json`: Configuration file containing the istructions for DatasetPreprocessor.
+- `results_images/`: A folder containing the charts of the metrics analyzed.
+- `results_metrics.json`: The json file containing the results of the models for this dataset.
 
 ---
 
@@ -105,14 +107,21 @@ An example of how the dataset is structured:
 
 ## Performance Metrics
 
-TODO
-
-(Optional) Include baseline metrics from using simple models, such as accuracy, precision, recall, etc. Example:
-
-| Model         | Accuracy | Precision | Recall | F1 Score |
-|---------------|----------|-----------|--------|----------|
-| Logistic Reg. | 85%      | 83%       | 82%    | 82.5%    |
-| Random Forest | 90%      | 88%       | 87%    | 87.5%    |
+| Classifier | Accuracy | Balanced Accuracy | Micro F1 | Macro F1 | Training Time | Prediction Time | Total Time |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Random Forest | 81.1% | 65.3% | 81.1% | 67.4% | 1.447s | 0.034s | 1.481s |
+| Extra Trees | 80.6% | 64.7% | 80.6% | 66.7% | 0.489s | 0.049s | 0.538s |
+| ***XGBoost*** | 82.1% | ***65.6%*** | 82.1% | ***68.2%*** | 0.048s | 0.002s | 0.049s |
+| AdaBoost | 82.1% | 64.3% | 82.1% | 66.9% | 0.824s | 0.012s | 0.836s |
+| ***Gradient Boosting*** | ***82.4%*** | 65.2% | ***82.4%*** | 67.9% | 2.100s | 0.004s | 2.105s |
+| SimilarityForest[cityblock] | 71.6% | 60.1% | 71.6% | 59.9% | 0.265s | 0.028s | 0.293s |
+| SimilarityForest[cosine] | 72.1% | 60.8% | 72.1% | 60.5% | 0.987s | 0.043s | 1.029s |
+| SimilarityForest[euclidean] | 72.4% | 61.3% | 72.4% | 61.0% | 0.289s | 0.030s | 0.318s |
+| SimilarityForest[braycurtis] | 72.1% | 60.4% | 72.1% | 60.2% | 1.031s | 0.052s | 1.084s |
+| SimilarityForest[canberra] | 72.4% | 60.8% | 72.4% | 60.6% | 1.012s | 0.047s | 1.059s |
+| SimilarityForest[chebyshev] | 71.6% | 61.0% | 71.6% | 60.5% | 0.243s | 0.036s | 0.279s |
+| SimilarityForest[correlation] | 71.3% | 59.8% | 71.3% | 59.5% | 0.999s | 0.046s | 1.045s |
+| SimilarityForest[hamming] | 72.1% | 60.4% | 72.1% | 60.2% | 1.059s | 0.045s | 1.104s |
 
 ---
 
