@@ -2,7 +2,7 @@
 
 **Description**:
 
-Data were extracted from images that were taken from genuine and forged banknote-like specimens.  For digitization, an industrial camera usually used for print inspection was used. The final images have 400x 400 pixels. Due to the object lens and distance to the investigated object gray-scale pictures with a resolution of about 660 dpi were gained. Wavelet Transform tool were used to extract features from images.  
+Data were extracted from images that were taken from genuine and forged banknote-like specimens. For digitization, an industrial camera usually used for print inspection was used. The final images have 400x 400 pixels. Due to the object lens and distance to the investigated object gray-scale pictures with a resolution of about 660 dpi were gained. Wavelet Transform tool were used to extract features from images.
 
 ---
 
@@ -13,6 +13,7 @@ Data were extracted from images that were taken from genuine and forged banknote
   - [Variables](#variables)
   - [Target Variable](#target-variable)
   - [Dataset Details](#dataset-details)
+  - [s](#s)
   - [File Structure](#file-structure)
   - [Sample Data](#sample-data)
   - [Performance Metrics](#performance-metrics)
@@ -23,7 +24,7 @@ Data were extracted from images that were taken from genuine and forged banknote
 ## Dataset Overview
 
 - **Source**: This dataset comes from [UC Irvine Machine Learning Repository - Banknote Authentication](https://archive.ics.uci.edu/dataset/267/banknote+authentication).
-  
+
 - **Domain**: Computer science
 
 - **Format**: CSV
@@ -47,7 +48,7 @@ Data were extracted from images that were taken from genuine and forged banknote
 
 - **Name**: class
 - **Type**: Binary
-- **Values**: 0 if the banknote is genuine, 1 otherwise 
+- **Values**: 0 if the banknote is genuine, 1 otherwise
 
 ---
 
@@ -59,14 +60,16 @@ Data were extracted from images that were taken from genuine and forged banknote
 - **Class Distribution**:
   - (0) : 762 instances
   - (1) : 610 instances
- 
+s
 ---
 
 ## File Structure
 
-- `banknote.csv`: Main dataset file.  
-- `README.md`: Documentation file (this file).  
-- `configuration.json`: Configuration file containing the istructions for DatasetPreprocessor.  
+- `banknote.csv`: Main dataset file.
+- `README.md`: Documentation file (this file).
+- `configuration.json`: Configuration file containing the istructions for DatasetPreprocessor.
+- `results_images/`: A folder containing the charts of the metrics analyzed.
+- `results_metrics.json`: The json file containing the results of the models for this dataset.
 
 ---
 
@@ -85,14 +88,21 @@ An example of how the dataset is structured:
 
 ## Performance Metrics
 
-TODO
-
-(Optional) Include baseline metrics from using simple models, such as accuracy, precision, recall, etc. Example:
-
-| Model         | Accuracy | Precision | Recall | F1 Score |
-|---------------|----------|-----------|--------|----------|
-| Logistic Reg. | 85%      | 83%       | 82%    | 82.5%    |
-| Random Forest | 90%      | 88%       | 87%    | 87.5%    |
+| Classifier | Accuracy | Balanced Accuracy | Micro F1 | Macro F1 | Training Time | Prediction Time | Total Time |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ***Random Forest*** | ***99.3%*** | ***99.3%*** | ***99.3%*** | ***99.3%*** | 0.040s | 0.001s | 0.041s |
+| Extra Trees | 98.5% | 98.7% | 98.5% | 98.5% | 0.020s | 0.002s | 0.022s |
+| XGBoost | 99.0% | 99.0% | 99.0% | 99.0% | 0.014s | 0.001s | 0.015s |
+| AdaBoost | 97.1% | 97.3% | 97.1% | 97.1% | 0.050s | 0.003s | 0.053s |
+| Gradient Boosting | 97.8% | 97.9% | 97.8% | 97.8% | 0.063s | 0.001s | 0.064s |
+| SimilarityForest[cityblock] | 98.1% | 98.1% | 98.1% | 98.0% | 0.097s | 0.003s | 0.100s |
+| SimilarityForest[cosine] | 97.1% | 97.2% | 97.1% | 97.1% | 0.022s | 0.003s | 0.025s |
+| SimilarityForest[euclidean] | 98.5% | 98.5% | 98.5% | 98.5% | 0.022s | 0.003s | 0.025s |
+| SimilarityForest[braycurtis] | 98.5% | 98.5% | 98.5% | 98.5% | 0.023s | 0.003s | 0.026s |
+| SimilarityForest[canberra] | 98.5% | 98.6% | 98.5% | 98.5% | 0.022s | 0.003s | 0.025s |
+| SimilarityForest[chebyshev] | 98.5% | 98.7% | 98.5% | 98.5% | 0.022s | 0.003s | 0.025s |
+| SimilarityForest[correlation] | 97.1% | 97.2% | 97.1% | 97.1% | 0.023s | 0.003s | 0.025s |
+| SimilarityForest[hamming] | 97.3% | 97.3% | 97.3% | 97.3% | 0.022s | 0.004s | 0.027s |
 
 ---
 
