@@ -1,6 +1,6 @@
 # Mushroom
 
-**Description**:  
+**Description**:
 
 This data set includes descriptions of hypothetical samples corresponding to 23 species of gilled mushrooms in the Agaricus and Lepiota Family (pp. 500-525).
 
@@ -30,10 +30,10 @@ The Guide clearly states that there is no simple rule for determining the edibil
 ## Dataset Overview
 
 - **Source**: This dataset comes from [UC Irvine Machine Learning Repository - Mushroom](https://archive.ics.uci.edu/dataset/73/mushroom)
-  
+
 - **Domain**: Biology
 
-- **Format**: CSV  
+- **Format**: CSV
 
 ---
 
@@ -69,7 +69,7 @@ The Guide clearly states that there is no simple rule for determining the edibil
 
 ## Target Variable
 
-- **Name**: *class*  
+- **Name**: *class*
 - **Type**: Categorical
 - **Values**:
   - e for edible
@@ -80,9 +80,9 @@ The Guide clearly states that there is no simple rule for determining the edibil
 ## Dataset Details
 
 - **Has missing values?**: Yes - marked with "?" (only in stalk-root)
-- **Number of Instances**: 
+- **Number of Instances**:
   - with missing values: 8124 instances
-  - without missing values: 5644 instances 
+  - without missing values: 5644 instances
 - **Number of Features**: 22
 - **Class Distribution**:
   - with missing values: p (poisonus): 3916 instances, e (edible): 4208
@@ -92,9 +92,11 @@ The Guide clearly states that there is no simple rule for determining the edibil
 
 ## File Structure
 
-- `mushroom.csv`: Main dataset file.  
-- `README.md`: Documentation file (this file).  
-- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.  
+- `mushroom.csv`: Main dataset file.
+- `README.md`: Documentation file (this file).
+- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.
+- `results_images/`: A folder containing the charts of the metrics analyzed.
+- `results_metrics.json`: The json file containing the results of the models for this dataset.
 
 ---
 
@@ -112,14 +114,21 @@ An example of how the dataset is structured:
 
 ## Performance Metrics
 
-TODO
-
-(Optional) Include baseline metrics from using simple models, such as accuracy, precision, recall, etc. Example:
-
-| Model         | Accuracy | Precision | Recall | F1 Score |
-|---------------|----------|-----------|--------|----------|
-| Logistic Reg. | 95%      | 94%       | 94%    | 94.5%    |
-| Random Forest | 97%      | 96%       | 96%    | 96.5%    |
+| Classifier | Accuracy | Balanced Accuracy | Micro F1 | Macro F1 | Training Time | Prediction Time | Total Time |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Random Forest | 100.0% | 100.0% | 100.0% | 100.0% | 0.041s | 0.003s | 0.044s |
+| Extra Trees | 100.0% | 100.0% | 100.0% | 100.0% | 0.039s | 0.003s | 0.042s |
+| XGBoost | 100.0% | 100.0% | 100.0% | 100.0% | 0.023s | 0.001s | 0.024s |
+| AdaBoost | 99.8% | 99.8% | 99.8% | 99.8% | 0.125s | 0.008s | 0.133s |
+| Gradient Boosting | 100.0% | 100.0% | 100.0% | 100.0% | 0.154s | 0.001s | 0.155s |
+| SimilarityForest[cityblock] | 100.0% | 100.0% | 100.0% | 100.0% | 0.161s | 0.010s | 0.171s |
+| SimilarityForest[cosine] | 100.0% | 100.0% | 100.0% | 100.0% | 0.157s | 0.008s | 0.166s |
+| SimilarityForest[euclidean] | 100.0% | 100.0% | 100.0% | 100.0% | 0.159s | 0.008s | 0.166s |
+| SimilarityForest[braycurtis] | 100.0% | 100.0% | 100.0% | 100.0% | 0.155s | 0.011s | 0.166s |
+| SimilarityForest[canberra] | 100.0% | 100.0% | 100.0% | 100.0% | 0.157s | 0.011s | 0.168s |
+| SimilarityForest[chebyshev] | 100.0% | 100.0% | 100.0% | 100.0% | 0.147s | 0.009s | 0.156s |
+| SimilarityForest[correlation] | 100.0% | 100.0% | 100.0% | 100.0% | 0.178s | 0.009s | 0.187s |
+| SimilarityForest[hamming] | 100.0% | 100.0% | 100.0% | 100.0% | 0.179s | 0.010s | 0.189s |
 
 ---
 
