@@ -1,6 +1,6 @@
 # Vehicles
 
-**Description**:  
+**Description**:
 
 This data was originally gathered at the TI in 1986-87 by JP Siebert. It was partially financed by Barr and Stroud Ltd. The original purpose was to find a method of distinguishing 3D objects within a 2D image by application of an ensemble of shape feature extractors to the 2D silhouettes of the objects. Measures of shape features extracted from example silhouettes of objects to be discriminated were used to generate a classification rule tree by means of computer induction.
 
@@ -25,10 +25,10 @@ This object recognition strategy was successfully used to discriminate between s
 ## Dataset Overview
 
 - **Source**: This dataset comes from [UC Irvine Machine Learning Repository - Statlog (Vehicle Silhouettes)](https://archive.ics.uci.edu/dataset/149/statlog+vehicle+silhouettes)
-  
+
 - **Domain**: Other
 
-- **Format**: CSV  
+- **Format**: CSV
 
 ---
 
@@ -60,7 +60,7 @@ This object recognition strategy was successfully used to discriminate between s
 
 ## Target Variable
 
-- **Name**: *class*  
+- **Name**: *class*
 - **Type**: Categorical
 - **Values**:
   - bus
@@ -73,21 +73,23 @@ This object recognition strategy was successfully used to discriminate between s
 ## Dataset Details
 
 - **Has missing values?**: no
-- **Number of Instances**: 846 instances 
+- **Number of Instances**: 846 instances
 - **Number of Features**: 18
 - **Class Distribution**:
   - bus = 218 instances
   - opel = 212 instances
   - saab = 217 instances
   - van = 199 instances
- 
+
 ---
 
 ## File Structure
 
-- `vehicles.csv`: Main dataset file.  
-- `README.md`: Documentation file (this file).  
-- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.  
+- `vehicles.csv`: Main dataset file.
+- `README.md`: Documentation file (this file).
+- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.
+- `results_images/`: A folder containing the charts of the metrics analyzed.
+- `results_metrics.json`: The json file containing the results of the models for this dataset.
 
 ---
 
@@ -105,14 +107,21 @@ An example of how the dataset is structured:
 
 ## Performance Metrics
 
-TODO
-
-(Optional) Include baseline metrics from using simple models, such as accuracy, precision, recall, etc. Example:
-
-| Model         | Accuracy | Precision | Recall | F1 Score |
-|---------------|----------|-----------|--------|----------|
-| Logistic Reg. | 85%      | 83%       | 82%    | 82.5%    |
-| Random Forest | 90%      | 88%       | 87%    | 87.5%    |
+| Classifier | Accuracy | Balanced Accuracy | Micro F1 | Macro F1 | Training Time | Prediction Time | Total Time |
+|  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |
+| Random Forest | 74.0% | 76.1% | 74.0% | 74.3% | 0.039s | 0.001s | 0.040s |
+| Extra Trees | 72.8% | 75.0% | 72.8% | 73.4% | 0.026s | 0.002s | 0.028s |
+| XGBoost | 76.0% | 77.7% | 76.0% | 76.9% | 0.040s | 0.001s | 0.041s |
+| AdaBoost | 62.6% | 65.5% | 62.6% | 61.1% | 0.045s | 0.003s | 0.048s |
+| Gradient Boosting | 73.6% | 75.7% | 73.6% | 73.5% | 0.190s | 0.001s | 0.192s |
+| SimilarityForest[cityblock] | 65.7% | 66.8% | 65.7% | 66.5% | 0.023s | 0.003s | 0.025s |
+| SimilarityForest[cosine] | 70.1% | 71.4% | 70.1% | 71.5% | 0.022s | 0.003s | 0.025s |
+| SimilarityForest[euclidean] | 70.5% | 71.6% | 70.5% | 70.7% | 0.023s | 0.003s | 0.025s |
+| SimilarityForest[braycurtis] | 69.3% | 70.4% | 69.3% | 70.1% | 0.024s | 0.003s | 0.027s |
+| SimilarityForest[canberra] | 67.7% | 69.0% | 67.7% | 68.3% | 0.022s | 0.003s | 0.025s |
+| SimilarityForest[chebyshev] | 65.0% | 66.1% | 65.0% | 65.6% | 0.048s | 0.003s | 0.050s |
+| SimilarityForest[correlation] | 73.2% | 74.4% | 73.2% | 73.9% | 0.022s | 0.003s | 0.025s |
+| SimilarityForest[hamming] | 66.9% | 67.9% | 66.9% | 68.2% | 0.023s | 0.003s | 0.026s |
 
 ---
 
