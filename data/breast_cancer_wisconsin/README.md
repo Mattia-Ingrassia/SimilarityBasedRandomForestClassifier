@@ -24,10 +24,10 @@ They describe characteristics of the cell nuclei present in the image.
 ## Dataset Overview
 
 - **Source**: This dataset comes from [UC Irvine Machine Learning Repository - Breast Cancer Wisconsin](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic)
-  
+
 - **Domain**: Health and Medicine
 
-- **Format**: CSV  
+- **Format**: CSV
 
 ---
 
@@ -76,8 +76,8 @@ List the features (columns) in the dataset along with descriptions, data types, 
 ## Target Variable
 
 - **Name**: diagnosis
-- **Type**: Categorical  
-- **Values**: B = Benign, M = Malignant  
+- **Type**: Categorical
+- **Values**: B = Benign, M = Malignant
 
 ---
 
@@ -89,14 +89,16 @@ List the features (columns) in the dataset along with descriptions, data types, 
 - **Class Distribution**:
   - M: 212
   - B: 357
- 
+
 ---
 
 ## File Structure
 
-- `breast_cancer_wisconsin.csv`: Main dataset file.  
-- `README.md`: Documentation file (this file).  
-- `configuration.json`: Configuration file containing the istructions for DatasetPreprocessor.  
+- `breast_cancer_wisconsin.csv`: Main dataset file.
+- `README.md`: Documentation file (this file).
+- `configuration.json`: Configuration file containing the istructions for DatasetPreprocessor.
+- `results_images/`: A folder containing the charts of the metrics analyzed.
+- `results_metrics.json`: The json file containing the results of the models for this dataset.
 
 ---
 
@@ -114,14 +116,21 @@ An example of how the dataset is structured:
 
 ## Performance Metrics
 
-TODO
-
-(Optional) Include baseline metrics from using simple models, such as accuracy, precision, recall, etc. Example:
-
-| Model         | Accuracy | Precision | Recall | F1 Score |
-|---------------|----------|-----------|--------|----------|
-| Logistic Reg. | 85%      | 83%       | 82%    | 82.5%    |
-| Random Forest | 90%      | 88%       | 87%    | 87.5%    |
+| Classifier | Accuracy | Balanced Accuracy | Micro F1 | Macro F1 | Training Time | Prediction Time | Total Time |
+|---|---|---|---|---|---|---|---|
+| ***Random Forest*** | ***98.2%*** | ***98.3%*** | ***98.2%*** | ***98.1%*** | 0.038s | 0.001s | 0.039s |
+| ***Extra Trees*** | ***98.2%*** | ***98.3%*** | ***98.2%*** | ***98.1%*** | 0.019s | 0.002s | 0.021s |
+| XGBoost | 97.1% | 96.7% | 97.1% | 96.8% | 0.022s | 0.001s | 0.023s |
+| AdaBoost | 97.1% | 96.4% | 97.1% | 96.8% | 0.076s | 0.003s | 0.079s |
+| Gradient Boosting | 95.3% | 94.3% | 95.3% | 94.9% | 0.112s | 0.000s | 0.113s |
+| SimilarityForest[cityblock] | 91.8% | 90.2% | 91.8% | 91.0% | 0.023s | 0.003s | 0.025s |
+| SimilarityForest[cosine] | 95.9% | 95.8% | 95.9% | 95.6% | 0.023s | 0.003s | 0.025s |
+| SimilarityForest[euclidean] | 94.2% | 93.1% | 94.2% | 93.6% | 0.022s | 0.002s | 0.025s |
+| SimilarityForest[braycurtis] | 93.0% | 93.1% | 93.0% | 92.6% | 0.024s | 0.003s | 0.026s |
+| SimilarityForest[canberra] | 94.7% | 94.5% | 94.7% | 94.4% | 0.022s | 0.003s | 0.025s |
+| SimilarityForest[chebyshev] | 95.3% | 96.0% | 95.3% | 95.1% | 0.022s | 0.002s | 0.025s |
+| SimilarityForest[correlation] | 95.9% | 95.8% | 95.9% | 95.6% | 0.022s | 0.003s | 0.025s |
+| SimilarityForest[hamming] | 90.6% | 89.9% | 90.6% | 89.9% | 0.023s | 0.003s | 0.025s |
 
 ---
 
