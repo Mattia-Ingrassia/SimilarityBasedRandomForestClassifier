@@ -1,6 +1,6 @@
 # Dropout
 
-**Description**:  
+**Description**:
 
 A dataset created from a higher education institution (acquired from several disjoint databases) related to students enrolled in different undergraduate degrees, such as agronomy, design, education, nursing, journalism, management, social service, and technologies. The dataset includes information known at the time of student enrollment (academic path, demographics, and social-economic factors) and the students' academic performance at the end of the first and second semesters. The data is used to build classification models to predict students' dropout and academic sucess. The problem is formulated as a three category classification task, in which there is a strong imbalance towards one of the classes.
 
@@ -23,10 +23,10 @@ A dataset created from a higher education institution (acquired from several dis
 ## Dataset Overview
 
 - **Source**: This dataset comes from [UC Irvine Machine Learning Repository - Predict Students' Dropout and Academic Success](https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success)
-  
+
 - **Domain**: Social Science
 
-- **Format**: CSV  
+- **Format**: CSV
 
 ---
 
@@ -77,8 +77,8 @@ A dataset created from a higher education institution (acquired from several dis
 
 ## Target Variable
 
-- **Name**: Target.  
-- **Type**: Categorical  
+- **Name**: Target.
+- **Type**: Categorical
 - **Values**:
   - dropout
   - enrolled
@@ -89,7 +89,7 @@ A dataset created from a higher education institution (acquired from several dis
 ## Dataset Details
 
 - **Has missing values?**: no
-- **Number of Instances**: 4424 instances 
+- **Number of Instances**: 4424 instances
 - **Number of Features**: 36
 - **Class Distribution**:
   - Dropout: 1421 instances
@@ -101,9 +101,12 @@ A dataset created from a higher education institution (acquired from several dis
 
 ## File Structure
 
-- `dropout.csv`: Main dataset file.  
-- `README.md`: Documentation file (this file).  
-- `configuration.json`: Configuration file containing the istructions for DatasetPreprocessor.  
+- `dropout.csv`: Main dataset file.
+- `README.md`: Documentation file (this file).
+- `configuration.json`: Configuration file containing the istructions for DatasetPreprocessor.
+- `results_images/`: A folder containing the charts of the metrics analyzed.
+- `results_metrics.json`: The json file containing the results of the models for this dataset.
+
 
 ---
 
@@ -121,14 +124,21 @@ An example of how the dataset is structured:
 
 ## Performance Metrics
 
-TODO
-
-(Optional) Include baseline metrics from using simple models, such as accuracy, precision, recall, etc. Example:
-
-| Model         | Accuracy | Precision | Recall | F1 Score |
-|---------------|----------|-----------|--------|----------|
-| Logistic Reg. | 85%      | 83%       | 82%    | 82.5%    |
-| Random Forest | 90%      | 88%       | 87%    | 87.5%    |
+| Classifier | Accuracy | Balanced Accuracy | Micro F1 | Macro F1 | Training Time | Prediction Time | Total Time |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Random Forest | 76.2% | 66.9% | 76.2% | 67.6% | 0.126s | 0.005s | 0.131s |
+| Extra Trees | 77.3% | 67.8% | 77.3% | 68.6% | 0.092s | 0.006s | 0.098s |
+| ***XGBoost*** | ***77.6%*** | ***69.6%*** | ***77.6%*** | ***70.4%*** | 0.067s | 0.001s | 0.069s |
+| AdaBoost | 72.4% | 61.0% | 72.4% | 60.3% | 0.103s | 0.004s | 0.107s |
+| Gradient Boosting | 76.5% | 66.5% | 76.5% | 67.4% | 0.545s | 0.003s | 0.547s |
+| SimilarityForest[cityblock] | 66.6% | 60.0% | 66.6% | 59.8% | 0.150s | 0.007s | 0.157s |
+| SimilarityForest[cosine] | 66.1% | 59.8% | 66.1% | 59.3% | 0.078s | 0.006s | 0.084s |
+| SimilarityForest[euclidean] | 65.1% | 57.3% | 65.1% | 57.3% | 0.070s | 0.006s | 0.076s |
+| SimilarityForest[braycurtis] | 67.6% | 60.2% | 67.6% | 60.1% | 0.081s | 0.007s | 0.088s |
+| SimilarityForest[canberra] | 65.1% | 58.8% | 65.1% | 58.4% | 0.088s | 0.007s | 0.095s |
+| SimilarityForest[chebyshev] | 66.1% | 59.2% | 66.1% | 58.7% | 0.069s | 0.007s | 0.076s |
+| SimilarityForest[correlation] | 66.6% | 59.6% | 66.6% | 59.2% | 0.077s | 0.007s | 0.084s |
+| SimilarityForest[hamming] | 66.9% | 61.3% | 66.9% | 60.8% | 0.080s | 0.008s | 0.088s |
 
 ---
 
