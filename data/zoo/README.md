@@ -1,8 +1,8 @@
 # Zoo
 
-**Description**:  
+**Description**:
 
-A simple database containing 17 Boolean-valued attributes.  The "type" attribute appears to be the class attribute. 
+A simple database containing 17 Boolean-valued attributes.  The "type" attribute appears to be the class attribute.
 
 ---
 
@@ -23,10 +23,10 @@ A simple database containing 17 Boolean-valued attributes.  The "type" attribute
 ## Dataset Overview
 
 - **Source**: This dataset comes from [UC Irvine Machine Learning Repository - Zoo](https://archive.ics.uci.edu/dataset/111/zoo)
-  
+
 - **Domain**: Biology
 
-- **Format**: CSV  
+- **Format**: CSV
 
 ---
 
@@ -57,7 +57,7 @@ A simple database containing 17 Boolean-valued attributes.  The "type" attribute
 
 ## Target Variable
 
-- **Name**: *class_type*  
+- **Name**: *class_type*
 - **Type**: Categorical
 - **Values**:
   - 1 = Mammal
@@ -73,7 +73,7 @@ A simple database containing 17 Boolean-valued attributes.  The "type" attribute
 ## Dataset Details
 
 - **Has missing values?**: no
-- **Number of Instances**: 101 instances 
+- **Number of Instances**: 101 instances
 - **Number of Features**: 16
 - **Class Distribution**:
   - 1 = Mammal = 41 instances
@@ -83,14 +83,16 @@ A simple database containing 17 Boolean-valued attributes.  The "type" attribute
   - 5 = Amphibian = 4 instances
   - 6 = Insect = 8 instances
   - 7 = Other = 10 instances
- 
+
 ---
 
 ## File Structure
 
-- `zoo.csv`: Main dataset file.  
-- `README.md`: Documentation file (this file).  
-- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.  
+- `zoo.csv`: Main dataset file.
+- `README.md`: Documentation file (this file).
+- `configuration.json`: Configuration file containing the instructions for DatasetPreprocessor.
+- `results_images/`: A folder containing the charts of the metrics analyzed.
+- `results_metrics.json`: The json file containing the results of the models for this dataset.
 
 ---
 
@@ -108,14 +110,21 @@ An example of how the dataset is structured:
 
 ## Performance Metrics
 
-TODO
-
-(Optional) Include baseline metrics from using simple models, such as accuracy, precision, recall, etc. Example:
-
-| Model         | Accuracy | Precision | Recall | F1 Score |
-|---------------|----------|-----------|--------|----------|
-| Logistic Reg. | 85%      | 83%       | 82%    | 82.5%    |
-| Random Forest | 90%      | 88%       | 87%    | 87.5%    |
+| Classifier | Accuracy | Balanced Accuracy | Micro F1 | Macro F1 | Training Time | Prediction Time | Total Time |
+|  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |
+| Random Forest | 96.8% | 97.2% | 96.8% | 84.4% | 0.019s | 0.001s | 0.020s |
+| Extra Trees | 90.3% | 91.7% | 90.3% | 73.8% | 0.015s | 0.001s | 0.017s |
+| XGBoost | 90.3% | 91.7% | 90.3% | 81.0% | 0.026s | 0.001s | 0.027s |
+| AdaBoost | 61.3% | 50.0% | 61.3% | 35.7% | 0.031s | 0.003s | 0.034s |
+| Gradient Boosting | 90.3% | 91.7% | 90.3% | 81.0% | 0.091s | 0.001s | 0.091s |
+| SimilarityForest[cityblock] | 96.8% | 97.2% | 96.8% | 97.8% | 0.024s | 0.002s | 0.026s |
+| SimilarityForest[cosine] | 61.3% | 50.0% | 61.3% | 32.1% | 0.023s | 0.003s | 0.026s |
+| SimilarityForest[euclidean] | 96.8% | 97.2% | 96.8% | 97.8% | 0.012s | 0.002s | 0.015s |
+| SimilarityForest[braycurtis] | 61.3% | 50.0% | 61.3% | 32.1% | 0.012s | 0.004s | 0.016s |
+| SimilarityForest[canberra] | 96.8% | 97.2% | 96.8% | 97.8% | 0.012s | 0.002s | 0.014s |
+| SimilarityForest[chebyshev] | 61.3% | 50.0% | 61.3% | 32.1% | 0.012s | 0.003s | 0.015s |
+| SimilarityForest[correlation] | 61.3% | 50.0% | 61.3% | 32.1% | 0.012s | 0.003s | 0.015s |
+| SimilarityForest[hamming] | 58.1% | 33.3% | 58.1% | 28.6% | 0.012s | 0.003s | 0.016s |
 
 ---
 
