@@ -209,46 +209,6 @@ def create_chart(classifiers: list, metric: list, title: str, xlabel: str, ylabe
     plt.savefig(file_path, dpi=300)
     plt.close()
 
-def generate_comparison_charts(dataframe: pd.DataFrame, comparison_path: str, title: str, color_palette: str, is_similarity_forest: bool = False) -> None:
-    """
-    Generate comparison charts for the different metrics.
-
-    Args:
-        dataframe (pd.DataFrame): The DataFrame containing the results.
-        comparison_path (str): The path to save the images.
-        title (str): The title of the plot.
-        color_palette (str): The color palette to use for the bars.
-        is_similarity_forest (bool): Whether the comparison is for SimilarityForest models.
-
-    Returns:
-        None
-    """
-    
-    metric_map = {
-        "accuracy" : "Accuracy",
-        "balanced_accuracy" : "Balanced Accuracy",
-        "macro_f1" : "Macro F1",
-        "micro_f1" : "Micro F1"
-    }
-
-    # Create a chart for each metric analyzed
-    for metric, metric_name in metric_map.items():
-        file_path = ""
-        if not is_similarity_forest:
-            file_path = os.path.join(comparison_path, f"{metric}_{IMAGE_COMPARISON_NAME}")
-        else:
-            file_path = os.path.join(comparison_path, f"similarities_{metric}_{IMAGE_COMPARISON_NAME}")
-        create_chart(
-            classifiers=dataframe["classifier"],
-            metric=dataframe[metric],
-            title=f"{metric_name} {title}",
-            xlabel="Classifiers",
-            ylabel=metric_name,
-            file_path=file_path,
-            color_palette=color_palette
-        )
-
-
 def process_dataset(dataset_name: str, path_data: str) -> None:
     """
     Process the results for a specific dataset.
@@ -282,29 +242,50 @@ def process_dataset(dataset_name: str, path_data: str) -> None:
         save_markdown(dataframe_complete, os.path.join(dataset_path, GENERAL_COMPARISON_MARKDOWN_FILE))
 
     images_path = os.path.join(dataset_path, RESULTS_FOLDER)
-    
     if not os.path.exists(images_path):
         os.makedirs(images_path)
+
+    metric_map = {
+        "accuracy": "Accuracy",
+        "balanced_accuracy": "Balanced Accuracy",
+        "macro_f1": "Macro F1",
+        "micro_f1": "Micro F1"
+    }
    
-    if not df_others.empty and not df_similarity_forests.empty:
-        best_similarity_models = pd.DataFrame()
+    for metric, metric_name in metric_map.items():
+        # Graph 1: Compare all similarity models for that metric
+        if not df_similarity_forests.empty:
+            df_similarity_metric = df_similarity_forests[['classifier', metric]]
+            create_chart(
+                classifiers=df_similarity_metric['classifier'],
+                metric=df_similarity_metric[metric],
+                title=f"SimilarityForests Comparison ({metric_name})",
+                xlabel="Similarity Models",
+                ylabel=metric_name,
+                file_path=os.path.join(images_path, f"similarity_forests_comparison_{metric}.png"),
+                color_palette="mako"
+            )
 
-        # Collect the best SimilarityForest models across all metrics
-        for metric in METRICS:
-            best_model = df_similarity_forests.sort_values(by=metric, ascending=False).iloc[[0]]
-            best_similarity_models = pd.concat([best_similarity_models, best_model], ignore_index=True)
+        # Graph 2: Compare df_others and the best similarity model(s) for that metric
+        if not df_others.empty and not df_similarity_forests.empty:
+            best_value = df_similarity_forests[metric].max()
+            best_similarity_models = df_similarity_forests[df_similarity_forests[metric] == best_value]
+            best_similarity_models = best_similarity_models.drop_duplicates(subset="classifier")
 
-        # Remove duplicate models based on the "classifier" column
-        best_similarity_models = best_similarity_models.drop_duplicates(subset="classifier")
+            df_combined = pd.concat(
+                [df_others[['classifier', metric]], best_similarity_models[['classifier', metric]]],
+                ignore_index=True
+            )
 
-        # Append the unique best SimilarityForest models to df_others
-        df_others = pd.concat([df_others, best_similarity_models], ignore_index=True)
-
-        generate_comparison_charts(df_others, images_path, "comparison between state-of-the-art ensemble models and SimilarityForest", "plasma")
-
-    if not df_similarity_forests.empty:
-        generate_comparison_charts(df_similarity_forests, images_path, "comparison between SimilarityForests with different similarity metrics", "mako", is_similarity_forest=True)
-
+            create_chart(
+                classifiers=df_combined['classifier'],
+                metric=df_combined[metric],
+                title=f"SOTA vs. Best SimilarityForest ({metric_name})",
+                xlabel="Classifiers",
+                ylabel=metric_name,
+                file_path=os.path.join(images_path, f"sota_vs_similarityforest_{metric}.png"),
+                color_palette="plasma"
+            )
 
 def create_accuracy_plot_with_confidence_interval(dataframe: pd.DataFrame, metric: list, file_path: str, title: str, is_similarity_forest: bool = False) -> None:
     """
