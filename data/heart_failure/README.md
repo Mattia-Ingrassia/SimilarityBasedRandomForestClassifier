@@ -1,6 +1,6 @@
 # Heart_failure
 
-**Description**:  
+**Description**:
 
 This dataset contains the medical records of 299 patients who had heart failure, collected during their follow-up period, where each patient profile has 13 clinical features.
 
@@ -23,10 +23,10 @@ This dataset contains the medical records of 299 patients who had heart failure,
 ## Dataset Overview
 
 - **Source**: This dataset comes from [UC Irvine Machine Learning Repository - Heart Failure Clinical Records](https://archive.ics.uci.edu/dataset/519/heart+failure+clinical+records)
-  
+
 - **Domain**: Health and Medicine
 
-- **Format**: CSV  
+- **Format**: CSV
 
 ---
 
@@ -55,7 +55,7 @@ List the features (columns) in the dataset along with descriptions, data types, 
 
 ## Target Variable
 
-- **Name**: *death_event*  
+- **Name**: *death_event*
 - **Type**: Binary
 - **Values**:
   - 0 if the patient survived in the follow-up period
@@ -65,19 +65,19 @@ List the features (columns) in the dataset along with descriptions, data types, 
 ## Dataset Details
 
 - **Has missing values?**: no
-- **Number of Instances**: 299 instances 
+- **Number of Instances**: 299 instances
 - **Number of Features**: 12
 - **Class Distribution**:
   - 0 if the patient survived = 203 instances
   - 1 if the patient died = 96 instances
- 
+
 ---
 
 ## File Structure
 
-- `heart_failure.csv`: Main dataset file.  
-- `README.md`: Documentation file (this file).  
-- `configuration.json`: Configuration file containing the istructions for DatasetPreprocessor.  
+- `heart_failure.csv`: Main dataset file.
+- `README.md`: Documentation file (this file).
+- `configuration.json`: Configuration file containing the istructions for DatasetPreprocessor.
 
 ---
 
@@ -95,14 +95,21 @@ An example of how the dataset is structured:
 
 ## Performance Metrics
 
-TODO
-
-(Optional) Include baseline metrics from using simple models, such as accuracy, precision, recall, etc. Example:
-
-| Model         | Accuracy | Precision | Recall | F1 Score |
-|---------------|----------|-----------|--------|----------|
-| Logistic Reg. | 85%      | 83%       | 82%    | 82.5%    |
-| Random Forest | 90%      | 88%       | 87%    | 87.5%    |
+| Classifier | Accuracy | Balanced Accuracy | Micro F1 | Macro F1 | Training Time | Prediction Time | Total Time |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Random Forest | 81.1% | 76.9% | 81.1% | 78.2% | 0.023s | 0.001s | 0.024s |
+| ***Extra Trees*** | ***83.3%*** | ***80.1%*** | ***83.3%*** | ***81.1%*** | 0.018s | 0.001s | 0.019s |
+| XGBoost | 80.0% | 75.4% | 80.0% | 76.7% | 0.015s | 0.001s | 0.016s |
+| AdaBoost | 76.7% | 72.1% | 76.7% | 73.0% | 0.033s | 0.003s | 0.036s |
+| Gradient Boosting | 77.8% | 73.0% | 77.8% | 74.1% | 0.023s | 0.000s | 0.023s |
+| SimilarityForest[cityblock] | 72.2% | 67.9% | 72.2% | 68.5% | 0.012s | 0.002s | 0.014s |
+| SimilarityForest[cosine] | 77.8% | 72.3% | 77.8% | 73.5% | 0.022s | 0.003s | 0.025s |
+| SimilarityForest[euclidean] | 65.6% | 56.5% | 65.6% | 55.4% | 0.035s | 0.005s | 0.040s |
+| SimilarityForest[braycurtis] | 72.2% | 70.0% | 72.2% | 69.9% | 0.025s | 0.002s | 0.027s |
+| SimilarityForest[canberra] | 73.3% | 70.9% | 73.3% | 70.9% | 0.012s | 0.002s | 0.015s |
+| SimilarityForest[chebyshev] | 65.6% | 56.5% | 65.6% | 55.4% | 0.012s | 0.002s | 0.014s |
+| SimilarityForest[correlation] | 77.8% | 72.3% | 77.8% | 73.5% | 0.022s | 0.002s | 0.025s |
+| SimilarityForest[hamming] | 74.4% | 73.2% | 74.4% | 72.7% | 0.022s | 0.002s | 0.025s |
 
 ---
 
