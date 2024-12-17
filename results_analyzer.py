@@ -199,7 +199,7 @@ def create_chart(classifiers: list, metric: list, title: str, xlabel: str, ylabe
     plt.xticks([])
     
     # Add the title, labels and limits
-    plt.title(title, fontsize=14)
+    plt.title(title, fontsize=14, pad=20)
     plt.xlabel(xlabel, fontsize=12)
     plt.ylabel(ylabel, fontsize=12)
     plt.ylim(min_ylim, max_ylim)
@@ -420,8 +420,8 @@ def main():
         print(f"No datasets found in {PATH_DATA}")
         return
 
-    for dataset_name in datasets:
-        process_dataset(dataset_name, PATH_DATA)
+    #for dataset_name in datasets:
+    #    process_dataset(dataset_name, PATH_DATA)
 
 
     if len(datasets) == TOTAL_DATASETS:

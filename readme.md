@@ -1,6 +1,6 @@
 # Similarity Based Random Forest Classifier
 
-This project implements a Similarity Based Random Forest Classifier and evaluates its performance on various datasets, confronting the results with other ensemble methods.
+This project implements a Similarity Based Random Forest Classifier and evaluates its performance on various datasets, comparing the results with other ensemble methods.
 More information on the model can be found in the classifier folder.
 
 ---
@@ -88,9 +88,15 @@ More information on the model can be found in the classifier folder.
 |
 ├── .gitignore
 ├── DatasetPreprocessor.py 
-├── requirements.txt 
+|
+├── general_results_images/
+|
+├── README.md
+├── requirements.txt
+├── results_analyzer.py
 ├── run_configuration.json 
 └── run_handler.py
+ 
 
 ```
 
@@ -127,8 +133,14 @@ To run the project, execute the run_handler.py script. This script will load the
 python run_handler.py
 ```
 
-This scripts uses ```DatasetPreprocessor.py``` for prepraring the datasets for the models.
-After the first execution, it is possible to avoid the preprocessing part if you don't need to edit the configuration of the datasets by setting the value of ```FROM_SCRATCH``` variable to false.
+This script uses ```DatasetPreprocessor.py``` for preparing the datasets for the models.
+After the first execution, it is possible to avoid the preprocessing part if you don't need to edit the configuration of the datasets by setting the value of the ```FROM_SCRATCH``` variable to false.
+
+After executing the ```run_handler.py``` script, it is possible to run ```results_analyzer.py``` to create plots and Markdown tables with the results of each dataset.
+
+```bash
+python results_analyzer.py
+```
 
 ---
 
@@ -136,4 +148,9 @@ After the first execution, it is possible to avoid the preprocessing part if you
 
 The results of the evaluations are saved in the ```results_metrics.json``` file within each dataset's subdirectory.
 The results include metrics such as accuracy, balanced accuracy, micro F1, macro F1, training time, and prediction time.
+
+In each dataset, you can also find all charts and plots representing the results for that dataset.
+
+The ```general_results_images``` folder contains general plots representing the average performance of each model.
+
 
