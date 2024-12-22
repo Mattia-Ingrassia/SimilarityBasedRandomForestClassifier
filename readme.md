@@ -6,6 +6,7 @@ More information on the model can be found in the classifier folder.
 ---
 
 ## Table of Contents
+
 - [Similarity Based Random Forest Classifier](#similarity-based-random-forest-classifier)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
@@ -20,12 +21,14 @@ More information on the model can be found in the classifier folder.
 ## Installation
 
 1. Clone the repository:
+
     ```sh
     git clone https://github.com/Mattia-Ingrassia/SimilarityBasedRandomForestClassifier.git
     cd SimilarityBasedRandomForestClassifier
     ```
 
 2. Create a virtual environment:
+
     ```sh
     python -m venv venv
     ```
@@ -33,15 +36,19 @@ More information on the model can be found in the classifier folder.
 3. Activate the virtual environment:
 
    - On Windows:
+
         ```sh
         venv\Scripts\activate
         ```
-    - On macOS and Linux:
+
+   - On macOS and Linux:
+
         ```sh
         source venv/bin/activate
         ```
 
 4. Install the required packages:
+
     ```sh
     pip install -r requirements.txt
     ```
@@ -50,7 +57,7 @@ More information on the model can be found in the classifier folder.
 
 ## Project Structure
 
-```
+```sh
 ├── classifier/
 │   ├── README.md
 │   └── SimilarityBasedRandomForestClassifier.py
@@ -96,7 +103,6 @@ More information on the model can be found in the classifier folder.
 ├── results_analyzer.py
 ├── run_configuration.json 
 └── run_handler.py
- 
 
 ```
 
@@ -128,7 +134,6 @@ The `run_configuration.json` file contains the configuration for running the pro
 
 To run the project, execute the run_handler.py script. This script will load the datasets, preprocess them, initialize the classifiers, and evaluate their performance.
 
-
 ```bash
 python run_handler.py
 ```
@@ -152,5 +157,3 @@ The results include metrics such as accuracy, balanced accuracy, micro F1, macro
 In each dataset, you can also find all charts and plots representing the results for that dataset.
 
 The ```general_results_images``` folder contains general plots representing the average performance of each model.
-
-
