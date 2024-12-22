@@ -15,6 +15,7 @@ class SimilarityBasedRandomForestClassifier:
         self.dataset_seed = None
         self.n_classes = None
  
+
     def fit(self, X, y): 
         self.classifiers = []
         self.dataset_seed = np.zeros((self.n_estimators, X.shape[1])) 
@@ -30,6 +31,7 @@ class SimilarityBasedRandomForestClassifier:
 
         return self
  
+
     def predict_proba(self, X): 
         all_distances = pairwise_distances(X, self.dataset_seed, metric=self.distance_metric)
         all_similarities = 1 / (1 + all_distances)
@@ -44,18 +46,20 @@ class SimilarityBasedRandomForestClassifier:
             
         return all_probas
  
+
     def predict(self, X): 
         proba = self.predict_proba(X) 
         return np.argmax(proba, axis=1) 
-     
+
+
     def _select_seed(self, X): 
         if len(self.classifiers) == 0: 
-            # Se è il primo dataset, seleziona casualmente il seed 
+            # If it is the first dataset, randomly select the seed
             rng = np.random.default_rng(self.random_state)
             seed_index = rng.integers(0, len(X))
             return seed_index 
         else: 
-            # Calcola le distanze medie rispetto ai dataset selezionati in precedenza 
+            # Calculate the average distances to the previously selected datasets 
             distances = pairwise_distances(X, self.dataset_seed[:len(self.classifiers)], metric=self.distance_metric)
             average_distances = np.mean(distances, axis=1) 
             seed_index = np.argmax(average_distances) 
@@ -67,7 +71,7 @@ class SimilarityBasedRandomForestClassifier:
         similarities = 1 / (1 + distances) 
         weights = similarities / np.sum(similarities) 
 
-        # Campiona casualmente gli indici del dataset basandosi sui pesi 
+        # Randomly sample the dataset indices based on the weights
         rng = np.random.default_rng(self.random_state)
         selected_indexes = rng.choice(len(X), size=len(X), replace=True,  p=weights.flatten())
         return selected_indexes
