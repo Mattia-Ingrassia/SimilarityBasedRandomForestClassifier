@@ -528,7 +528,7 @@ def main():
                     xlabel="Classifiers",
                     ylabel=metric_name,
                     file_path=os.path.join(sota_images_path, f"sota_vs_similarityforest_{metric}.png"),
-                    color_palette="mako"
+                    color_palette="plasma"
                 )
             else:
                 create_chart(
@@ -538,7 +538,7 @@ def main():
                     xlabel="Classifiers",
                     ylabel=metric_name,
                     file_path=os.path.join(sota_images_path, f"sota_vs_similarityforest_{metric}.png"),
-                    color_palette="mako"
+                    color_palette="plasma"
                 )
 
 
