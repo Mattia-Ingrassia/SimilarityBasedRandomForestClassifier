@@ -123,7 +123,7 @@ The `run_configuration.json` file contains the configuration for running the pro
     "random_states": [23],
     "number_of_estimators": [25],
     "test_sizes": [0.3],
-    "distance_metrics": ["cityblock", "cosine", "euclidean","braycurtis", "canberra", "chebyshev", "correlation", "hamming"]
+    "distance_metrics": ["cityblock", "cosine", "euclidean", "braycurtis", "canberra", "chebyshev", "correlation", "hamming"]
 }
 
 ```
