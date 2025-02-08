@@ -37,13 +37,16 @@ class SimilarityBasedRandomForestClassifier:
     def predict_proba(self, X):
         all_distances = pairwise_distances(X, self.dataset_seed, metric=self.distance_metric)
         all_similarities = 1 / (1 + all_distances)
-        all_weights = all_similarities / np.sum(all_similarities, axis=1, keepdims=True)
+        all_sum = np.sum(all_similarities, axis=1, keepdims=True)
+        all_weights = all_similarities / all_sum
         all_probas = np.zeros((X.shape[0], self.n_classes))
 
         for i, tree in enumerate(self.classifiers):
             tree_probas = tree.predict_proba(X)
             if tree_probas.shape[1] < self.n_classes:
-                tree_probas = np.pad(tree_probas, ((0, 0), (0, self.n_classes - tree_probas.shape[1])))
+                padding = self.n_classes - tree_probas.shape[1]
+                tree_probas = np.pad(tree_probas, 
+                                     ((0, 0), (0, padding)))
             all_probas += all_weights[:, i][:, np.newaxis] * tree_probas
 
         return all_probas
@@ -62,7 +65,8 @@ class SimilarityBasedRandomForestClassifier:
             return seed_index
         else:
             # Calculate the average distances to the previously selected datasets
-            distances = pairwise_distances(X, self.dataset_seed[:len(self.classifiers)], metric=self.distance_metric)
+            datasets_selected = self.dataset_seed[:len(self.classifiers)]
+            distances = pairwise_distances(X, datasets_selected, metric=self.distance_metric)
             average_distances = np.mean(distances, axis=1)
             seed_index = np.argmax(average_distances)
             return seed_index
@@ -85,7 +89,8 @@ class SimilarityBasedRandomForestClassifier:
         seed_instance = X[seed_index]
 
         dataset_indexes = self._create_dataset(X, seed_instance)
-        dataset_X, dataset_y = X[dataset_indexes], y[dataset_indexes]
+        dataset_X = X[dataset_indexes]
+        dataset_y = y[dataset_indexes]
 
         tree = DecisionTreeClassifier(max_depth=self.max_depth, random_state=self.random_state, ccp_alpha=0.00)
         tree.fit(dataset_X, dataset_y)
